@@ -1,0 +1,15 @@
+body{margin: 0; padding: 0;}
+
+.tabelas01{max-width: 500px;}
+
+.tabelas03{margin: 20px 0 50px 0; text-align: left; -webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); -moz-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); box-shadow: 2px 2px 20px rgba(0,0,0,0.15); border-radius: 3px;}
+
+.celulas03{padding: 40px 50px 40px 50px; font-size: 14.5px; line-height: 21px;  color: #363F44;}
+
+.tabela3topo-img{background-image: url('images/img_topo.jpg'); background-repeat: no-repeat; background-size: cover; margin: 20px 0 20px 0; text-align: left; -webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); -moz-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); box-shadow: 2px 2px 20px rgba(0,0,0,0.15); border-radius: 3px; display: block;}
+
+.link01{text-decoration: none; color: #444444; font-size: 10px;}
+
+.logo01{padding: 45px 0;}
+
+.displayblock{display: block;}
