@@ -1,8 +1,26 @@
 
 
- {
-	font-family:'Titillium Web','Helvetica','Arial','sans-serif'; 
-	font-size:18px; 
+.background{
+	background-color: #eaeced;
+}
+
+.widthfull{
+	width: 100%;
+}
+
+.width600{
+	width: 600px; 
+}
+
+.noborder{
+	border: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+}
+
+.centralize{
+	margin: 0 auto;
 }
 
 a.link{
@@ -22,7 +40,7 @@ a.tiny-button{
 	font-weight: bold; 
 	border-radius:50px; 
 	text-align: center !important;
-	width: auto
+	width: auto;
 }
 
 a.small-button{
@@ -180,6 +198,7 @@ img.logo-topo{
 
 img{
 	display: block;
+	border: 0;
 }
 
 img.professores{
