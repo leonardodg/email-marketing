@@ -1,5 +1,4 @@
 
-
 .background{
 	background-color: #eaeced;
 }
@@ -19,6 +18,46 @@
 	padding: 0px;
 }
 
+td.color-block{
+	width: 75px; 
+	height: 50px;  
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 0.5px;
+	border-style: double;
+	border-color: black;
+}
+
+.color-primary{
+	background: #2199e8;
+}
+
+.color-secondary{
+	background: #777777;
+}
+
+.color-success{
+	background: #3adb76;
+}
+
+.color-warning{
+	background: #ffae00;
+}
+
+.color-alert{
+	background: #ec5840;
+}
+
+td.float-blocks{
+	border: 1px; 
+	border-color: white; 
+	border-style: solid; 
+	background-color: #1678ea; 
+	color: #fff; 
+	padding: 10px 30px;
+	font-size: 10px
+}
+
 .centralize{
 	margin: auto !important;
   	float: none !important;
@@ -33,6 +72,10 @@
 .float-right{
 	text-align: right;
 	float: right;
+}
+
+table.float-clear{
+	clear: both;
 }
 
 .maxblock{
@@ -161,12 +204,54 @@ h1{
 	padding-bottom: 20px;
 }
 
+h1.default{
+	font-family:'Titillium Web'; 
+	font-size: 34px; 
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
 h2{
 	font-family:'Titillium Web'; 
 	font-size: 20px; 
 	padding-right: 50px;
 	padding-left: 50px;
 	padding-bottom: 20px;
+}
+
+h2.default{
+	font-family:'Titillium Web'; 
+	font-size: 30px; 
+	padding-right: 50px;
+	padding-left: 50px;;
+}
+
+h3.default{
+	font-family:'Titillium Web'; 
+	font-size: 28px; 
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+h4.default{
+	font-family:'Titillium Web'; 
+	font-size: 24px; 
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+h5.default{
+	font-family:'Titillium Web'; 
+	font-size: 20px; 
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+h6.default{
+	font-family:'Titillium Web'; 
+	font-size: 18px; 
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 p{
@@ -507,7 +592,7 @@ p strong.curso-validade{
 	margin-left:50px; 
 	margin-right:50px; 
 	margin-bottom:0px; 
-	font-family: 'Lato, Helvetica, Arial, sans-serif'; 
+	font-family: 'Lato','Helvetica','Arial','sans-serif'; 
 	font-size: default; 
 	line-height: 1.5; 
 	color: #363f44;
