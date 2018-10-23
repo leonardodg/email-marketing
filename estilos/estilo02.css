@@ -18,15 +18,47 @@
 	padding: 0px;
 }
 
-td.color-block{
-	width: 75px; 
-	height: 50px;  
-	padding-left: 5px;
-	padding-right: 5px;
+.inline-block{
+	display: inline-block;
+}
+
+td.color-block-teste1{
+	width: 100px; 
+	height: 100px;  
+	margin-left: 5px;
+	margin-right: 5px;
 	border: 0.5px;
 	border-style: double;
-	border-color: black;
+	border-color: #000000;
+	max-width: 100px;	
 }
+
+td.color-block-teste2{
+	width: 100px; 
+	height: 100px;  
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0.5px;
+	border-style: double;
+	border-color: #cacaca;
+	max-width: 100px;	
+}
+
+td.color-block-teste3{
+	width: 100px; 
+	height: 100px;  
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0.5px;
+	border-style: double;
+	border-color: #ffffff;
+	max-width: 100px;	
+}
+
+div.color-block{
+	width: 75px; 
+	height: 50px;  
+}	
 
 .color-primary{
 	background: #2199e8;
@@ -144,7 +176,7 @@ a.large-button{
 	text-align: center !important;	
 }
 
-a.grey-button{
+a.secondary-button{
 	background: #777777;
   	border: 0px solid #777777; 
 	color:#fff; 
@@ -157,7 +189,7 @@ a.grey-button{
 	text-align: left !important;
 }
 
-a.lightgreen-button{
+a.success-button{
 	background: #3adb76;
   	border: 0px solid #3adb76; 
 	color:#fff; 
@@ -170,20 +202,7 @@ a.lightgreen-button{
 	text-align: center !important;
 }
 
-a.strongorange-button{
-	background: #ec5840;
-  	border: 0px solid #ec5840; 
-	color:#fff; 
-	text-decoration: none; 
-	font-family:'Lato','Helvetica','Arial','sans-serif'; 
-	font-size:16px; 
-	font-weight: bold; 
-	border-radius:50px; 
-	padding: 8px 16px 8px 16px;
-	text-align: center !important;
-}
-
-a.yellow-button{
+a.warning-button{
 	background: #ffae00;
   	border: 0px solid #ffae00; 
 	color:#fff; 
@@ -196,58 +215,57 @@ a.yellow-button{
 	text-align: center !important;
 }
 
-h1{
-	font-family:'Titillium Web'; 
-	font-size: 26px; 
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-bottom: 20px;
+a.alert-button{
+	background: #ec5840;
+  	border: 0px solid #ec5840; 
+	color:#fff; 
+	text-decoration: none; 
+	font-family:'Lato','Helvetica','Arial','sans-serif'; 
+	font-size:16px; 
+	font-weight: bold; 
+	border-radius:50px; 
+	padding: 8px 16px 8px 16px;
+	text-align: center !important;
 }
 
-h1.default{
+h1{
 	font-family:'Titillium Web'; 
 	font-size: 34px; 
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-h2{
-	font-family:'Titillium Web'; 
-	font-size: 20px; 
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-bottom: 20px;
-}
 
-h2.default{
+
+h2{
 	font-family:'Titillium Web'; 
 	font-size: 30px; 
 	padding-right: 50px;
 	padding-left: 50px;;
 }
 
-h3.default{
+h3{
 	font-family:'Titillium Web'; 
 	font-size: 28px; 
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-h4.default{
+h4{
 	font-family:'Titillium Web'; 
 	font-size: 24px; 
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-h5.default{
+h5{
 	font-family:'Titillium Web'; 
 	font-size: 20px; 
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-h6.default{
+h6{
 	font-family:'Titillium Web'; 
 	font-size: 18px; 
 	padding-right: 50px;
@@ -257,7 +275,7 @@ h6.default{
 p{
 	font-family:'Lato'; 
 	font-size: 14.5px; 
-	line-height: 120%; 
+	line-height: 120%;
 }
 
 p.content{
@@ -380,9 +398,7 @@ td.eberick-img{
 h3.eberick-title1{
 	font-weight:600; 
 	text-align:left; 
-	margin-top:30px; 
-	margin-left:50px; 
-	margin-right:50px; 
+	margin-top:30px;   
 	margin-bottom:0; 
 }
 
@@ -390,8 +406,6 @@ h3.investimento-preco,h3.eberick-title2{
 	font-weight:600; 
 	text-align:left; 
 	margin-top:0px; 
-	margin-left:50px; 
-	margin-right:50px; 
 	margin-bottom: 0;
 }
 
@@ -424,9 +438,7 @@ span.eberick-title1{
 h3.investimento-title,h3.cp-title,h3.formato-title{
 	font-weight:600; 
 	text-align:left; 
-	margin-top:30px; 
-	margin-left:50px; 
-	margin-right:50px; 
+	margin-top:30px;   
 	margin-bottom: 0;
 }
 
@@ -475,8 +487,6 @@ h3.investimento-adquirir{
 	font-weight: 600; 
 	text-align: left; 
 	margin-top:0px; 
-	margin-left:50px; 
-	margin-right:50px; 
 	margin-bottom:30px; 
 	text-transform:uppercase;
 }
@@ -556,8 +566,6 @@ h3.professores2{
 	font-weight:600; 
 	text-align:left; 
 	margin-top:30px; 
-	margin-left:50px; 
-	margin-right:50px; 
 	margin-bottom:20px;
 	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
 	color: #363f44;
