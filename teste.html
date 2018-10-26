@@ -3,14 +3,14 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<title>Document</title>
-    <link rel="stylesheet" type="text/css" href="estilos/estilo02.css">
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
-		@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
-	</style>
-	<style type="text/css">
+    <meta charset="UTF-8">
+    <title>Teste Grid Layout</title>
+    <link rel="stylesheet" type="text/css" href="estilos/grid1.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
+    </style>
+    <style type="text/css">
 
             
             
@@ -96,11 +96,11 @@
                 }
 
             }       
-	</style>
+    </style>
 </head>
 <body bgcolor="eaeced">       
   
-	    <table>
+        <table>
             
             <!-- PRIMEIRO LINK TOPO -->
             <tr>
@@ -140,22 +140,28 @@
             <!-- BLOCO OLÁ -->
             <tr>
                 <td>
-                    <table class="row">
+                    <table>
                         <tr>
                             <td>
-                                <table class="col-12">
+                                <table class="container">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="row">
                                                 <tr>
-                                                    <td class="padding-top-bottom">
-                                                        <strong><h2>Olá[Nome], ◄ Exemplo H2</h2></strong>
-                                                        <p class="first-content">
-                                                            Meu nome é Micheli Mohr, sou engenheira civil, atuo no departamento de produtos e serviços da Altoqi e participei diretamente no desenvolvimento da versão 2018 do Eberick.
-                                                        </p>
-                                                        <p class="content">
-                                                            É um grande orgulho poder dizer que desenvolvemos <strong>o melhor Eberick de</strong>
-                                                        </p>
+                                                    <td>
+                                                        <table class="col-12 inline-block float-left">
+                                                            <tr>
+                                                                <td class="padding-top-bottom">
+                                                                    <strong><h2>Olá[Nome], ◄ Exemplo H2</h2></strong>
+                                                                    <p class="first-content">
+                                                                        Meu nome é Micheli Mohr, sou engenheira civil, atuo no departamento de produtos e serviços da Altoqi e participei diretamente no desenvolvimento da versão 2018 do Eberick.
+                                                                    </p>
+                                                                    <p class="content">
+                                                                        É um grande orgulho poder dizer que desenvolvemos <strong>o melhor Eberick de</strong>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -172,36 +178,42 @@
             <!-- CORES -->
             <tr>
                 <td>
-                    <table class="row">
+                    <table>
                         <tr>
                             <td>
-                                <table class="col-12">
+                                <table class="container">
                                     <tr>
                                         <td>
-                                            <table class="container">
-                                                <tr> 
-                                                    <td class="padding-top-bottom">
-                                                        <table style="border-spacing: 10px !important;">
-                                                            <tr>
-                                                                <td class="color-block-teste2 inline-block">
-                                                                    <center><div class="color-block color-primary"></div>
-                                                                    <strong><p style="padding: 0 !important;">Primary</p></strong></center>
-                                                                </td>
-                                                                <td class="color-block-teste2 inline-block">
-                                                                    <center><div class="color-block color-secondary"></div>
-                                                                    <strong><p style="padding: 0 !important;">Secondary</p></strong></center>
-                                                                </td>
-                                                                <td class="color-block-teste2 inline-block">
-                                                                    <center><div class="color-block color-success"></div>
-                                                                    <strong><p style="padding: 0 !important;">Success</p></strong></center>
-                                                                </td>
-                                                                <td class="color-block-teste2 inline-block">
-                                                                    <center><div class="color-block color-warning"></div>
-                                                                    <strong><p style="padding: 0 !important;">Warning</p></strong></center>
-                                                                </td>
-                                                                <td class="color-block-teste2 inline-block">
-                                                                    <center><div class="color-block color-alert"></div>
-                                                                    <strong><p style="padding: 0 !important;">Alert</p></strong></center>
+                                            <table class="row">
+                                                <tr>
+                                                    <td>
+                                                        <table class="col-6 inline-block float-left">
+                                                            <tr> 
+                                                                <td class="padding-top-bottom">
+                                                                    <table style="border-spacing: 10px !important;">
+                                                                        <tr>
+                                                                            <td class="color-block-teste2 inline-block">
+                                                                                <center><div class="color-block color-primary"></div>
+                                                                                <strong><p style="padding: 0 !important;">Primary</p></strong></center>
+                                                                            </td>
+                                                                            <td class="color-block-teste2 inline-block">
+                                                                                <center><div class="color-block color-secondary"></div>
+                                                                                <strong><p style="padding: 0 !important;">Secondary</p></strong></center>
+                                                                            </td>
+                                                                            <td class="color-block-teste2 inline-block">
+                                                                                <center><div class="color-block color-success"></div>
+                                                                                <strong><p style="padding: 0 !important;">Success</p></strong></center>
+                                                                            </td>
+                                                                            <td class="color-block-teste2 inline-block">
+                                                                                <center><div class="color-block color-warning"></div>
+                                                                                <strong><p style="padding: 0 !important;">Warning</p></strong></center>
+                                                                            </td>
+                                                                            <td class="color-block-teste2 inline-block">
+                                                                                <center><div class="color-block color-alert"></div>
+                                                                                <strong><p style="padding: 0 !important;">Alert</p></strong></center>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -221,83 +233,89 @@
             <!-- BOTÕES cores -->
             <tr>
                 <td>
-                    <table class="row">
+                    <table>
                         <tr>
                             <td>
-                                <table class="col-12">
+                                <table class="container">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="row">
                                                 <tr>
-                                                    <td class="padding-top-bottom">
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-button">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="float-center secondary-button mobile-button">
-                                                                           <span>Secondary Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center>                                                        
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-button">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="float-center success-button mobile-button">
-                                                                           <span>Success Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-button">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="float-center warning-button mobile-button">
-                                                                           <span>Warning Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-button">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="float-center alert-button mobile-button">
-                                                                           <span>Alert Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
+                                                    <td>
+                                                        <table class="col-12 inline-block float-left">
+                                                            <tr>
+                                                                <td class="padding-top-bottom">
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-button">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="float-center secondary-button mobile-button">
+                                                                                       <span>Secondary Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center>                                                        
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-button">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="float-center success-button mobile-button">
+                                                                                       <span>Success Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-button">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="float-center warning-button mobile-button">
+                                                                                       <span>Warning Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-button">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="float-center alert-button mobile-button">
+                                                                                       <span>Alert Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -314,83 +332,89 @@
             <!-- BOTÕES tamanhos -->
             <tr>
                 <td>
-                    <table class="row">
+                    <table>
                         <tr>
                             <td>
-                                <table class="col-12">
+                                <table class="container">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="row">
                                                 <tr>
-                                                    <td class="padding-top-bottom">
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-tinybutton">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="tiny-button">
-                                                                           <span>Tiny Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-smallbutton">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="small-button">
-                                                                           <span>Small Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-button">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="button">
-                                                                           <span>Default Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center> 
-                                                        <center>
-                                                         <table>
-                                                           <tr>
-                                                             <td>
-                                                               <table class="mobile-largebutton">
-                                                                 <tr>
-                                                                   <td class="button-padding">
-                                                                       <a href="" target="blank" class="large-button">
-                                                                           <span>Large Button</span>
-                                                                        </a>
-                                                                   </td>
-                                                                 </tr>
-                                                               </table>
-                                                             </td>
-                                                           </tr>
-                                                         </table>
-                                                        </center>        
+                                                    <td>
+                                                        <table class="col-12 inline-block float-left">
+                                                            <tr>
+                                                                <td class="padding-top-bottom">
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-tinybutton">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="tiny-button">
+                                                                                       <span>Tiny Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-smallbutton">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="small-button">
+                                                                                       <span>Small Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-button">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="button">
+                                                                                       <span>Default Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center> 
+                                                                    <center>
+                                                                     <table>
+                                                                       <tr>
+                                                                         <td>
+                                                                           <table class="mobile-largebutton">
+                                                                             <tr>
+                                                                               <td class="button-padding">
+                                                                                   <a href="" target="blank" class="large-button">
+                                                                                       <span>Large Button</span>
+                                                                                    </a>
+                                                                               </td>
+                                                                             </tr>
+                                                                           </table>
+                                                                         </td>
+                                                                       </tr>
+                                                                     </table>
+                                                                    </center>        
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1081,7 +1105,7 @@
                                             <table class="container-img">
                                                 <tr>
                                                     <td>
-                                                    	<img src="http://public.qisat.com.br/campanhas/e-convites/cursos/cdeb19/images/img_topo.jpg" class="full">
+                                                        <img src="http://public.qisat.com.br/campanhas/e-convites/cursos/cdeb19/images/img_topo.jpg" class="full">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1091,21 +1115,21 @@
 
             <!-- CAIXA DE TEXTO EBERICK -->
                                     <tr>
-                                    	<td>
-                                    		<table class="container">
-                                    			<tr>
-                                    				<td>
-                                    					<span class="eberick-title1">
-														<h3 class="eberick-title1"><strong>Curso</strong></h3>
+                                        <td>
+                                            <table class="container">
+                                                <tr>
+                                                    <td>
+                                                        <span class="eberick-title1">
+                                                        <h3 class="eberick-title1"><strong>Curso</strong></h3>
                                                         </span>
-														<span class="eberick-title2">
-														<h3 class="eberick-title2"><strong>Software Eberick 2019</strong></h3>
-														</span>
-														<p class="eberick"><span class="eberick"> O curso tem como objetivo proporcionar conhecimento sobre os principais recursos do AltoQi Eberick, software para elaboração de projetos estruturais em concreto armado.</span></p>
-                                    				</td>
-                                    			</tr>
-                                    		</table>
-                                    	</td>
+                                                        <span class="eberick-title2">
+                                                        <h3 class="eberick-title2"><strong>Software Eberick 2019</strong></h3>
+                                                        </span>
+                                                        <p class="eberick"><span class="eberick"> O curso tem como objetivo proporcionar conhecimento sobre os principais recursos do AltoQi Eberick, software para elaboração de projetos estruturais em concreto armado.</span></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
                                     </tr>
             <!-- //CAIXA DE TEXTO EBERICK -->
                                 </table>
@@ -1127,36 +1151,36 @@
                                             <table class="container">
                                                 <tr>
                                                     <td class="padding-table">
-														<span class="cp-title">
-															<h3 class="cp-title"><strong>Conteúdo Programático ◄Exemplo H3</strong></h3>
-														</span>
-														<span class="cp">
-															<ul class="cp">
-																<li>Lançando o projeto</li>
-                                        						<li>Ferramentas de captura</li>
-                                        						<li>Preparação das arquiteturas</li>
-                                        						<li>Lançamento da estrutura - parte 1</li>
-                                        						<li>Lançamento da estrutura - parte 2</li>
-                                       						 	<li>Lançamento da escada</li>
-                                        						<li>Finalização do lançamento da estrutura</li>
-                                       						 	<li>Análise da estrutura</li>
-                                       						 	<li>Dimensionamento das vigas</li>
-                                       						 	<li>Dimensionamento das lajes e escadas</li>
-                                      						  	<li>Dimensionamento dos pilares e fundações</li>
-                                       						 	<li>Detalhamento das armaduras</li>
-                                       						 	<li>Desenho das formas</li>
-                                       						 	<li>Tópicos Especiais</li>
-															</ul>
-														</span>                                                    
-													</td>
+                                                        <span class="cp-title">
+                                                            <h3 class="cp-title"><strong>Conteúdo Programático ◄Exemplo H3</strong></h3>
+                                                        </span>
+                                                        <span class="cp">
+                                                            <ul class="cp">
+                                                                <li>Lançando o projeto</li>
+                                                                <li>Ferramentas de captura</li>
+                                                                <li>Preparação das arquiteturas</li>
+                                                                <li>Lançamento da estrutura - parte 1</li>
+                                                                <li>Lançamento da estrutura - parte 2</li>
+                                                                <li>Lançamento da escada</li>
+                                                                <li>Finalização do lançamento da estrutura</li>
+                                                                <li>Análise da estrutura</li>
+                                                                <li>Dimensionamento das vigas</li>
+                                                                <li>Dimensionamento das lajes e escadas</li>
+                                                                <li>Dimensionamento dos pilares e fundações</li>
+                                                                <li>Detalhamento das armaduras</li>
+                                                                <li>Desenho das formas</li>
+                                                                <li>Tópicos Especiais</li>
+                                                            </ul>
+                                                        </span>                                                    
+                                                    </td>
                                                 </tr>
             <!-- //CAIXA DE TEXTO CONTEÚDO PROGRAMÁTICO -->
                                                 <!-- BOTÃO CONHECER O CURSO FUNDO BRANCO -->
-                								<tr>
-													<td class="float-center conhecer-button padding-top-bottom">
-														<a class="conhecer-button mobile-button" href="https://www.qisat.com.br/curso/online/eberick-2019" target="_blank">CONHECER O CURSO</a>
-													</td>
-												</tr>
+                                                <tr>
+                                                    <td class="float-center conhecer-button padding-top-bottom">
+                                                        <a class="conhecer-button mobile-button" href="https://www.qisat.com.br/curso/online/eberick-2019" target="_blank">CONHECER O CURSO</a>
+                                                    </td>
+                                                </tr>
                                                 <!-- //BOTÃO CONHECER O CURSO FUNDO BRANCO -->
                                             </table>
                                         </td>
@@ -1181,21 +1205,21 @@
                                             <table class="container">
                                                 <tr>
                                                     <td>
-														<span class="investimento-title">
-															<h3 class="investimento-title"><strong>Investimento de</strong></h3>
-														</span>
-														<h3 class="investimento-preco">
-                                    					<span class="investimento-rS">R$</span>
-                                    					<span class="investimento-preco"><strong>560,00</strong></span>
-                                   						</h3>
+                                                        <span class="investimento-title">
+                                                            <h3 class="investimento-title"><strong>Investimento de</strong></h3>
+                                                        </span>
+                                                        <h3 class="investimento-preco">
+                                                        <span class="investimento-rS">R$</span>
+                                                        <span class="investimento-preco"><strong>560,00</strong></span>
+                                                        </h3>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <!-- LINK ADQUIRIR CURSO -->
                                                     <td>
-                    									<span class="investimento-adquirir">
-															<h3 class="investimento-adquirir"><a class="investimento-adquirir" href="https://www.qisat.com.br/curso/online/eberick-2019" target="_blank"><strong><u>Adquirir curso</u> -></strong></a></h3>
-														</span>                                	
+                                                        <span class="investimento-adquirir">
+                                                            <h3 class="investimento-adquirir"><a class="investimento-adquirir" href="https://www.qisat.com.br/curso/online/eberick-2019" target="_blank"><strong><u>Adquirir curso</u> -></strong></a></h3>
+                                                        </span>                                 
                                                     </td>
                                                     <!-- //LINK ADQUIRIR CURSO -->
                                                 </tr>
@@ -1447,7 +1471,7 @@
                 </td>
             </tr>
 
-		</table>
-	
+        </table>
+    
 </body>
-</html>
+</html

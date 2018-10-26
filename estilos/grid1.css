@@ -1,5 +1,122 @@
-// $width = '600px';
+/*/////////////////////////////GRID///////////////////////////////////////*/
 
+/*REDEFININDO O BOX MODEL*/
+.row,
+.col {
+  box-sizing: border-box;
+}
+
+/*LIMPANDO OS FLOATS*/
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+/*COLUNAS*/
+.col {
+  position: relative;
+  float: left;
+
+	/*LARGURA-> scw = (100 – (m * (mc – 1))) / mc  */
+}
+
+/*CALHAS*/
+.col + .col {
+  margin-left: 1.6%;
+}
+
+/*LARGURA COLUNAS*/
+.col-1 {
+  width: 6.86666666667%;
+  max-width: 6.86666666667%;
+  
+}
+
+.col-2 {
+  width: 15.3333333333%;
+  max-width: 15.3333333333%; 
+  
+}
+
+.col-3 {
+  width: 23.8%;
+  max-width: 23.8%;
+  
+}
+
+.col-4 {
+  width: 32.2666666667%;
+  max-width: 32.2666666667%;
+  
+}
+
+.col-5 {
+  width: 40.7333333333%;
+  max-width: 40.7333333333%;
+  
+}
+
+.col-6 {
+  width: 49.2%;
+  max-width: 49.2%;
+  
+}
+
+.col-7 {
+  width: 57.6666666667%;
+  max-width: 57.6666666667%; 
+  
+}
+
+.col-8 {
+  width: 66.1333333333%;
+  max-width: 66.1333333333%;
+  
+}
+
+.col-9 {
+  width: 74.6%;
+  max-width: 74.6%;
+  
+}
+
+.col-10 {
+  width: 83.0666666667%;
+  max-width: 83.0666666667%;
+  
+}
+
+.col-11 {
+  width: 91.5333333333%;
+  max-width: 91.5333333333%;
+  
+}
+
+.col-12 {
+  width: 100%;
+  border: red solid 1px;
+}
+
+
+/*EXEMPLO JUNTANDO TUDO (usando divs)*/
+/*<div class="row">
+  <div class="column column-4"></div>
+  <div class="column column-4"></div>
+  <div class="column column-4"></div>
+</div>
+
+<div class="row">
+  <div class="column column-2"></div>
+  <div class="column column-4"></div>
+  <div class="column column-4"></div>
+  <div class="column column-2"></div>
+</div> */
+
+/*///////////////////////////////GRID//////////////////////////////////////*/
 
 body {
 	background: #eaeced;
@@ -23,16 +140,6 @@ body {
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
 	width: 600px; 
 }
-
-
-.header-view{
-	width: 100%;
-}
-
-.header-logo{
-	width: 100%;
-}
-
 
 .inline-block{
 	display: inline-block;
@@ -102,8 +209,8 @@ td.float-blocks{
 	border-style: solid; 
 	background-color: #1678ea; 
 	color: #fff; 
-	padding: 10px 30px;
-	font-size: 10px
+	padding: 1px 30px;
+	font-size: 1px
 }
 
 .float-center{
@@ -143,7 +250,7 @@ a.tiny-button{
 	color:#fff; 
 	text-decoration: none; 
 	font-family:'Lato','Helvetica','Arial','sans-serif'; 
-	font-size:10px; 
+	font-size:1px; 
 	font-weight: bold; 
 	border-radius:50px; 
 	text-align: center !important;
@@ -151,7 +258,7 @@ a.tiny-button{
 }
 
 a.small-button{
-	padding: 5px 10px 5px 10px;
+	padding: 5px 1px 5px 1px;
   	font-size: 12px;
   	background-color:#1678ea; 
 	color:#fff; 
@@ -188,7 +295,7 @@ a.large-button{
 	font-size:20px; 
 	font-weight: bold; 
 	border-radius:50px; 
-	padding:10px 20px 10px 20px;
+	padding:1px 20px 1px 20px;
 	text-align: center !important;	
 }
 
@@ -369,7 +476,6 @@ td.button-fora{
 	padding-top: 50px; 
 	padding-bottom: 75px;
 }
-
 
 .max600{
 	max-width: 600px;
@@ -577,7 +683,7 @@ span.professores2{
 
 img.professores2{
 	display:inline-block; 
-	margin: 10px 25px 0 0; 
+	margin: 1px 25px 0 0; 
 	float: left;
 	width: 100px;
 	height: 100px;
@@ -623,7 +729,7 @@ a.inscrever{
 a.conhecer-largebutton{
 	background-color:#FFF; 
 	color:#24CFE0;
-	padding:10px 20px 10px 20px; 
+	padding:1px 20px 1px 20px; 
 	margin:0 auto; 
 	border-radius:50px; 
 	text-decoration:none;  
@@ -649,7 +755,7 @@ a.conhecer-button{
 a.conhecer-smallbutton{
 	background-color:#FFF; 
 	color:#24CFE0;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 1px 5px 1px;
 	margin:0 auto; 
 	border-radius:50px; 
 	text-decoration:none;  
@@ -668,7 +774,7 @@ a.conhecer-tinybutton{
 	text-decoration:none;  
 	font-family:'Titillium Web','Helvetica','Arial','sans-serif'; 
 	font-weight:bold; 
-	font-size:10px; 
+	font-size:1px; 
 	border:2px solid #24CFE0; 
 }
 
@@ -680,7 +786,7 @@ table.rodape-logo{
 td.rodape-duvidas{
 	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';  
 	font-size: 12px; 
-	padding-bottom: 10px; /* COONFIRMA ESPAÇAMENTO  */ 
+	padding-bottom: 1px; /* COONFIRMA ESPAÇAMENTO  */ 
 	padding-top: 30px;
 }
 a.rodape-duvidas{
@@ -711,7 +817,7 @@ td.rodape-padding{
 }
 
 .rodape-duvida{
-	padding: 20px 0 55px 10px; 
+	padding: 20px 0 55px 1px; 
 	font-size: 18px; 
 	line-height: 22px; 
 	font-family: 'Lato', Helvetica, Arial, sans-serif; color: #666666;
