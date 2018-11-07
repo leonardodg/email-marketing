@@ -205,6 +205,10 @@ a.inscrever{
 
 /* BOTAO FUNDO BRANCO tamanhos*/
 
+td.btn-sizes-block-padding{
+	@extend %padding-top-bottom;
+}
+
 %btn-branco-padrao{
 	background-color:#FFF; 
 	color:#24CFE0;
@@ -496,7 +500,8 @@ td.padding-bottom{
 	width: 100%;
 }
 
-.container{
+@for $i from 1 through 18{
+	.container-#{$i} {
 	background-color: #fff; 
 	border-right: 1px solid #EAECED; 
 	border-left: 1px solid #EAECED; 
@@ -508,7 +513,8 @@ td.padding-bottom{
 	-webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
 	-moz-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
-	width: 600px; 
+	width: 600px;
+	} 
 }
 
 .inline-block{
@@ -516,15 +522,17 @@ td.padding-bottom{
 }
 
 %padding-top-bottom{
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding:{
+		bottom: 40px;
+		top: 40px;
+	}	
 }
 
 
 
 /*EBERICK, CP, INSCREVER - ultimos blocos*/
 
-table.container-eberick-img{
+table.container-img{
 	background-color: #fff;  
 	margin: 20px 0 0 0; text-align: left; 
 	-webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
@@ -542,9 +550,11 @@ td.eberick-img{
 
 h3.eberick-title1{
 	font-weight:600; 
-	text-align:left; 
-	margin-top:30px;   
-	margin-bottom:0; 
+	text-align:left;
+	margin:{
+		top:30px;   
+		bottom:0;
+	}	 
 }
 
 h3.investimento-preco,h3.eberick-title2{

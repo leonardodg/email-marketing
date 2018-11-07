@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
     <link rel="stylesheet" type="text/css" href="estilos/estilo02.css">
+    <link rel="stylesheet" media="screen and (max-width: 525px)" href="estilos/mediamobile02.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
 		@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
@@ -14,84 +15,7 @@
 
             @media screen and (max-width: 525px){
                 /* ALLOWS FOR FLUID TABLES */
-                body{margin: 0; padding: 0;}
-
-                .rodape{
-                    padding: 20px 7.5px 20px 7.5px !important;
-                    font-size: 14px !important;
-                }
-                .img-grande{
-                    display: none !important;
-                }
-                .img-pequeno{
-                    display: block !important;
-                }
-                .mobile-logo  {
-                    margin: 0 auto !important;
-                    padding: 25px 0 25px  0 !important;
-                }
-                .responsive-table,.container,.container-img {
-                    width: 320px !important;
-                    font-size: 5px !important;
-                }
-                .padding-table {
-                    padding: 10px 5% 10px 5% !important;
-                    text-align: left !important;
-                    font-size: 14px !important;
-                }
-                .mobile-largebutton{
-                    padding: 16px 28px !important;
-                    text-align: center !important;
-                    font-size: 20px !important;
-                }
-                .mobile-button {
-                    padding: 12px 20px !important;
-                    text-align: center !important;
-                    font-size: 16px !important;
-                }
-                .mobile-smallbutton{
-                    padding: 8px 14px !important;
-                    text-align: center !important;
-                    font-size: 12px !important;
-                }
-                .mobile-tinybutton{
-                    padding: 6px 10px !important;
-                    text-align: center !important;
-                    font-size: 10px !important;
-                }
-                .mobile-max,.container {
-                    max-width: 320px !important;
-                }
-                .wrapper {
-                    max-width: 240px !important;
-                }
-                .padding-copy {
-                    padding: 10px 5% 10px 5% !important;
-                    text-align: left;
-                }
-                .no-padding {
-                    padding: 0 !important;
-                }
-                .section-padding {
-                    padding: 30px 15px 50px 15px !important;
-                }
-                .section-padding1 {
-                    padding: 35px 15px 5px 75px !important;
-                }
-                td.color-block{
-                    width: 50px; 
-                    height: 25px;  
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    border: 0.5px;
-                    border-style: solid;
-                    border-color: black;
-                }
-                .fonte-mobile-cores{
-                    font-size: 10px
-                }
-
-            }       
+               
 	</style>
 </head>
 <body bgcolor="eaeced">       
@@ -139,10 +63,10 @@
                     <table class="row">
                         <tr>
                             <td>
-                                <table class="col-12">
+                                <table class="col-6">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-1">
                                                 <tr>
                                                     <td class="ola-padding">
                                                         <strong><h2>Olá[Nome], ◄ Exemplo H2</h2></strong>
@@ -174,7 +98,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-2">
                                                 <tr> 
                                                     <td class="color-block-padding">
                                                         <table style="border-spacing: 10px !important;">
@@ -184,19 +108,19 @@
                                                                     <strong><p style="padding: 0 !important;">Primary</p></strong></center>
                                                                 </td>
                                                                 <td class="color-block inline-block">
-                                                                    <center><div class="color-block color-secondary"></div>
+                                                                    <center><div class="color-block color-secondary inline-block"></div>
                                                                     <strong><p style="padding: 0 !important;">Secondary</p></strong></center>
                                                                 </td>
                                                                 <td class="color-block inline-block">
-                                                                    <center><div class="color-block color-success"></div>
+                                                                    <center><div class="color-block color-success inline-block"></div>
                                                                     <strong><p style="padding: 0 !important;">Success</p></strong></center>
                                                                 </td>
                                                                 <td class="color-block inline-block">
-                                                                    <center><div class="color-block color-warning"></div>
+                                                                    <center><div class="color-block color-warning inline-block"></div>
                                                                     <strong><p style="padding: 0 !important;">Warning</p></strong></center>
                                                                 </td>
                                                                 <td class="color-block inline-block">
-                                                                    <center><div class="color-block color-alert"></div>
+                                                                    <center><div class="color-block color-alert inline-block"></div>
                                                                     <strong><p style="padding: 0 !important;">Alert</p></strong></center>
                                                                 </td>
                                                             </tr>
@@ -223,7 +147,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-3">
                                                 <tr>
                                                     <td class="btn-types-block-padding">
                                                         <center>
@@ -316,7 +240,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-4">
                                                 <tr>
                                                     <td class="btn-sizes-block-padding">
                                                         <center>
@@ -435,7 +359,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-5">
                                                 <tr>
                                                     <td class="btn-sizes-block-padding">
                                                         <center>
@@ -546,7 +470,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-6">
                                                 <tr>
                                                     <td class="padding-top-bottom">
                                                         <center><h4><strong>Alinhamentos Float</strong></h4></center>
@@ -641,7 +565,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container float-center">
+                                            <table class="container-7 float-center">
                                                 <tr>
                                                     <td>
                                                         <center><h4><strong>Alinhamentos Float Mobile</strong></h4></center>
@@ -724,7 +648,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-8">
                                                 <tr>
                                                     <td>
                                                         <h1>[H1].This is a very large header.</h1>
@@ -805,7 +729,7 @@
                                     <!-- TEXTO -->
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-8">
                                                 <tr>
                                                     <td class="solucoes-block-padding">
                                                         <h2><strong>Soluções viáveis para compatibilizar o projeto estrutural</strong></h2>
@@ -838,7 +762,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-9">
                                                 <tr>
                                                     <td class="curso2018-block-padding">
                                                        <strong><h2>
@@ -874,7 +798,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-10">
                                                 <tr>
                                                     <td class="curso2018-block-padding">
                                                         <p class="content">
@@ -923,7 +847,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-11">
                                                 <tr>
                                                     <td class="curso2018-block-padding">
                                                         <h1>Curso online sofware Eberick 2018 ◄Exemplo H1</h1>
@@ -962,7 +886,7 @@
                                             </table>
                                             <!-- //IMAGEM -->
                                             <!-- TEXTO -->
-                                            <table class="container">
+                                            <table class="container-12">
                                                 <tr>
                                                     <td class="processador64-block-text-padding">
                                                         <h2>
@@ -996,7 +920,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-13">
                                                 <tr>
                                                     <td class="eb18-block-padding">   
                                                         <h2>
@@ -1088,7 +1012,7 @@
             <!-- CAIXA DE TEXTO EBERICK -->
                                     <tr>
                                     	<td>
-                                    		<table class="container">
+                                    		<table class="container-14">
                                     			<tr>
                                     				<td>
                                     					<span class="eberick-title1">
@@ -1120,7 +1044,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-15">
                                                 <tr>
                                                     <td class="padding-table">
 														<span class="cp-title">
@@ -1174,7 +1098,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-16">
                                                 <tr>
                                                     <td>
 														<span class="investimento-title">
@@ -1221,7 +1145,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-17">
                                                 <tr>
                                                     <td class="professores2-title">
                                                         <h3 class="professores2"><strong>Professores do Curso</strong></h3>
@@ -1265,7 +1189,7 @@
                                 <table class="col-12">
                                     <tr>
                                         <td>
-                                            <table class="container">
+                                            <table class="container-18">
                                                 <tr>
                                                     <td>
                                                         <p class="curso-validade">
