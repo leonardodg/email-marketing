@@ -1,26 +1,69 @@
 
+$background: #eaeced;
 
+$title-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
+$texto-font-family: 'Lato','Helvetica','Arial','sans-serif';
+$global-font-size: 14.5px;
+$global-line-height: 120%;
 
-/* PRIMEIRO LINK TOPO */
+$container-largura: 600px;
+$container-background: #fff;
+$container-padding: 40px 0px 40px 0px;
+$container-margin: 20px 0px 20px 0px;
+$container-align: left;
+$container-limit: 600px;
+$container-box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
+$container-border-radius: 3px;
 
-a.clique-aqui{
-	text-decoration: none;
-	font-size: x-small; 
-	color: #666666; 
-	font-family: 'Tahoma','Geneva','sans-serif';
-}
+$color-primary: #2199e8;
+$color-secondary: #777777;
+$color-success: #3adb76;
+$color-warning: #ffae00;
+$color-alert: #ec5840;
+$color-link: #1678ea;
+
+$h1-tamanho: 34px;
+$h2-tamanho: 30px;
+$h3-tamanho: 28px;
+$h4-tamanho: 24px;
+$h5-tamanho: 20px;
+$h6-tamanho: 18px;
+
+$btn-default-color: #1678ea;
+$btn-default-fonte: 'Lato','Helvetica','Arial','sans-serif';
+$btn-branco-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
+$btn-margin: 30px 0px 30px 0px;
+$btn-fora-margin: 50px 0px 50px 0px;
+$btn-padding: (
+	tiny: 4px 8px 4px 8px,
+  	small: 5px 10px 5px 10px,
+  	default: 8px 16px 8px 16px,
+  	large: 10px 20px 10px 20px,
+);
+$btn-fonte-tamanho: (
+	tiny: 10px,
+  	small: 12px,
+  	default: 16px,
+  	large: 20px,
+);
+
+$content-padding: 30px 50px 0px 50px;
+$first-content-padding: 0px 50px 0px 50px;
+
 
 
 /* LOGO QISAT TOPO*/
-
-table.margin-logo-topo{
-	margin-top: 30px;
+table.max600{
+	tr{
+		td{
+		    &.paddinglogotopo{
+					padding-top: 40px;
+					padding-bottom: 50px;
+				}
+		}
+	} 
 }
 
-td.paddinglogotopo{
-	padding-top: 40px;
-	padding-bottom: 50px;
-}
 
 img.logo-topo{
 	width: 193px; 
@@ -28,20 +71,7 @@ img.logo-topo{
 	display: block;
 }
 
-
-/* BLOCO OLA*/
-
-td.ola-padding{
-	@extend %padding-top-bottom;
-}
-
-
-
 /* BLOCO CORES*/
-
-td.color-block-padding{
-	@extend %padding-top-bottom;
-}
 
 td.color-block{
 	width: 100px; 
@@ -51,75 +81,82 @@ td.color-block{
 	border: 0.5px;
 	border-style: double;
 	border-color: #cacaca;
-	max-width: 100px;	
+	max-width: 100px;
+	display: inline-block;	
 }
 
 div.color-block{
 	width: 75px; 
-	height: 50px;  
+	height: 50px;
+	display: inline-block;  
 }	
 
 .color-primary{
-	background: #2199e8;
+	background: $color-primary;
 }
 
 .color-secondary{
-	background: #777777;
+	background: $color-secondary;
 }
 
 .color-success{
-	background: #3adb76;
+	background: $color-success;
 }
 
 .color-warning{
-	background: #ffae00;
+	background: $color-warning;
 }
 
 .color-alert{
-	background: #ec5840;
+	background: $color-alert;
 }
 
 
 
 /* BOTOES cores/tipos*/
 
-td.btn-types-block-padding{
-	@extend %padding-top-bottom;
-}
-
 %btn-types-padrao{
 	color:#fff; 
 	text-decoration: none; 
-	font-family:'Lato','Helvetica','Arial','sans-serif'; 
-	font-size:16px; 
+	font-family: $btn-default-fonte; 
+	font-size: map-get($btn-fonte-tamanho, default); 
 	font-weight: bold; 
 	border-radius:50px; 
-	padding: 8px 16px 8px 16px;
+	padding: map-get($btn-padding, default);
 	text-align: center !important;
 }
 
 a{
+	/* PRIMEIRO LINK TOPO */
+	&.clique-aqui{
+		text-decoration: none;
+		font-size: x-small; 
+		color: #666666; 
+		font-family: 'Tahoma','Geneva','sans-serif';	
+	}
+	/*///////////////////*/
+
 	&.secondary-button{
-		background: #777777;
-  		border: 0px solid #777777;
+		background: $color-secondary;
+  		border: 0px solid $color-secondary;
   		@extend %btn-types-padrao;
 	}
 
 	&.success-button{
-		background: #3adb76;
-	  	border: 0px solid #3adb76;
+		background: $color-success;
+	  	border: 0px solid $color-success;
 	  	@extend %btn-types-padrao; 
 	}
 
 	&.warning-button{
-		background: #ffae00;
-	  	border: 0px solid #ffae00;
+		background: $color-warning;
+	  	border: 0px solid $color-warning;
 	  	@extend %btn-types-padrao; 
 	}
 
 	&.alert-button{
-		background: #ec5840;
-	  	border: 0px solid #ec5840;
+		background: $color-alert;
+	  	border: 0px solid $color-alert;
 	  	@extend %btn-types-padrao; 
 	}
 }
@@ -128,15 +165,11 @@ a{
 
 /* BOTOES tamanhos*/
 
-td.btn-types-block-padding{
-	@extend %padding-top-bottom;
-}
-
 %btn-sizes-padrao{
-  	background-color:#1678ea; 
+  	background-color: $btn-default-color; 
 	color:#fff; 
 	text-decoration: none; 
-	font-family:'Lato','Helvetica','Arial','sans-serif';  
+	font-family: $btn-default-fonte;  
 	font-weight: bold; 
 	border-radius:50px;
 	-webkit-border-radius: 50px; 
@@ -148,26 +181,27 @@ td.btn-types-block-padding{
 a{
 
 	&.tiny-button{
-		padding: 4px 8px 4px 8px;
-		font-size:10px; 
+		padding: map-get($btn-padding, tiny);
+		font-size: map-get($btn-fonte-tamanho, tiny);
 		@extend %btn-sizes-padrao;
 	}
 
 	&.small-button{
-		padding: 5px 10px 5px 10px;
-	  	font-size: 12px;
+		padding: map-get($btn-padding, small);
+	  	font-size: map-get($btn-fonte-tamanho, small);
 	  	@extend %btn-sizes-padrao;
+	  	
 	}
 
 	&.default-button{
-		font-size:16px;  
-		padding: 8px 16px 8px 16px;
+		padding: map-get($btn-padding, default);
+		font-size: map-get($btn-fonte-tamanho, default);
 		@extend %btn-sizes-padrao 
 	} 
 
 	&.large-button{
-		font-size:20px;
-		padding:10px 20px 10px 20px;
+		padding: map-get($btn-padding, large);
+		font-size: map-get($btn-fonte-tamanho, large);		
 		@extend %btn-sizes-padrao;
 	}
 }
@@ -176,19 +210,7 @@ a{
 
 /* BOTAO FORA quero me inscrever fundo azul*/
 
-table.margin-inscrever{
-	margin-top: 30px;
-	margin-bottom: 30px; 
-	padding:0px;
-}
-
-td.inscrever{
-	-moz-border-radius:3px; 
-	-webkit-border-radius:3px; 
-	border-radius:3px;
-}
-
-a.inscrever{
+a.inscrever-button{
 	background-color:#24CFE0; 
 	color:#fff;
 	padding: 8px 16px 8px 16px;
@@ -199,15 +221,14 @@ a.inscrever{
 	font-weight: bold; 
 	font-size:16px; 
 	border:2px solid #24CFE0; 
+	-moz-border-radius:30px; 
+	-webkit-border-radius:30px; 
+	border-radius:30px;
 }
 
 
 
 /* BOTAO FUNDO BRANCO tamanhos*/
-
-td.btn-sizes-block-padding{
-	@extend %padding-top-bottom;
-}
 
 %btn-branco-padrao{
 	background-color:#FFF; 
@@ -216,50 +237,45 @@ td.btn-sizes-block-padding{
 	margin:0 auto; 
 	border-radius:50px; 
 	text-decoration: none;  
-	font-family:'Titillium Web','Helvetica','Arial','sans-serif'; 
-	font-weight: bold; 		
+	font-family: $btn-branco-fonte; 
+	font-weight: bold;
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	border-radius:30px; 	 		
 }
 
 a{
-	&.conhecer-largebutton{
+	&.btn-branco-large{
 		@extend %btn-branco-padrao;
 		padding:10px 20px 10px 20px;  
 		font-size:20px; 
 	}
 
-	&.conhecer-button{
+	&.btn-branco-default{
 		@extend %btn-branco-padrao;
 		padding: 8px 16px 8px 16px;
 		font-size:16px; 
 	}
 
-	&.conhecer-smallbutton{
+	&.btn-branco-small{
 		@extend %btn-branco-padrao;
 		padding: 5px 10px 5px 10px;
 		font-size:12px; 
 	}
 
-	&.conhecer-tinybutton{
+	&.btn-branco-tiny{
 		@extend %btn-branco-padrao;
 		padding: 4px 8px 4px 8px;  
 		font-size:10px;
 	}
 
 }
-td.conhecer-button{
-	-moz-border-radius:3px; 
-	-webkit-border-radius:3px; 
-	border-radius:3px; 
-	padding-bottom: 35px;
-}
-
 
 
 /* BOTAO FORA DO BLOCO default-button*/
 
-td.button-fora{
-	padding-top: 50px; 
-	padding-bottom: 75px;
+table.btn-fora-margin{
+	margin: $btn-fora-margin;
 }
 
 
@@ -293,7 +309,8 @@ td.float-blocks{
 	background-color: #1678ea; 
 	color: #fff; 
 	padding: 10px 30px;
-	font-size: 10px
+	font-size: 10px;
+	display: inline-block;
 }
 
 .maxblock-teste{
@@ -305,61 +322,148 @@ td.float-blocks{
 /* TIPOGRAFIA titulos*/
 
 %titles-padrao{
-	font-family:'Titillium Web'; 
+	font-family: $title-fonte; 
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-$somaHpx : 38px;
-@for $i from 1 through 6 {
-	@if $i == 3 {
-		$somaHpx : $somaHpx - 2;
-		h#{$i}{
-			@extend %titles-padrao;
-			font-size: $somaHpx;
-		}
-	}
-	@else if $i == 6 {
-		$somaHpx : $somaHpx - 2;
-		h#{$i}{
-			@extend %titles-padrao;
-			font-size: $somaHpx;
-		}
-	}
-	@else {
-		$somaHpx : $somaHpx - 4;
-		h#{$i}{
-			@extend %titles-padrao;
-			font-size: $somaHpx;
-		}
-	}
+h1 {
+  font-size: $h1-tamanho;
+  @extend %titles-padrao;
+}
+
+h2 {
+  font-size: $h2-tamanho;
+  @extend %titles-padrao;
+}
+
+h3 {
+  font-size: $h3-tamanho;
+  @extend %titles-padrao;
+}
+
+h4 {
+  font-size: $h4-tamanho;
+  @extend %titles-padrao;
+}
+
+h5 {
+  font-size: $h5-tamanho;
+  @extend %titles-padrao;
+}
+
+h6 {
+  font-size: $h6-tamanho;
+  @extend %titles-padrao;
 }
 
 
+/*EBERICK, CP, INSCREVER - ultimos blocos*/
 
-/* BLOCO SOLUCOES VIAVEIS*/
-
-td.solucoes-block-padding{
-	@extend %padding-top-bottom;
+h3.eberick-title1{
+	font-weight:600; 
+	text-align: left;
+	margin:{
+		top:30px;   
+		bottom:0;
+	}	 
 }
 
-
-
-/* BLOCO CURSO ONLINE 2018*/
-
-td.curso2018-block-padding{
-	@extend %padding-top-bottom;
+h3.investimento-preco,h3.eberick-title2{
+	font-weight:600; 
+	text-align: left; 
+	margin-top:0px; 
+	margin-bottom: 0;
 }
 
+p.eberick{
+	text-align: justify; 
+	margin-left: 50px; 
+	margin-right: 50px; 
+	margin-bottom: 30px;
+}
 
+span.eberick{
+	color: #363F44; 
+	font-size: 3; 
+	font-family: $title-fonte; 
+	line-height: 1.5;
+}
+
+span.investimento-title,span.cp-title,span.eberick-title2{
+	color: #363F44; 
+	font-family: $title-fonte; 
+	font-size: 4;
+}
+
+span.eberick-title1{
+	color:#24CFE0; 
+	font-size: 3; 
+	font-family: $title-fonte;
+}
+
+h3.investimento-title,h3.cp-title,h3.formato-title{
+	font-weight:600; 
+	text-align: left; 
+	margin-top: 30px;   
+	margin-bottom: 0;
+}
+
+h3.formato-title{
+	font-family: $title-fonte; 
+}
+
+span.cp,.professores-texto-td{
+	color: #363F44; 
+	line-height: 1.5; 
+	font-size: 3; 
+	font-family: $texto-font-family;
+}
+
+span.investimento-rS{
+	color:#24CFE0; 
+	font-size: 6; 
+	font-family: $texto-font-family;
+}
+
+span.investimento-preco{
+	color:#24CFE0; 
+	font-size:50px; 
+	font-family: $texto-font-family;
+}
+
+span.investimento-adquirir{
+	color: #363F44; 
+	font-family: $texto-font-family; 
+	font-size: 2;
+}
+
+h3.investimento-adquirir{
+	font-weight: 600; 
+	text-align: left; 
+	margin-top:0px; 
+	margin-bottom:30px; 
+	text-transform: uppercase;
+}
+
+a.investimento-adquirir{
+	text-decoration: none; 
+	color: #363F44;
+}
+
+p strong.curso-validade{
+	text-align: justify; 
+	margin-left:50px; 
+	margin-right:50px; 
+	margin-bottom:0px; 
+	font-family: $texto-font-family; 
+	font-size: default; 
+	line-height: 1.5; 
+	color: #363f44;
+	padding-left: 5px;
+}
 
 /* PROFESSORES imagens e texto*/
-
-span.professores{
-	font-family:'Lato'; 
-	font-size: 14.5px; 
-	line-height: 120%; 
-}
 
 img.professores{
 	display: inline-block; 
@@ -367,19 +471,12 @@ img.professores{
 	padding-right: 25px;
 }
 
-img.professores1{
-	display: inline-block; 
-	float: left;
-	width: 100px;
-	height: 100px;
-}
-
 h3.professores2{
 	font-weight:600; 
 	text-align: left; 
 	margin-top:30px; 
 	margin-bottom:20px;
-	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
+	font-family: $title-fonte;
 	color: #363f44;
 	font-size: 4;
 }
@@ -393,7 +490,7 @@ p.professores2{
 }
 
 span.professores2{
-	font-family: 'Lato','Helvetica','Arial','sans-serif';
+	font-family: $texto-font-family;
 	color: #363f44;
 	line-height: 1.5;
 	margin: 0px; 
@@ -409,37 +506,23 @@ img.professores2{
 td.professores2-title{
 	color: #363F44; 
 	font-size: 4; 
-	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
-}
-
-
-/* BLOCO PROCESSADOR 64 BITS*/
-
-td.processador64-block-text-padding{
-	@extend %padding-top-bottom;
+	font-family: $title-fonte;
 }
 
 
 
-/* BLOCO EB2018*/
-
-td.eb18-block-padding{
-	@extend %padding-top-bottom;
-}
-
-
-
+/*LINK*/
 a.link{
-	font-family:'Lato'; 
-	font-size: 14.5px; 
-	color: #1678ea; 
+	font-family: $texto-font-family; 
+	font-size: $global-font-size; 
+	color: $color-link; 
 	font-weight: bold;
 }
 
 /* GERAL*/
 
 body {
-	background: #eaeced;
+	background: $background;
 }
 
 table{
@@ -453,9 +536,9 @@ table{
 }
 
 p{
-	font-family:'Lato'; 
-	font-size: 14.5px; 
-	line-height: 120%;
+	font-family: $texto-font-family; 
+	font-size: $global-font-size; 
+	line-height: $global-line-height;
 }
 
 img{
@@ -472,17 +555,16 @@ ul{
 /* GERAL classes*/
 
 p.content{
-	padding: 30px 50px 0px 50px;
+	padding: $content-padding;
 }
 
 p.first-content{
-	padding: 0px 50px 0px 50px;
+	padding: $first-content-padding;
 }
 
-p.button-padding,td.button-padding{
-	padding: 40px 50px 40px 50px;
+table.btn-margin{
+	margin: $btn-margin;
 }
-
 
 img.none{
 	display: none;
@@ -493,176 +575,67 @@ td.padding-bottom{
 }
 
 .max600{
-	max-width: 600px;
+	max-width: $container-limit;
 }
 
 .full{
 	width: 100%;
 }
 
-@for $i from 1 through 18{
-	.container-#{$i} {
-	background-color: #fff; 
+table.container-no-padding{
+	background-color: $container-background; 
 	border-right: 1px solid #EAECED; 
 	border-left: 1px solid #EAECED; 
-	margin:0px 0 30px 0; 
-	text-align: left; 
-	-moz-border-radius: 3px; 
-	-webkit-border-radius: 3px; 
-	border-radius: 3px; 
-	-webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
-	-moz-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
-	box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
-	width: 600px;
-	} 
+	text-align: $container-align; 
+	-moz-border-radius: $container-border-radius; 
+	-webkit-border-radius: $container-border-radius; 
+	border-radius: $container-border-radius; 
+	-webkit-box-shadow: $container-box-shadow; 
+	-moz-box-shadow: $container-box-shadow; 
+	box-shadow: $container-box-shadow;
+	width: $container-largura;
+	margin: $container-margin;
+
+	td.container-text-padding{
+		padding: $container-padding;
+	}
 }
+table.container{
+	background-color: $container-background; 
+	border-right: 1px solid #EAECED; 
+	border-left: 1px solid #EAECED; 
+	text-align: $container-align; 
+	-moz-border-radius: $container-border-radius; 
+	-webkit-border-radius: $container-border-radius; 
+	border-radius: $container-border-radius; 
+	-webkit-box-shadow: $container-box-shadow; 
+	-moz-box-shadow: $container-box-shadow; 
+	box-shadow: $container-box-shadow;
+	width: $container-largura;
+	margin: $container-margin;
+	padding: $container-padding;
+}
+
 
 .inline-block{
 	display: inline-block;
 }
 
-%padding-top-bottom{
-	padding:{
-		bottom: 40px;
-		top: 40px;
-	}	
-}
 
 
 
-/*EBERICK, CP, INSCREVER - ultimos blocos*/
-
-table.container-img{
-	background-color: #fff;  
-	margin: 20px 0 0 0; text-align: left; 
-	-webkit-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
-	-moz-box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
-	box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
-	-moz-border-radius: 3px; 
-	-webkit-border-radius: 3px; 
-	border-radius: 3px;
-}
-
-td.eberick-img{
-	line-height: 21px; 
-	color: #363F44;
-}
-
-h3.eberick-title1{
-	font-weight:600; 
-	text-align:left;
-	margin:{
-		top:30px;   
-		bottom:0;
-	}	 
-}
-
-h3.investimento-preco,h3.eberick-title2{
-	font-weight:600; 
-	text-align:left; 
-	margin-top:0px; 
-	margin-bottom: 0;
-}
-
-p.eberick{
-	text-align:justify; 
-	margin-left: 50px; 
-	margin-right:50px; 
-	margin-bottom:30px;
-}
-
-span.eberick{
-	color: #363F44; 
-	font-size: 3; 
-	font-family: 'Titillium Web', 'Helvetica','Arial','sans-serif'; 
-	line-height: 1.5;
-}
-
-span.investimento-title,span.cp-title,span.eberick-title2{
-	color: #363F44; 
-	font-family: 'Titillium Web','Helvetica','Arial','sans-serif'; 
-	font-size: 4;
-}
-
-span.eberick-title1{
-	color:#24CFE0; 
-	font-size: 3; 
-	font-family:'Titillium Web','Helvetica','Arial','sans-serif'
-}
-
-h3.investimento-title,h3.cp-title,h3.formato-title{
-	font-weight:600; 
-	text-align:left; 
-	margin-top:30px;   
-	margin-bottom: 0;
-}
-
-h3.formato-title{
-	font-family: 'Titillium Web','Helvetica','Arial','sans-serif'; 
-}
-
-span.cp,.professores-texto-td{
-	color: #363F44; 
-	line-height: 1.5; 
-	font-size: 3; 
-	font-family: 'Lato','Helvetica','Arial','sans-serif';
-}
-
-span.investimento-rS{
-	color:#24CFE0; 
-	font-size: 6; 
-	font-family: 'Lato','Helvetica','Arial','sans-serif';
-}
-
-span.investimento-preco{
-	color:#24CFE0; 
-	font-size:50px; 
-	font-family: 'Lato','Helvetica','Arial','sans-serif'
-}
-
-span.investimento-adquirir{
-	color: #363F44; 
-	font-family: 'Lato','Helvetica','Arial','sans-serif'; 
-	font-size: 2;
-}
-
-h3.investimento-adquirir{
-	font-weight: 600; 
-	text-align: left; 
-	margin-top:0px; 
-	margin-bottom:30px; 
-	text-transform:uppercase;
-}
-
-a.investimento-adquirir{
-	text-decoration:none; 
-	color: #363F44;
-}
-
-p strong.curso-validade{
-	text-align:justify; 
-	margin-left:50px; 
-	margin-right:50px; 
-	margin-bottom:0px; 
-	font-family: 'Lato','Helvetica','Arial','sans-serif'; 
-	font-size: default; 
-	line-height: 1.5; 
-	color: #363f44;
-	padding-left: 5px;
-}
-
-/*RODAPE*/
+/* RODAPE */
 
 td.rodape-duvidas{
 	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';  
 	font-size: 12px; 
-	padding-bottom: 10px; /* COONFIRMA ESPAÇAMENTO  */ 
+	padding-bottom: 10px; /* CONFIRMA ESPAÇAMENTO */ 
 	padding-top: 30px;
 }
 a.rodape-duvidas{
-	font-family:'Lato'; 
+	font-family: $texto-font-family; 
 	font-size: 12px; 
-	color:#777;
+	color: #777;
 }
 
 td.icones{
@@ -690,7 +663,8 @@ td.rodape-padding{
 	padding: 20px 0 55px 10px; 
 	font-size: 18px; 
 	line-height: 22px; 
-	font-family: 'Lato', Helvetica, Arial, sans-serif; color: #666666;
+	font-family: $texto-font-family; 
+	color: #666666;
 }
 
 .max500{
