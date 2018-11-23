@@ -5,10 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "compass": "^0.1.1",
     "gulp": "^4.0.0",
+    "gulp-compass": "^2.1.0",
     "gulp-inline-css": "^3.3.1",
     "gulp-jshint": "^2.1.0",
     "gulp-style-inject": "^0.1.1",
+    "gulp-watch": "^5.0.1",
     "jshint": "^2.9.6"
   },
   "scripts": {

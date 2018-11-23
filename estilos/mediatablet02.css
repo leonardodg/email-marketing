@@ -1,8 +1,7 @@
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 768px) {
   body {
     margin: 0;
     padding: 0;
-    background-color: #eaeced;
   }
 
   .rodape {
@@ -23,12 +22,12 @@
     padding: 25px 0 25px  0 !important;
   }
 
-  .block, .block-no-padding {
+  .container, .container-no-padding {
     width: 320px !important;
     font-size: 5px !important;
   }
 
-  .block-img {
+  .container-img {
     width: 320px !important;
     font-size: 5px !important;
   }
@@ -63,7 +62,7 @@
     font-size: 10px !important;
   }
 
-  .mobile-max, .block {
+  .mobile-max, .container {
     max-width: 320px !important;
   }
 

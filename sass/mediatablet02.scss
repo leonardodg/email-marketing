@@ -1,8 +1,8 @@
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 768px) {
 
-    $block-largura: 320px !important;
-    $block-limit: 320px !important;;
-    $block-font-size: 5px !important;
+    $container-largura: 320px !important;
+    $container-limit: 320px !important;;
+    $container-font-size: 5px !important;
 
     $btn-padding: (
         tiny: 6px 10px !important,
@@ -18,7 +18,7 @@
     );
 
 
-    body{margin: 0; padding: 0; background-color: #eaeced;}
+    body{margin: 0; padding: 0;} 
 
     .rodape{
         padding: 20px 7.5px 20px 7.5px !important;
@@ -38,14 +38,14 @@
         padding: 25px 0 25px  0 !important;
     }
 
-    .block,.block-no-padding{
-        width: $block-largura; 
-        font-size: $block-font-size;
+    .container,.container-no-padding{
+        width: $container-largura; 
+        font-size: $container-font-size;
     }    
 
-    .block-img {
-        width: $block-largura;
-        font-size: $block-font-size;
+    .container-img {
+        width: $container-largura;
+        font-size: $container-font-size;
     }
 
     .padding-table {
@@ -78,8 +78,8 @@
         font-size: map-get($btn-font-size, tiny);
     }
 
-    .mobile-max,.block {
-        max-width: $block-limit;
+    .mobile-max,.container {
+        max-width: $container-limit;
     }
 
     .wrapper {
