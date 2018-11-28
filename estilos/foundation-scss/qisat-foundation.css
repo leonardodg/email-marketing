@@ -910,11 +910,12 @@ img.text-center {
 
 table.float-center,
 td.float-center,
-th.float-center {
-  margin: 0 auto;
-  Margin: 0 auto;
-  float: none;
-  text-align: center;
+th.float-center,
+a.float-center {
+  margin: 0 auto !important;
+  Margin: 0 auto !important;
+  float: none !important;
+  text-align: center !important;
 }
 
 .hide-for-large {
@@ -1743,15 +1744,19 @@ table.block-no-padding td.block-text-padding {
   padding: 40px 0px 40px 0px;
 }
 
-p {
+.block-text-padding {
+  padding: 40px 0px 40px 0px;
+}
+
+p, span {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
   font-size: 14.5px;
   line-height: 120%;
 }
-p.content {
+p.content, span.content {
   padding: 30px 50px 0px 50px;
 }
-p.first-content {
+p.first-content, span.first-content {
   padding: 0px 50px 0px 50px;
 }
 
@@ -1828,4 +1833,257 @@ img.professores2 {
     margin: 10px 25px 0 0;
     padding-left: 25px;
   }
+}
+
+/* BOTOES e links */
+table.btn-margin {
+  margin: 30px 0px 30px 0px;
+}
+
+/* BOTAO FORA DO BLOCO default-button*/
+table.btn-fora-margin {
+  margin: 50px 0px 50px 0px;
+}
+
+a.secondary-button, a.success-button, a.warning-button, a.alert-button {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 8px 16px 8px 16px;
+  text-align: center !important;
+}
+
+a.tiny-button, a.small-button, a.default-button, a.large-button {
+  background-color: #1678ea;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  text-align: center !important;
+  width: auto;
+}
+
+a.btn-branco-large, a.btn-branco-default, a.btn-branco-small, a.btn-branco-tiny {
+  background-color: #FFF;
+  color: #24CFE0;
+  border: 2px solid #24CFE0;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 30px;
+}
+
+a {
+  /* PRIMEIRO LINK TOPO */
+  /*///////////////////*/
+  /* BOTAO FORA quero me inscrever fundo azul*/
+  /*LINKS*/
+}
+a.clique-aqui {
+  text-decoration: none;
+  font-size: x-small;
+  color: #666666;
+  font-family: 'Tahoma','Geneva','sans-serif';
+}
+a.secondary-button {
+  background: #777777;
+  border: 0px solid #777777;
+}
+a.success-button {
+  background: #3adb76;
+  border: 0px solid #3adb76;
+}
+a.warning-button {
+  background: #ffae00;
+  border: 0px solid #ffae00;
+}
+a.alert-button {
+  background: #ec5840;
+  border: 0px solid #ec5840;
+}
+a.tiny-button {
+  padding: 4px 8px 4px 8px;
+  font-size: 10px;
+}
+a.small-button {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+}
+a.default-button {
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+}
+a.large-button {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+a.btn-branco-large {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+a.btn-branco-default {
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+}
+a.btn-branco-small {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+}
+a.btn-branco-tiny {
+  padding: 4px 8px 4px 8px;
+  font-size: 10px;
+}
+a.inscrever-button {
+  background-color: #24CFE0;
+  color: #fff;
+  padding: 8px 16px 8px 16px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #24CFE0;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+a.link {
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  font-size: 14.5px;
+  color: #1678ea;
+  font-weight: bold;
+}
+a.investimento-adquirir {
+  text-decoration: none;
+  color: #363F44;
+}
+
+/*/////////////////////////*/
+span.eberick {
+  color: #363F44;
+  font-size: 3;
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+  line-height: 1.5;
+}
+span.investimento-title, span.cp-title, span.eberick-title2 {
+  color: #363F44;
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+  font-size: 4;
+}
+span.eberick-title1 {
+  color: #24CFE0;
+  font-size: 3;
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+}
+span.cp {
+  color: #363F44;
+  line-height: 1.5;
+  font-size: 3;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+}
+span.investimento-rS {
+  color: #24CFE0;
+  font-size: 6;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+}
+span.investimento-preco {
+  color: #24CFE0;
+  font-size: 50px;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+}
+span.investimento-adquirir {
+  color: #363F44;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  font-size: 2;
+}
+span.professores2 {
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  color: #363f44;
+  line-height: 1.5;
+  margin: 0px;
+  padding-right: 50px;
+}
+@media screen and (max-width: 600px) {
+  span.professores2 {
+    display: inline-block;
+    margin: 10px 25px 0 0;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+}
+
+/* TIPOGRAFIA titulos*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+}
+h3.professores2 {
+  font-weight: 600;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
+  color: #363f44;
+  font-size: 4;
+}
+h3.eberick-title1 {
+  font-weight: 600;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+h3.investimento-preco, h3.eberick-title2 {
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+h3.investimento-title, h3.cp-title, h3.formato-title {
+  font-weight: 600;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+h3.investimento-adquirir {
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
 }
