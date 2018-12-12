@@ -1,4 +1,4 @@
-http_path = "/"
+http_path = "/html/email-marketing/"
 css_dir = "estilos"
 sass_dir = "sass"
 

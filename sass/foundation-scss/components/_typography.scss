@@ -5,14 +5,15 @@
 ////
 /// @group typography
 ////
-
+$content-padding: 30px 50px 0px 50px;
+$first-content-padding: 0px 50px 0px 50px;
 /// Global font color.
 /// @type Color
-$global-font-color: $black !default;
+$global-font-color: #363F44 !default;
 
 /// Global font family.
 /// @type Font
-$body-font-family: Helvetica, Arial, sans-serif !default;
+$global-font-family: 'Lato','Helvetica','Arial','sans-serif' !default;
 
 /// Global font weight.
 /// @type Keyword
@@ -24,7 +25,7 @@ $header-color: inherit !default;
 
 /// Global line height.
 /// @type Number
-$global-line-height: 130% !default;
+$global-line-height: 120% !default;
 
 /// Font size of body text.
 /// @type Number
@@ -36,7 +37,7 @@ $body-line-height: $global-line-height !default;
 
 /// Font family of headings.
 /// @type List
-$title-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
+$title-fonte: 'Titillium Web','Helvetica','Arial','sans-serif' !default;
 
 /// Font family of headings.
 /// @type List
@@ -278,6 +279,7 @@ h6 {
   @extend %titles-padrao;
 }
 
+
 body,
 table.body, 
 p,
@@ -286,6 +288,7 @@ th {
   font-size: $global-font-size;
   line-height: $body-line-height;
   font-weight: normal;
+  font-family: $global-font-family;
 }
 
 p {
@@ -306,6 +309,14 @@ p {
     line-height: $subheader-lineheight;
     color: $subheader-color;
   }
+
+  &.content{
+    padding: $content-padding;
+  }
+
+  &.first-content{
+    padding: $first-content-padding;
+  }
 }
 
 small {
@@ -316,7 +327,7 @@ small {
 a {
   color: $anchor-color;
   text-decoration: $anchor-text-decoration;
-  font-family: $body-font-family;
+  font-family: $global-font-family;
   font-weight: $global-font-weight;
   padding: 0;
   text-align: left;

@@ -35,7 +35,7 @@ table {
 
   &.container {
     background: $container-background;
-    width: 600px;
+    width: $global-width;
     margin: 0 auto;
     Margin: 0 auto;
     text-align: inherit;

@@ -12,10 +12,13 @@
 //   7. Menu
 //   8. Thumbnail
 
+////////////////////////////////////////////
+  /*@include icons-sprite(youtube);*/
+////////////////////////////////////////////
 
 // 1. Global
 // ---------
-
+$azul-default: #1E7AC9;
 $primary-color: #2199e8;
 $secondary-color: #777777;
 $success-color: #3adb76;
@@ -27,9 +30,10 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 608px;
 $global-width-small: 95%;
 $global-gutter: 16px;
+$header-background: $azul-default;
 $body-background: $light-gray;
 $container-background: $white;
 $global-padding: 16px;
@@ -95,25 +99,26 @@ $remove-ios-blue: true;
 // 5. Button
 // ---------
 
-$button-padding: (
+$btn-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
   default: 8px 16px 8px 16px,
   large: 10px 20px 10px 20px,
 );
-$button-font-size: (
+$btn-font-size: (
   tiny: 10px,
   small: 12px,
   default: 16px,
   large: 20px,
 );
-$button-color: $white;
+$btn-default-color: $white;
+$btn-branco-color:;
 $button-color-alt: $medium-gray;
-$button-font-weight: bold;
-$button-margin: 0 0 $global-margin 0;
-$button-background: $primary-color;
+$btn-font-weight: bold;
+$btn-margin: 0 0 $global-margin 0;
+$btn-default-background: $header-background;
 $button-border: 2px solid $button-background;
-$button-radius: $global-radius;
+$btn-radius: $global-radius;
 $button-rounded: $global-rounded;
 
 // 6. Callout

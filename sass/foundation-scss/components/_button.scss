@@ -4,93 +4,181 @@
 
 ////
 /// @group button
+
+
+
+
 ////
 
 /// Padding inside buttons at various sizes.
 /// @type Map
-$button-padding: (
+$btn-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
+  default: 16px 16px 16px 16px,
   large: 10px 20px 10px 20px,
-) !default;
+);
 
 /// Font sizes of buttons at various sizes.
 /// @type Map
-$button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 16px,
-  large: 20px,
-) !default;
+$btn-font-size: (
+  tiny: 10px !important,
+  small: 12px !important,
+  default: 16px !important,
+  large: 20px !important,
+);
+
 
 /// Text color of buttons.
 /// @type Color
-$button-color: $white !default;
+$btn-default-color: $white;
 
 /// Text color of buttons with a light background.
 /// @type Color
-$button-color-alt: $medium-gray !default;
+$button-color-alt: $medium-gray;
+$btn-branco-color: #24CFE0;
 
 /// Font weight of buttons.
 /// @type Weight
-$button-font-weight: bold !default;
+$btn-font-weight: bold !default;
 
 /// Margin around buttons.
 /// @type List
-$button-margin: 0 0 $global-margin 0 !default;
+$btn-margin: 0 0 $global-margin 0;
+$btn-fora-margin: 50px 0px 50px 0px;
 
 /// Background color of buttons.
 /// @type Color
-$button-background: $primary-color !default;
+$btn-default-background: $header-background !default;
 
 /// Border around buttons.
 /// @type Border
-$button-border: 2px solid $button-background !default;
+$btn-border: 2px solid $btn-default-background !default;
 
 /// Border radius of buttons. Not supported by all email clients.
 /// @type Number
-$button-radius: $global-radius !default;
+$btn-radius: 26px !default;
 
 /// Border radius of rounded buttons. Not supported by all email clients.
 /// @type Number
-$button-rounded: $global-rounded !default;
+$btn-rounded: $global-rounded !default;
+
+$color-link: $azul-default;
+
+%btn-sizes-padrao{
+  background-color: $btn-default-color; 
+  color:#fff; 
+  text-decoration: none; 
+  font-family: $global-font-family;  
+  font-weight: $btn-font-weight; 
+  border-radius:50px;
+  -webkit-border-radius: 50px; 
+  -moz-border-radius: 50px;      
+  text-align: center !important;
+  width: auto;
+}
+
+%btn-types-padrao{
+  color:#fff; 
+  text-decoration: none; 
+  font-family: $global-font-family; 
+  font-size: map-get($btn-font-size, default); 
+  font-weight: $btn-font-weight; 
+  border-radius:50px;
+  -webkit-border-radius: 50px; 
+  -moz-border-radius: 50px;    
+  padding: map-get($btn-padding, default);
+  text-align: center !important;
+}
+
+a{
+  /* PRIMEIRO LINK TOPO */
+  &.clique-aqui{
+    text-decoration: none;
+    font-size: x-small; 
+    color: #666666; 
+    font-family: 'Tahoma','Geneva','sans-serif';  
+  }
+  /*///////////////////*/
+
+  &.alternative-btn{
+      background: $white;
+      border: 1px solid $header-background;
+      color: $global-font-color; 
+      text-decoration: none; 
+      font-family: $global-font-family; 
+      font-size: $global-font-size; 
+      font-weight: $btn-font-weight; 
+      border-radius: $btn-radius;
+      -webkit-border-radius: $btn-radius; 
+      -moz-border-radius: $btn-radius;    
+      padding: map-get($btn-padding, default);
+      text-align: center !important;
+  }
+
+  &.default-btn{
+    padding: map-get($btn-padding, default);
+    font-size: $global-font-size;
+    background-color: $header-background; 
+    color: $white; 
+    text-decoration: none; 
+    font-family: $global-font-family;  
+    font-weight: $btn-font-weight; 
+    border-radius: $btn-radius;
+    -webkit-border-radius: $btn-radius; 
+    -moz-border-radius: $btn-radius;      
+    text-align: center !important;
+    width: auto;
+  } 
+    /*LINKS*/
+  &.link{
+    font-family: $global-font-family; 
+    font-size: $global-font-size; 
+    color: $color-link; 
+    font-weight: bold;
+  }
+}
+/*/////////////////////////*/
+
+
+
+
 
 table.button {
   width: auto;
-  margin: $button-margin;
-  Margin: $button-margin;
+  margin: $btn-margin;
+  Margin: $btn-margin;
 
   table {
 
     td {
       text-align: left;
-      color: $button-color;
-      background: $button-background;
-      border: $button-border;
+      color: $white;
+      background: $btn-default-background;
+      border: $btn-border;
 
       a {
-        font-family: $body-font-family;
-        font-size: map-get($button-font-size, default);
-        font-weight: $button-font-weight;
-        color: $button-color;
+        font-family: $global-font-family;
+        font-size: map-get($btn-font-size, default);
+        font-weight: $btn-font-weight;
+        color: $white;
         text-decoration: none;
         text-align: left;
         display: inline-block;
-        padding: map-get($button-padding, default);
-        border: 0 solid $button-background;
-        border-radius: $button-radius;
+        padding: map-get($btn-padding, default);
+        border: 0 solid $btn-default-background;
+        border-radius: $btn-radius;
       }
     }
   }
 
   &.radius table td {
-    border-radius: $button-radius;
+    border-radius: $btn-radius;
     border: none;
   }
 
   &.rounded table td {
-    border-radius: $button-rounded;
+    border-radius: $btn-rounded;
     border: none;
   }
 }
@@ -107,18 +195,20 @@ table.button.small table tr td a:visited,
 table.button.large:hover table tr td a,
 table.button.large:active table tr td a,
 table.button.large table tr td a:visited {
-  color: $button-color;
+  color: $white;
+
+
 }
 
 table.button.tiny {
   table {
     td,
     a {
-      padding: map-get($button-padding, tiny);
+      padding: map-get($btn-padding, tiny);
     }
 
     a {
-      font-size: map-get($button-font-size, tiny);
+      font-size: map-get($btn-font-size, tiny);
       font-weight: normal;
     }
   }
@@ -128,8 +218,8 @@ table.button.small {
   table {
     td,
     a {
-      padding: map-get($button-padding, small);
-      font-size: map-get($button-font-size, small);
+      padding: map-get($btn-padding, small);
+      font-size: map-get($btn-font-size, small);
     }
   }
 }
@@ -137,8 +227,8 @@ table.button.small {
 table.button.large {
   table {
     a {
-      padding: map-get($button-padding, large);
-      font-size: map-get($button-font-size, large);
+      padding: map-get($btn-padding, large);
+      font-size: map-get($btn-font-size, large);
     }
   }
 }
@@ -168,8 +258,8 @@ table.button:visited,
 table.button:active {
   table {
     td {
-      background: darken($button-background, 10%);
-      color: $button-color;
+      background: darken($btn-default-background, 10%);
+      color: $white;
     }
   }
 }
@@ -179,7 +269,7 @@ table.button:visited,
 table.button:active {
   table {
     a {
-      border: 0 solid darken($button-background, 10%);
+      border: 0 solid darken($btn-default-background, 10%);
     }
   }
 }
@@ -188,12 +278,12 @@ table.button.secondary {
   table {
     td {
       background: $secondary-color;
-      color: $button-color;
+      color: $white;
       border: 0px solid $secondary-color;
     }
 
     a {
-      color: $button-color;
+      color: $white;
       border: 0 solid $secondary-color;
     }
   }
@@ -203,7 +293,7 @@ table.button.secondary:hover {
   table {
     td {
       background: lighten($secondary-color, 10%);
-      color: $button-color;
+      color: $white;
     }
 
     a {
@@ -215,7 +305,7 @@ table.button.secondary:hover {
 table.button.secondary:hover {
   table {
     td a {
-      color: $button-color;
+      color: $white;
     }
   }
 }
@@ -223,7 +313,7 @@ table.button.secondary:hover {
 table.button.secondary:active {
   table {
     td a {
-      color: $button-color;
+      color: $white;
     }
   }
 }
@@ -231,7 +321,7 @@ table.button.secondary:active {
 table.button.secondary {
   table {
     td a:visited {
-      color: $button-color;
+      color: $white;
     }
   }
 }

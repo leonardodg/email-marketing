@@ -5,13 +5,21 @@
 ////
 /// @group callout
 ////
+$block-align: left !default;
 
+$block-width: $global-width !default;
 
+$block-limit: $global-width !default;
 
+$block-margin: 20px 0px 20px 0px;
+
+$block-box-shadow: 2px 2px 20px rgba(0,0,0,0.15) !default;
+
+$block-border-radius: 3px;
 
 /// Background color of a callout.
 /// @type Color
-$callout-background: $white !default;
+$block-background: $white !default;
 
 /// Fade value for callout backgrounds.
 /// @type Number
@@ -19,7 +27,7 @@ $callout-background-fade: 85% !default;
 
 /// Padding inside a callout.
 /// @type Length
-$callout-padding: 10px !default;
+$block-padding: 40px 0px 40px 0px !default;
 
 /// Bottom margin of a callout.
 /// @type Length
@@ -27,7 +35,7 @@ $callout-margin-bottom: $global-margin !default;
 
 /// Border around a callout.
 /// @type Border
-$callout-border: 1px solid darken($callout-background, 20%) !default;
+$callout-border: 1px solid darken($block-background, 20%) !default;
 
 /// Border around a callout with the `.success` class.
 /// @type Border
@@ -53,8 +61,8 @@ table.callout {
 th.callout-inner {
   width: 100%;
   border: $callout-border;
-  padding: $callout-padding;
-  background: $callout-background;
+  padding: $block-padding;
+  background: $block-background;
 
   &.primary {
     background: scale-color($primary-color, $lightness: $callout-background-fade);

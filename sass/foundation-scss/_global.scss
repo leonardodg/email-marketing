@@ -8,6 +8,19 @@
 
 /// Primary color for interactive components like links and buttons.
 /// @type Color
+
+
+// ---------
+///Cores Qisat padrões:
+$azul-default: #1E7AC9;
+$azul-escuro: #1C5485;
+$verde-claro: #11C2BA;
+$verde-escuro: #0B8D87;
+
+///Cores Altoqi padrões:
+$verde-default: #2DAD71;
+
+
 $primary-color: #2199e8 !default;
 
 /// Secondary color, used with components that support the `.secondary` class.
@@ -52,7 +65,7 @@ $pre-color: #ff6908 !default;
 
 /// Width of the container.
 /// @type Number
-$global-width: 580px !default;
+$global-width: 608px !default;
 
 /// Width of the container on small screens.
 /// @type Length
@@ -64,7 +77,11 @@ $global-gutter: 16px !default;
 
 /// Body background color.
 /// @type Length
-$body-background: #eaeced !default;
+$body-background: $white !default;
+
+/// Color for the container background
+/// @type Color
+$header-background: $dark-gray;
 
 /// Color for the container background
 /// @type Color
@@ -92,4 +109,5 @@ $global-breakpoint: $global-width + $global-gutter !default;
 
 .wrapper {
   width: 100%;
+  background-color: $header-background;
 }
