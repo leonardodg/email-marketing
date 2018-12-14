@@ -31,6 +31,10 @@ $global-line-height: 120% !default;
 /// @type Number
 $global-font-size: 16px !default;
 
+/// Line height of title text.
+/// @type Number
+$title-line-height: 110% !default;
+
 /// Line height of body text.
 /// @type Number
 $body-line-height: $global-line-height !default;
@@ -78,7 +82,6 @@ $paragraph-margin-bottom: 10px !default;
 /// Default font size for `<small>`.
 /// @type Number
 $small-font-size: 80% !default;
-
 /// Color of `<small>` elements when placed inside headers.
 /// @type Color
 $small-font-color: $medium-gray !default;
@@ -191,25 +194,24 @@ $remove-ios-blue: true !default;
       Margin: 0;
     }
 
-      td {
-        width: $width;
-        height: 0;
-        padding-top: $margin;
-        clear: both;
-        border-top: 0;
-        border-right: 0;
-        border-bottom: $border;
-        border-left: 0;
-        font-size: 0;
-        line-height: 0;
-      }
+    td {
+      width: $width;
+      height: 0;
+      padding-top: $margin;
+      clear: both;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: $border;
+      border-left: 0;
+      font-size: 0;
+      line-height: 0;
+    }
 }
 /* TIPOGRAFIA titulos*/
 
 %titles-padrao{
   font-family: $title-fonte; 
-  padding-right: 50px;
-  padding-left: 50px;
+  line-height: $title-line-height;
 }
 
 h1 {

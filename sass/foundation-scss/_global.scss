@@ -81,7 +81,7 @@ $body-background: $white !default;
 
 /// Color for the container background
 /// @type Color
-$header-background: $dark-gray;
+$header-background: $azul-default !default;
 
 /// Color for the container background
 /// @type Color
@@ -100,7 +100,7 @@ $global-margin: 16px !default;
 $global-radius: 3px !default;
 
 /// Global rounded radius of rounded-corners.
-/// @type Number
+/// @type Number 
 $global-rounded: 500px !default;
 
 /// Global media query to switch from desktop to mobile styles.
@@ -109,5 +109,10 @@ $global-breakpoint: $global-width + $global-gutter !default;
 
 .wrapper {
   width: 100%;
+}
+
+.retangulo {
+  width: 100%;
   background-color: $header-background;
+  height: 228px;
 }

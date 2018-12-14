@@ -51,6 +51,14 @@ $btn-fora-margin: 50px 0px 50px 0px;
 /// @type Color
 $btn-default-background: $header-background !default;
 
+/// Background color of buttons hover.
+/// @type Color
+$default-hover-background: #1560A0 !default;
+
+/// Background color of buttons hover.
+/// @type Color
+$alternative-hover-background: #D9E8F6 !default;
+
 /// Border around buttons.
 /// @type Border
 $btn-border: 2px solid $btn-default-background !default;
@@ -102,7 +110,7 @@ a{
   /*///////////////////*/
 
   &.alternative-btn{
-      background: $white;
+      background-color: $white;
       border: 1px solid $header-background;
       color: $global-font-color; 
       text-decoration: none; 
@@ -114,12 +122,13 @@ a{
       -moz-border-radius: $btn-radius;    
       padding: map-get($btn-padding, default);
       text-align: center !important;
+      &:hover{ background-color: $alternative-hover-background }
   }
 
   &.default-btn{
     padding: map-get($btn-padding, default);
     font-size: $global-font-size;
-    background-color: $header-background; 
+    background-color: $btn-default-background; 
     color: $white; 
     text-decoration: none; 
     font-family: $global-font-family;  
@@ -129,13 +138,26 @@ a{
     -moz-border-radius: $btn-radius;      
     text-align: center !important;
     width: auto;
-  } 
+    &:hover{ background-color: $default-hover-background }
+  }
+
     /*LINKS*/
-  &.link{
+  &.link-arrow{
     font-family: $global-font-family; 
     font-size: $global-font-size; 
     color: $color-link; 
     font-weight: bold;
+    text-decoration: underline;
+    &:hover{ color: $default-hover-background; }
+    &::after{ content: "\2192"; }
+  }
+  &.link-default{
+    font-family: $global-font-family; 
+    font-size: $global-font-size; 
+    color: $color-link; 
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover{ color: $default-hover-background; }
   }
 }
 /*/////////////////////////*/
