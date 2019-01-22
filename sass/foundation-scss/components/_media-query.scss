@@ -137,3 +137,35 @@
   }
 }
 
+// Media Cards
+@media only screen and (min-width: $global-breakpoint){
+  .catalogo-cards-title{
+    padding-left: 8px !important;
+  }
+}
+
+@media only screen and (max-width: $global-breakpoint){
+    .catalogo-cards-content{
+      padding-left: 20% !important;
+     } 
+}
+
+// Media Professores
+@media screen and (max-width: $global-breakpoint){
+    img.professores2,img.professores-curso{
+      display: inline-block !important;
+    }
+    span.professores2{
+      display: inline-block !important; 
+      margin: 10px 25px 0 0 !important; 
+      padding-left: 50px !important;
+      padding-right: 25px !important;
+    } 
+}
+
+// Media Tipografia
+@media only screen and (min-width: #{$global-breakpoint}){
+  h2.subtitle-catalogo,h4.subtitle-catalogo,p.subtitle-catalogo{
+    padding-left: 16px !important;
+  }
+}  

@@ -4,22 +4,20 @@
 
 ////
 /// @group callout
-////
-$block-align: left !default;
+///
+$card-align: left !default;
 
-$block-width: $global-width !default;
+$card-width: 296px !default;
 
-$block-limit: $global-width !default;
+$card-margin: 20px 0px 20px 0px;
 
-$block-margin: 20px 0px 20px 0px;
+$card-box-shadow: 2px 2px 20px rgba(0,0,0,0.15) !default;
 
-$block-box-shadow: 2px 2px 20px rgba(0,0,0,0.15) !default;
-
-$block-border-radius: 3px;
+$card-border-radius: 3px;
 
 /// Background color of a callout.
 /// @type Color
-$block-background: $white !default;
+$card-background: $white !default;
 
 /// Fade value for callout backgrounds.
 /// @type Number
@@ -27,7 +25,7 @@ $callout-background-fade: 85% !default;
 
 /// Padding inside a callout.
 /// @type Length
-$block-padding: 40px 0px 40px 0px !default;
+$card-padding: 40px 0px 40px 0px !default;
 
 /// Bottom margin of a callout.
 /// @type Length
@@ -35,7 +33,7 @@ $callout-margin-bottom: $global-margin !default;
 
 /// Border around a callout.
 /// @type Border
-$callout-border: 1px solid darken($block-background, 20%) !default;
+$callout-border: 1px solid darken($card-background, 20%) !default;
 
 /// Border around a callout with the `.success` class.
 /// @type Border
@@ -61,8 +59,8 @@ table.callout {
 th.callout-inner {
   width: 100%;
   border: $callout-border;
-  padding: $block-padding;
-  background: $block-background;
+  padding: $card-padding;
+  background: $card-background;
 
   &.primary {
     background: scale-color($primary-color, $lightness: $callout-background-fade);
@@ -93,4 +91,76 @@ th.callout-inner {
     border: $callout-border-alert;
     color: $white;
   }
+}
+
+table{
+    border-spacing: 0;
+    border-collapse: none;
+    border: none;
+    text-align: center;
+    margin : 0;
+    padding: 0;
+    margin: 0 auto;
+    
+
+    &.card{
+    background-color: $card-background; 
+    border-right: 1px solid #EAECED; 
+    border-left: 1px solid #EAECED; 
+    text-align: $card-align; 
+    -moz-border-radius: $card-border-radius; 
+    -webkit-border-radius: $card-border-radius; 
+    border-radius: $card-border-radius; 
+    -webkit-box-shadow: $card-box-shadow; 
+    -moz-box-shadow: $card-box-shadow; 
+    box-shadow: $card-box-shadow;
+    width: $card-width;
+    padding: $card-padding;
+    max-width: 296px;
+    p.card-padding{
+      padding: 0px 30px 0px 30px;
+      }
+    } 
+
+    &.card-no-padding{
+      background-color: $card-background; 
+      border-right: 1px solid #EAECED; 
+      border-left: 1px solid #EAECED; 
+      text-align: $card-align; 
+      -moz-border-radius: $card-border-radius; 
+      -webkit-border-radius: $card-border-radius; 
+      border-radius: $card-border-radius; 
+      -webkit-box-shadow: $card-box-shadow; 
+      -moz-box-shadow: $card-box-shadow; 
+      box-shadow: $card-box-shadow;
+      width: $card-width;
+      margin: $card-margin;
+
+      td.card-text-padding{
+        padding: $card-padding;
+      }
+    }  
+}
+
+.card-text-padding{
+  padding: $card-padding;
+}
+
+.catalogo-cards-content{
+  padding-left: 8px;
+}
+
+table.list{
+  width: 95%;
+}
+
+tr.list{
+  border: 1px #E5E5E5 solid; 
+}
+
+th.list{
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
 }

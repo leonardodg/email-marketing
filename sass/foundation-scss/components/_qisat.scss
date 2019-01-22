@@ -1,4 +1,4 @@
-$title-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
+$title-fonte: 'Lato','Helvetica','Arial','sans-serif';
 $global-font-family: 'Lato','Helvetica','Arial','sans-serif';
 $global-font-size: 16px;
 $global-line-height: 120%;
@@ -11,15 +11,6 @@ $color-warning: #ffae00;
 $color-alert: #ec5840;
 
 $background: #eaeced;
-
-$block-largura: 600px;
-$block-background: #fff;
-$block-padding: 40px 0px 40px 0px;
-$block-margin: 20px 0px 20px 0px;
-$block-align: left;
-$block-limit: 600px;
-$block-box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
-$block-border-radius: 3px;
 
 $btn-default-color: #1678ea;
 $btn-default-fonte: 'Lato','Helvetica','Arial','sans-serif';
@@ -48,11 +39,8 @@ $color-alert: #ec5840;
 $color-link: $azul-default;
 
 
-$content-padding: 30px 50px 0px 50px;
-$first-content-padding: 0px 50px 0px 50px;
-
-
-
+$content-padding: 30px 32px 0px 32px;
+$first-content-padding: 0px 32px 0px 32px;
 
 
 /* GERAL*/
@@ -66,56 +54,6 @@ $first-content-padding: 0px 50px 0px 50px;
 body {
 	background: $background;
 }
-
-table{
-    border-spacing: 0;
-    border-collapse: none;
-    border: none;
-    text-align: center;
-    margin : 0;
-    padding: 0;
-    margin: 0 auto;
-
-    &.block{
-		background-color: $block-background; 
-		border-right: 1px solid #EAECED; 
-		border-left: 1px solid #EAECED; 
-		text-align: $block-align; 
-		-moz-border-radius: $block-border-radius; 
-		-webkit-border-radius: $block-border-radius; 
-		border-radius: $block-border-radius; 
-		-webkit-box-shadow: $block-box-shadow; 
-		-moz-box-shadow: $block-box-shadow; 
-		box-shadow: $block-box-shadow;
-		width: $block-largura;
-		
-		padding: $block-padding;
-	}
-
-	&.block-no-padding{
-		background-color: $block-background; 
-		border-right: 1px solid #EAECED; 
-		border-left: 1px solid #EAECED; 
-		text-align: $block-align; 
-		-moz-border-radius: $block-border-radius; 
-		-webkit-border-radius: $block-border-radius; 
-		border-radius: $block-border-radius; 
-		-webkit-box-shadow: $block-box-shadow; 
-		-moz-box-shadow: $block-box-shadow; 
-		box-shadow: $block-box-shadow;
-		width: $block-largura;
-		margin: $block-margin;
-
-		td.block-text-padding{
-			padding: $block-padding;
-		}
-	}
-}
-
-.block-text-padding{
-	padding: $block-padding;
-}
-
 
 
 %btn-types-padrao{
@@ -157,14 +95,6 @@ table{
 }
 
 a{
-	/* PRIMEIRO LINK TOPO */
-	&.clique-aqui{
-		text-decoration: none;
-		font-size: x-small; 
-		color: #666666; 
-		font-family: 'Tahoma','Geneva','sans-serif';	
-	}
-	/*///////////////////*/
 
 	&.secondary-button{
 		background: $color-secondary;
@@ -286,10 +216,6 @@ th.rodape-padding{
 	margin-top: 150px;
 }
 
-.rodape-padding-px{
-	padding: 0 600px 0 600px;
-}
-
 .rodape-logos{
 	margin-top: 150px;
 }
@@ -302,38 +228,22 @@ th.rodape-padding{
 	color: #666666;
 }
 
-.max500{
-	max-width: 500px;
-}
-
-.max200{
-	max-width: 200px; 
-}
-
-.max300{
-	max-width: 300px;
-}
-
 .none{
 	display: none;
 }
 
-.full{
-	width: 100%;
+img.professores2{
+	display: inline-block; 
+	margin: 10px 25px 0 0px;
+	width: 96px;
+	height: 96px;		
 }
 
-img.professores2{
-		display: inline-block; 
-		margin: 10px 25px 0 0px;
-		padding-left: 25px;
-		width: 100px;
-		height: 100px;
-		@media screen and (max-width: 600px){
-			display: inline-block; 
-			margin: 10px 25px 0 0; 
-			padding-left: 25px;	
-		}
-		
+img.professores-curso{
+	display: inline-block; 
+	margin: 10px 25px 0 0px;
+	width: 120px;
+	height: 120px;	
 }
 
 
@@ -381,14 +291,14 @@ span{
 	}
 
 	&.investimento-rS{
-		color:#24CFE0; 
-		font-size: 6; 
+		color: $header-background;
+		font-size: 40px; 
 		font-family: $global-font-family;
 	}
 
 	&.investimento-preco{
-		color:#24CFE0; 
-		font-size:50px; 
+		color: $header-background; 
+		font-size: 60px; 
 		font-family: $global-font-family;
 	}
 
@@ -403,14 +313,6 @@ span{
 		line-height: 1.5;
 		margin: 0px;
 		padding-right: 50px;
-		@media screen and (max-width: 600px){
-			display: inline-block; 
-			margin: 10px 25px 0 0; 
-			padding-left: 50px;
-			padding-right: 25px;	
-		}
-
-
 	}
 }
 
@@ -421,24 +323,11 @@ span{
 
 %titles-padrao{
 	font-family: $title-fonte; 
-	padding-right: 50px;
-	padding-left: 50px;
-}
-
-h1 {
-	font-size: $h1-font-size;
-	@extend %titles-padrao;
-}
-
-h2 {
-	font-size: $h2-font-size;
-	@extend %titles-padrao;
+	padding-right: 32px;
+	padding-left: 32px;
 }
 
 h3 {
-	font-size: $h3-font-size;
-	@extend %titles-padrao;
-
   	&.professores2{
 		font-weight:600; 
 		text-align: left; 
@@ -477,17 +366,7 @@ h3 {
 	}
 }
 
-h4 {
-	font-size: $h4-font-size;
-	@extend %titles-padrao;
-}
 
-h5 {
-	font-size: $h5-font-size;
-	@extend %titles-padrao;
-}
-
-h6 {
-	font-size: $h6-font-size;
-	@extend %titles-padrao;
+ul{
+	list-style-type: none;
 }

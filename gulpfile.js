@@ -2,7 +2,9 @@ var gulp = require('gulp'),
     inlineCss = require('gulp-inline-css'),
 	  styleInject = require("gulp-style-inject"),
     watch = require('gulp-watch'),
-    compass = require('gulp-compass');
+    compass = require('gulp-compass'),
+    htmlhint = require("gulp-htmlhint");
+
     
 /*gulp.task('compass', function() {
   console.log('compass');
@@ -16,7 +18,9 @@ var gulp = require('gulp'),
 });*/
 
 gulp.task('default', function() {
- return gulp.src('index.html')
+ return gulp.src('qisat-foundation-templates/*.html')
+          //  .pipe(htmlhint())
+         //   .pipe(htmlhint.reporter())
             .pipe(styleInject())    
                 .pipe(inlineCss({
                   preserveMediaQueries:false,
@@ -24,7 +28,14 @@ gulp.task('default', function() {
                   applyStyleTags:false
                   //applyLinkTags : false
                 }))
-                .pipe(gulp.dest('inline/'))
+                .pipe(gulp.dest('public/templates-inline'))
+});
+
+
+gulp.task('check-html', function() {
+ return gulp.src('qisat-foundation-templates/*.html')
+            .pipe(htmlhint())
+            .pipe(htmlhint.reporter());
 });
 
 /*gulp.task('default', function () {

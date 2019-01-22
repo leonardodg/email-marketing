@@ -9,7 +9,7 @@
 /// Primary color for interactive components like links and buttons.
 /// @type Color
 
-
+$url-base : 'http://public-local.qisat.com.br';
 // ---------
 ///Cores Qisat padrões:
 $azul-default: #1E7AC9;
@@ -114,5 +114,6 @@ $global-breakpoint: $global-width + $global-gutter !default;
 .retangulo {
   width: 100%;
   background-color: $header-background;
-  height: 228px;
+  height: 114px;
 }
+

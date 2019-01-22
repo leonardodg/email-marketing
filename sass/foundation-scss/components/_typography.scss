@@ -5,7 +5,7 @@
 ////
 /// @group typography
 ////
-$content-padding: 30px 50px 0px 50px;
+$content-padding: 0px 32px 0px 32px;
 $first-content-padding: 0px 50px 0px 50px;
 /// Global font color.
 /// @type Color
@@ -41,7 +41,7 @@ $body-line-height: $global-line-height !default;
 
 /// Font family of headings.
 /// @type List
-$title-fonte: 'Titillium Web','Helvetica','Arial','sans-serif' !default;
+$title-fonte: 'Lato','Helvetica','Arial','sans-serif' !default ;
 
 /// Font family of headings.
 /// @type List
@@ -212,6 +212,7 @@ $remove-ios-blue: true !default;
 %titles-padrao{
   font-family: $title-fonte; 
   line-height: $title-line-height;
+  color: $global-font-color;
 }
 
 h1 {
@@ -222,7 +223,7 @@ h1 {
 h2 {
   font-size: $h2-font-size;
   @extend %titles-padrao;
-}
+} 
 
 h3 {
   font-size: $h3-font-size;
@@ -416,4 +417,17 @@ span.preheader {
       line-height: inherit !important;
     }
   }
+
+  .subtitle{
+    color: $white !important;
+  }
+}
+
+p,span,li{
+  color: $global-font-color;
+}
+
+
+li{
+  line-height: 22px;
 }
