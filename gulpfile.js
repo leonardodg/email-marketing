@@ -17,6 +17,8 @@ var gulp = require('gulp'),
               .pipe(gulp.dest('estilos'));
 });*/
 
+// TAREFA PADRÃO
+
 gulp.task('default', function() {
  return gulp.src('qisat-foundation-templates/*.html')
           //  .pipe(htmlhint())

@@ -5,7 +5,7 @@
 
 .retangulo {
   width: 100%;
-  background-color: #1E7AC9;
+  background-color: #2DAD71;
   height: 114px;
 }
 
@@ -933,7 +933,7 @@ a.clique-aqui.branco {
 }
 a.alternative-btn {
   background-color: #fefefe;
-  border: 1px solid #1E7AC9;
+  border: 1px solid #2DAD71;
   color: #363F44;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -953,7 +953,7 @@ a.alternative-btn:hover {
 a.default-btn {
   padding: 16px 16px 16px 16px;
   font-size: 16px;
-  background-color: #1E7AC9;
+  background-color: #2DAD71;
   color: #fefefe;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1023,8 +1023,8 @@ table.button {
 table.button table td {
   text-align: left;
   color: #fefefe;
-  background: #1E7AC9;
-  border: 2px solid #1E7AC9;
+  background: #2DAD71;
+  border: 2px solid #2DAD71;
 }
 table.button table td a {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1035,7 +1035,7 @@ table.button table td a {
   text-align: left;
   display: inline-block;
   padding: 16px 16px 16px 16px;
-  border: 0 solid #1E7AC9;
+  border: 0 solid #2DAD71;
   border-radius: 26px;
 }
 table.button.radius table td {
@@ -1105,14 +1105,14 @@ table.button.expanded center {
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td {
-  background: #175f9d;
+  background: #228557;
   color: #fefefe;
 }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a {
-  border: 0 solid #175f9d;
+  border: 0 solid #228557;
 }
 
 table.button.secondary table td {
@@ -1770,12 +1770,12 @@ span.cp {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-rS {
-  color: #1E7AC9;
+  color: #2DAD71;
   font-size: 40px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-preco {
-  color: #1E7AC9;
+  color: #2DAD71;
   font-size: 60px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
@@ -1839,7 +1839,7 @@ ul {
 }
 
 .icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
-  background-image: url('http://public-local.qisat.com.br/public/images/icons-s42a684e4db.png');
+  background-image: url('http://public-local.qisat.com.br/images/icons-s42a684e4db.png');
   background-repeat: no-repeat;
 }
 
