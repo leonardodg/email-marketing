@@ -1,8 +1,8 @@
-http_path = "http://public-local.qisat.com.br/"
-css_dir = "estilos"
+http_path = "/"
+css_dir = "/css"
 sass_dir = "sass"
 images_dir = "public/images"
-generated_images_dir = "images/"
+generated_images_dir = "public/images"
 http_images_path = http_path + generated_images_dir
 http_generated_images_path = http_images_path
 

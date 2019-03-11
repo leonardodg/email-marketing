@@ -251,7 +251,6 @@ table.button.large:active table tr td a,
 table.button.large table tr td a:visited {
   color: $white;
 
-
 }
 
 table.button.tiny {
@@ -276,6 +275,7 @@ table.button.small {
       font-size: map-get($btn-font-size, small);
     }
   }
+  
 }
 
 table.button.large {

@@ -10,12 +10,13 @@
 /// @type Color
 
 $url-base : 'http://public-local.qisat.com.br';
-// ---------
+// ------
 ///Cores Qisat padrões:
 $azul-default: #1E7AC9;
 $azul-escuro: #1C5485;
 $verde-claro: #11C2BA;
 $verde-escuro: #0B8D87;
+$agronomia: #006633;
 
 ///Cores Altoqi padrões:
 $verde-default: #2DAD71;
@@ -68,7 +69,7 @@ $pre-color: #ff6908 !default;
 $global-width: 608px !default;
 
 /// Width of the container on small screens.
-/// @type Length
+///@type Length
 $global-width-small: 95% !default;
 
 /// Gutter for grid elements.
@@ -78,10 +79,9 @@ $global-gutter: 16px !default;
 /// Body background color.
 /// @type Length
 $body-background: $white !default;
-
 /// Color for the container background
 /// @type Color
-$header-background: $verde-default !default;
+$header-background: $azul-escuro !default;
 
 /// Color for the container background
 /// @type Color
@@ -114,6 +114,5 @@ $global-breakpoint: $global-width + $global-gutter !default;
 .retangulo {
   width: 100%;
   background-color: $header-background;
-  height: 114px;
 }
 

@@ -120,7 +120,26 @@ table{
     p.card-padding{
       padding: 0px 30px 0px 30px;
       }
-    } 
+    }
+
+    &.card-doc{
+    background-color: $card-background; 
+    border-right: 1px solid #EAECED; 
+    border-left: 1px solid #EAECED; 
+    text-align: $card-align; 
+    -moz-border-radius: $card-border-radius; 
+    -webkit-border-radius: $card-border-radius; 
+    border-radius: $card-border-radius; 
+    -webkit-box-shadow: $card-box-shadow; 
+    -moz-box-shadow: $card-box-shadow; 
+    box-shadow: $card-box-shadow;
+    width: 550px;
+    padding: $card-padding;
+    max-width: 550px;
+    p.card-padding{
+      padding: 0px 30px 0px 30px;
+      }
+    }  
 
     &.card-no-padding{
       background-color: $card-background; 
@@ -163,4 +182,8 @@ th.list{
   padding-right: 16px;
   padding-bottom: 12px;
   padding-left: 16px;
+}
+
+span.linethrough{
+  text-decoration: line-through;
 }
