@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Gulp doc</title>
+	<link rel="stylesheet" type="text/css" href="/css/qisat-foundation.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <!-- inject-style src="public\css\qisat-foundation.css" -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
+  </style>
+</head>
+  <body>
+
+    <table class="body">
+      <tr>
+        <td class="float-center">
+            <table align="center" class="retangulo header float-center">
+              <tr>
+                <td class="wrapper-inner">
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table class="row collapse">
+                            <tbody>
+                              <tr>
+                                <th class="small-6 large-6 columns first last">
+                                  <a href="http://litmus.com" target="_blank">
+                                    <img src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                                  </a>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="container float-center">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td height="40px"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h2 class="">Instalação do Gulp 4</h2></strong>
+                            <p class="content" style="text-align: justify;">
+                                Caso você não tenha ainda o Gulp 4 e/ou os plugins necessários instalado na sua máquina, a instalação é simples, siga os passos abaixo: 
+                            </p> 
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">  
+                      <tr>  
+                        <th class="small-6 large-6 columns last">
+                          <ul>
+                            <li>Abra o prompt de comando (CLI)</li>
+                            <li>Acesse o diretório raíz do projeto(diretório onde está o arquivo 'gulpfile.js' e o 'package.json') pelo prompt digitando "cd 'caminho até a pasta'" e digite enter</li>
+                            <li>Digite "npm install", dê enter e aguarde...</li>
+                            <li>Pronto, a instalação está feita.</li>
+                          </ul>                                     
+                        </th>
+                      </tr>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Detalhe:</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                O gulp deve sempre ser utilizado pelo CLI na pasta raíz do projeto onde deverá estar localizado o arquivo "gulpfile.js".
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h2 class="">Funcionamento do Gulp para a produção de Campanhas</h2></strong>
+                            <p class="content" style="text-align: justify;">
+                                Para a Produção de uma campanha de Email será necessário a utilização do Gulp, portanto listamos a seguir as tarefas que serão realizadas por ele:
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="40px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h3 class="content" style="text-align: justify;">Automatização</h3></strong>
+                            <p class="content" style="text-align: justify;">
+                                O gulp como um automatizador de tarefas tem como função principal otimizar o tempo gasto com tarefas manuais, portanto criamos a tarefa "default", para evitar que todas as tarefas listadas sejam executadas uma a uma.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa default ("gulp")</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa terá como função um "watch", que irá monitorar as pastas 'campanhas/2019/' 'public/images/icons/' e 'sass/foundation-scss/', assim havendo qualquer mudança em algumas das pastas, ele realizará todas as tarefas em sequência de forma automática.<br><br>
+                                A tarefa default pode ser chamada simplesmente digitando "gulp" na linha de comando no diretório raíz do projeto.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">  
+		                  <tr>  
+		                    <th class="small-6 large-6 columns last">
+		                      <h3 class="small-text-center"><strong>Tarefas do gulp a serem executadas</strong></h3>
+		                      <ul>
+		                        <li>Tarefa 1: "gulp compass"</li>
+		                        <li>Tarefa 2: "gulp css-series"</li>
+		                        <li>Tarefa 3: "gulp replace-inline"</li>
+		                        <li>Tarefa 4: "gulp campanhas-inline"</li>
+		                        <li>Tarefa 5: "gulp campanhas-html-final"</li>
+		                      </ul>                                     
+		                    </th>
+		                  </tr>
+		                </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa 1 - "gulp compass"</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa será a primeira a ser executada e terá função de monitorar mudanças no sass e assim então atualizar os arquivos "qisat-foundation.css" e "qisat-foundation.min.css", da pasta "estilos/css/".
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>	
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa 2 - "gulp css-series"</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa terá a função de renomear os caminhos dos ícones para caminhos reais, e caminhos em relação a pasta raíz respectivamente.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa 3 - "gulp replace-inline"</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa terá será responsável por alterar nos html os endereços raízes para endereços reais, para assim 
+                                o css poder ser aplicado inline pela tarefa "campanhas-inline" posteiormente.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa 4 - "gulp campanhas-inline"</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa seleciona todos os arquivos html do endereço "public/campanhas/2019/inline/", e insere inline o documento css externo utilizado nos html; 
+                                Além de inserir estilos específicos no cabeçalho do email e também minificar o html final.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Tarefa 5 - "gulp campanhas-html-final"</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Esta tarefa é a última a ser realizada, ela minifica e transfere o html produzido em "/campanhas/2019", para "/public/campanhas/2019".
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="40px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h4 class="content" style="text-align: justify;">Importante:</h4></strong>
+                            <p class="content" style="text-align: justify;">
+                                Com a tarefa default sendo executada, ao renomear um arquivo na pasta 'campanhas/2019' o gulp criará um novo arquivo na pasta 'public/campanhas/2019' tendo então dois arquivos, portanto o arquivo de nome antigo deve ser deletado manualmente da pasta 'public/campanhas/2019'e da pasta 'public/campanhas/2019/inline'.
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody> 
+                        <tr>
+                          <th class="small-6 large-6 columns first last">
+                            <strong><h3 class="content" style="text-align: justify;">Variáveis</h3></strong>
+                            <p class="content" style="text-align: justify;">
+                                As variáveis "url-html", "url_imagens", "url_css" existem em função da variável "url_base" que é a única a ser modificada.<br>
+                                A variável url_base deverá ter como valor padrão "https://public.qisat.com.br"
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="30px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>  
+                          <th class="small-6 large-6">
+                            <p class="content"><a href="/templates/catalogo-tudo.html" class="link-arrow">Template Catálogo Completo</a></p>
+                            <p class="content"><a href="/templates/curso-qieletrico.html" class="link-arrow">Template Elétrico</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-basic.html" class="link-arrow">Template Básico</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-catalogo-online.html" class="link-arrow">Template Catálogo Online</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-catalogo.html" class="link-arrow">Template Catálogo Simples</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-comercial-artigo.html" class="link-arrow">Template Comercial Artigo</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-comercial-desconto.html" class="link-arrow">Template Comercial Desconto</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-curso.html" class="link-arrow">Template Curso Oferta</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-instrutor.html" class="link-arrow">Template Instrutores</a></p>
+                            <p class="content"><a href="/templates/qisat-foundation-testando.html" class="link-arrow">Template Teste</a></p>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-6 large-6 columns first">
+                            <table>
+                              <!-- RODAPE QISAT -->
+                              <tr>
+                                <td>
+                                  <table>
+                                    <tr>
+                                      <td valign="top" class="rodape-logo-td">
+                                        <a href="https://www.qisat.com.br" target="_blank" >
+                                          <img alt="Logo" class="float-center mobile-logo" src="/images/logo_topo.png">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table class="row">
+                                    <tr>
+                                      <th class="small-1 large-1 columns"></th>
+                                      <th class="small-1 large-1 columns first float-center">
+                                        <a href="https://www.facebook.com/qisat" target="_blank">
+                                          <p class="small-text-center icons-sprite icons-facebook"></p>
+                                        </a>
+                                      </th>
+                                      <th class="small-1 large-1 columns float-center">
+                                        <a href="https://www.instagram.com/qisat/" target="_blank">
+                                          <p class="small-text-center icons-sprite icons-instagram"></p>
+                                        </a>
+                                      </th>
+                                      <th class="small-1 large-1 columns float-center">
+                                        <a href="https://br.linkedin.com/in/qisat" target="_blank">
+                                          <p class=" icons-sprite icons-linkedin"></p>
+                                        </a>
+                                      </th>
+                                      <th class="small-1 large-1 columns last float-center">
+                                        <a href="https://www.youtube.com/user/qisat" target="_blank">
+                                          <p class="small-text-center icons-sprite icons-youtube"></p>
+                                        </a>
+                                      </th>
+                                      <th class="small-1 large-1 columns"></th>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table class="row">
+                                    <tr>
+                                      <td>
+                                        <table>
+                                          <tr>
+                                            <th class="small-6 large-6 columns first last">
+                                              <center><span class="rodape-duvidas">Em caso de dúvidas, responda esse e-mail<br> ou entre em contato pelo telefone/whatsapp:<br>+55 48 99815 1222</span></center>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- //RODAPE QISAT -->
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

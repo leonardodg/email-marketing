@@ -1,0 +1,372 @@
+$title-fonte: 'Lato','Helvetica','Arial','sans-serif';
+$global-font-family: 'Lato','Helvetica','Arial','sans-serif';
+$global-font-size: 16px;
+$global-line-height: 120%;
+
+
+$color-primary: #2199e8;
+$color-secondary: #777777;
+$color-success: #3adb76;
+$color-warning: #ffae00;
+$color-alert: #ec5840;
+
+$background: #eaeced;
+
+$btn-default-color: #1678ea;
+$btn-default-fonte: 'Lato','Helvetica','Arial','sans-serif';
+$btn-branco-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
+$btn-margin: 30px 0px 30px 0px;
+$btn-fora-margin: 50px 0px 50px 0px;
+$btn-padding: (
+	tiny: 4px 8px 4px 8px,
+  	small: 5px 10px 5px 10px,
+  	default: 8px 16px 8px 16px,
+  	large: 10px 20px 10px 20px,
+);
+$btn-font-size: (
+	tiny: 10px !important,
+  	small: 12px !important,
+  	default: 16px !important,
+  	large: 20px !important,
+);
+
+$azul-default: #1E7AC9;
+$color-primary: #2199e8;
+$color-secondary: #777777;
+$color-success: #3adb76;
+$color-warning: #ffae00;
+$color-alert: #ec5840;
+$color-link: $azul-default;
+
+
+$content-padding: 30px 32px 0px 32px;
+$first-content-padding: 0px 32px 0px 32px;
+
+
+/* GERAL*/
+
+.teste{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: $background;
+}
+
+
+%btn-types-padrao{
+	color:#fff; 
+	text-decoration: none; 
+	font-family: $btn-default-fonte; 
+	font-size: map-get($btn-font-size, default); 
+	font-weight: $btn-font-weight; 
+	border-radius:50px; 
+	padding: map-get($btn-padding, default);
+	text-align: center !important;
+}
+
+%btn-sizes-padrao{
+  	background-color: $btn-default-color; 
+	color:#fff; 
+	text-decoration: none; 
+	font-family: $btn-default-fonte;  
+	font-weight: $btn-font-weight; 
+	border-radius:50px;
+	-webkit-border-radius: 50px; 
+	-moz-border-radius: 50px; 		 
+	text-align: center !important;
+	width: auto;
+}
+
+%btn-branco-padrao{
+	background-color: $white; 
+	color:#24CFE0;
+	border:2px solid #24CFE0; 
+	margin:0 auto; 
+	border-radius:50px; 
+	text-decoration: none;  
+	font-family: $btn-branco-fonte; 
+	font-weight: $btn-font-weight;
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	border-radius:30px; 	 		
+}
+
+a{
+
+	&.secondary-button{
+		background: $color-secondary;
+  		border: 0px solid $color-secondary;
+  		@extend %btn-types-padrao;
+	}
+
+	&.success-button{
+		background: $color-success;
+	  	border: 0px solid $color-success;
+	  	@extend %btn-types-padrao; 
+	}
+
+	&.warning-button{
+		background: $color-warning;
+	  	border: 0px solid $color-warning;
+	  	@extend %btn-types-padrao; 
+	}
+
+	&.alert-button{
+		background: $color-alert;
+	  	border: 0px solid $color-alert;
+	  	@extend %btn-types-padrao; 
+	}
+
+	&.tiny-button{
+		padding: map-get($btn-padding, tiny);
+		font-size: map-get($btn-font-size, tiny);
+		@extend %btn-sizes-padrao;
+	}
+
+	&.small-button{
+		padding: map-get($btn-padding, small);
+	  	font-size: map-get($btn-font-size, small);
+	  	@extend %btn-sizes-padrao;
+	  	
+	}
+
+	&.large-button{
+		padding: map-get($btn-padding, large);
+		font-size: map-get($btn-font-size, large);		
+		@extend %btn-sizes-padrao;
+	}
+
+	&.btn-branco-large{
+		@extend %btn-branco-padrao;
+		padding: map-get($btn-padding, large);  
+		font-size: map-get($btn-font-size, large);
+	}
+
+	&.btn-branco-default{
+		@extend %btn-branco-padrao;
+		padding: map-get($btn-padding, default);
+		font-size: map-get($btn-font-size, default);
+	}
+
+	&.btn-branco-small{
+		@extend %btn-branco-padrao;
+		padding: map-get($btn-padding, small);
+		font-size: map-get($btn-font-size, small); 
+	}
+
+	&.btn-branco-tiny{
+		@extend %btn-branco-padrao;
+		padding: map-get($btn-padding, tiny); 
+		font-size: map-get($btn-font-size, tiny);
+	}
+		/* BOTAO FORA quero me inscrever fundo azul*/
+	&.inscrever-button{
+		background-color:#24CFE0; 
+		color:#fff;
+		padding: 8px 16px 8px 16px;
+		margin:0 auto; 
+		border-radius:50px; 
+		text-decoration: none;  
+		font-family:'Titillium Web','Helvetica','Arial','sans-serif'; 
+		font-weight: bold; 
+		font-size:16px; 
+		border:2px solid #24CFE0; 
+		-moz-border-radius:30px; 
+		-webkit-border-radius:30px; 
+		border-radius:30px;
+	}
+		/*LINKS*/
+	&.link{
+		font-family: $global-font-family; 
+		font-size: $global-font-size; 
+		color: $color-link; 
+		font-weight: bold;
+	}
+	&.investimento-adquirir{
+		text-decoration: none; 
+		color: #363F44;
+	}
+}
+/*/////////////////////////*/
+
+
+
+/* RODAPE */
+
+td.rodape-duvidas,th.rodape-duvidas,span.rodape-duvidas{
+	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';  
+	font-size: 12px; 
+	padding-bottom: 10px; /* CONFIRMA ESPAÇAMENTO */ 
+	padding-top: 30px;
+}
+a.rodape-duvidas{
+	font-family: $global-font-family; 
+	font-size: 12px; 
+	color: #777;
+}
+th.rodape-padding{
+	padding: 0 40% 0 40%;
+}
+
+.rodape-logo-td{
+	padding: 50px 0 28px 0; 
+	margin-top: 150px;
+}
+
+.rodape-logos{
+	margin-top: 150px;
+}
+
+.rodape-duvida{
+	padding: 20px 0 55px 10px; 
+	font-size: 18px; 
+	line-height: 22px; 
+	font-family: $global-font-family; 
+	color: #666666;
+}
+
+.none{
+	display: none;
+}
+
+img.professores2{
+	display: inline-block; 
+	margin: 10px 25px 0 0px;
+	width: 96px;
+	height: 96px;		
+}
+
+img.professores-curso{
+	display: inline-block; 
+	margin: 10px 25px 0 0px;
+	width: 120px;
+	height: 120px;	
+}
+
+
+
+
+
+/* BOTOES e links */
+
+table.btn-margin{
+	margin: $btn-margin;
+}
+
+	/* BOTAO FORA DO BLOCO default-button*/
+table.btn-fora-margin{
+	margin: $btn-fora-margin;
+}
+
+
+
+
+span{
+	&.eberick{
+		color: #363F44; 
+		font-size: 3; 
+		font-family: $title-fonte; 
+		line-height: 1.5;
+	}
+	&.investimento-title,&.cp-title,&.eberick-title2{
+		color: #363F44; 
+		font-family: $title-fonte; 
+		font-size: 4;
+	}
+
+	&.eberick-title1{
+		color:#24CFE0; 
+		font-size: 3; 
+		font-family: $title-fonte;
+	}
+
+	&.cp{
+		color: #363F44; 
+		line-height: 1.5; 
+		font-size: 3; 
+		font-family: $global-font-family;
+	}
+
+	&.investimento-rS{
+		color: $header-background;
+		font-size: 40px; 
+		font-family: $global-font-family;
+	}
+
+	&.investimento-preco{
+		color: $header-background; 
+		font-size: 60px; 
+		font-family: $global-font-family;
+	}
+
+	&.investimento-adquirir{
+		color: #363F44; 
+		font-family: $global-font-family; 
+		font-size: 2;
+	}
+	&.professores2{
+		font-family: $global-font-family;
+		color: #363f44;
+		line-height: 1.5;
+		margin: 0px;
+		padding-right: 50px;
+	}
+}
+
+
+
+
+/* TIPOGRAFIA titulos*/
+
+%titles-padrao{
+	font-family: $title-fonte; 
+	padding-right: 32px;
+	padding-left: 32px;
+}
+
+h3 {
+  	&.professores2{
+		font-weight:600; 
+		text-align: left; 
+		margin-top:30px; 
+		margin-bottom:20px;
+		font-family: $title-fonte;
+		color: #363f44;
+		font-size: 4;
+	}
+	&.eberick-title1{
+		font-weight:600; 
+		text-align: left;
+		margin:{
+			top:30px;   
+			bottom:0;
+		}	 
+	}
+	&.investimento-preco,&.eberick-title2{
+		font-weight:600; 
+		text-align: left; 
+		margin-top:0px; 
+		margin-bottom: 0;
+	}
+	&.investimento-title,&.cp-title,&.formato-title{
+		font-weight:600; 
+		text-align: left; 
+		margin-top: 30px;   
+		margin-bottom: 0;
+	}
+	&.investimento-adquirir{
+		font-weight: 600; 
+		text-align: left; 
+		margin-top:0px; 
+		margin-bottom:30px; 
+		text-transform: uppercase;
+	}
+}
+
+
+ul{
+	list-style-type: none;
+}

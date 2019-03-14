@@ -1,0 +1,456 @@
+// Foundation for Emails by ZURB
+// zurb.com/ink/
+// Licensed under MIT Open Source
+
+////
+/// @group button
+
+
+
+
+////
+
+/// Padding inside buttons at various sizes.
+/// @type Map
+$btn-padding: (
+  tiny: 4px 8px 4px 8px,
+  small: 5px 10px 5px 10px,
+  default: 16px 16px 16px 16px,
+  large: 10px 20px 10px 20px,
+);
+
+/// Font sizes of buttons at various sizes.
+/// @type Map
+$btn-font-size: (
+  tiny: 10px !important,
+  small: 12px !important,
+  default: 16px !important,
+  large: 20px !important,
+);
+
+
+/// Text color of buttons.
+/// @type Color
+$btn-default-color: $white;
+
+/// Text color of buttons with a light background.
+/// @type Color
+$button-color-alt: $medium-gray;
+$btn-branco-color: #24CFE0;
+
+/// Font weight of buttons.
+/// @type Weight
+$btn-font-weight: bold !default;
+
+/// Margin around buttons.
+/// @type List
+$btn-margin: 0 0 $global-margin 0;
+$btn-fora-margin: 50px 0px 50px 0px;
+
+/// Background color of buttons.
+/// @type Color
+$btn-default-background: $header-background !default;
+
+/// Background color of buttons hover.
+/// @type Color
+$default-hover-background: #1560A0 !default;
+
+/// Background color of buttons hover.
+/// @type Color
+$alternative-hover-background: #D9E8F6 !default;
+
+/// Border around buttons.
+/// @type Border
+$btn-border: 2px solid $btn-default-background !default;
+
+/// Border radius of buttons. Not supported by all email clients.
+/// @type Number
+$btn-radius: 26px !default;
+
+/// Border radius of rounded buttons. Not supported by all email clients.
+/// @type Number
+$btn-rounded: $global-rounded !default;
+
+$color-link: $azul-default;
+
+%btn-sizes-padrao{
+  background-color: $btn-default-color; 
+  color:#fff; 
+  text-decoration: none; 
+  font-family: $global-font-family;  
+  font-weight: $btn-font-weight; 
+  border-radius:50px;
+  -webkit-border-radius: 50px; 
+  -moz-border-radius: 50px;      
+  text-align: center !important;
+  width: auto;
+} 
+
+%btn-types-padrao{
+  color:#fff; 
+  text-decoration: none; 
+  font-family: $global-font-family; 
+  font-size: map-get($btn-font-size, default); 
+  font-weight: $btn-font-weight; 
+  border-radius:50px;
+  -webkit-border-radius: 50px; 
+  -moz-border-radius: 50px;    
+  padding: map-get($btn-padding, default);
+  text-align: center !important;
+}
+
+a{
+  /* PRIMEIRO LINK TOPO */
+  &.clique-aqui{
+    text-decoration: none;
+    font-size: x-small;  
+    font-family: 'Tahoma','Geneva','sans-serif';
+    &.default{
+      color: $global-font-color;
+    }
+    &.branco{
+      color: $white;
+    }  
+  }
+  /*///////////////////*/
+
+  &.alternative-btn{
+      background-color: $white;
+      border: 1px solid $header-background;
+      color: $global-font-color; 
+      text-decoration: none; 
+      font-family: $global-font-family; 
+      font-size: $global-font-size; 
+      font-weight: $btn-font-weight; 
+      border-radius: $btn-radius;
+      -webkit-border-radius: $btn-radius; 
+      -moz-border-radius: $btn-radius;    
+      padding: map-get($btn-padding, default);
+      text-align: center !important;
+      width: 200px;
+      display: inline-block;
+      &:hover{ background-color: $alternative-hover-background !important; }
+  }
+
+  &.default-btn{
+    padding: map-get($btn-padding, default);
+    font-size: $global-font-size;
+    background-color: $btn-default-background; 
+    color: $white; 
+    text-decoration: none; 
+    font-family: $global-font-family;  
+    font-weight: $btn-font-weight; 
+    border-radius: $btn-radius;
+    -webkit-border-radius: $btn-radius; 
+    -moz-border-radius: $btn-radius;      
+    text-align: center !important;
+    width: auto;
+    &:hover{ background-color: $default-hover-background !important; }
+  }
+
+
+
+    /*LINKS*/
+  &.link-arrow{
+    font-family: $global-font-family; 
+    font-size: $global-font-size; 
+    color: $color-link; 
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover{ color: $default-hover-background !important; }
+    &::after{ content: "\2192"; }
+  }
+  &.link-default{
+    font-family: $global-font-family; 
+    font-size: $global-font-size; 
+    color: $color-link; 
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover{ color: $default-hover-background !important; }
+  }
+
+  &.link-list{
+    font-family: $global-font-family; 
+    font-size: $global-font-size; 
+    color: $global-font-color; 
+    font-weight: normal;
+    text-decoration: none;
+    &:hover{ 
+      color: $azul-default !important;
+      font-weight: bold !important; 
+    }
+  }
+
+  &.link-card{
+    color: $global-font-color;
+    font-family: $global-font-family;
+    font-weight: normal;
+    text-decoration: underline;
+    &:hover{ color: $default-hover-background !important;}
+    &::after{ content: "\2192"; }
+  }
+
+
+}
+/*/////////////////////////*/
+
+
+
+
+
+table.button {
+  width: auto;
+  margin: $btn-margin;
+  Margin: $btn-margin;
+
+  table {
+
+    td {
+      text-align: left;
+      color: $white;
+      background: $btn-default-background;
+      border: $btn-border;
+
+      a {
+        font-family: $global-font-family;
+        font-size: map-get($btn-font-size, default);
+        font-weight: $btn-font-weight;
+        color: $white;
+        text-decoration: none;
+        text-align: left;
+        display: inline-block;
+        padding: map-get($btn-padding, default);
+        border: 0 solid $btn-default-background;
+        border-radius: $btn-radius;
+      }
+    }
+  }
+
+  &.radius table td {
+    border-radius: $btn-radius;
+    border: none;
+  }
+
+  &.rounded table td {
+    border-radius: $btn-rounded;
+    border: none;
+  }
+}
+
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.tiny:hover table tr td a,
+table.button.tiny:active table tr td a,
+table.button.tiny table tr td a:visited,
+table.button.small:hover table tr td a,
+table.button.small:active table tr td a,
+table.button.small table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: $white;
+
+}
+
+table.button.tiny {
+  table {
+    td,
+    a {
+      padding: map-get($btn-padding, tiny);
+    }
+
+    a {
+      font-size: map-get($btn-font-size, tiny);
+      font-weight: normal;
+    }
+  }
+}
+
+table.button.small {
+  table {
+    td,
+    a {
+      padding: map-get($btn-padding, small);
+      font-size: map-get($btn-font-size, small);
+    }
+  }
+  
+}
+
+table.button.large {
+  table {
+    a {
+      padding: map-get($btn-padding, large);
+      font-size: map-get($btn-font-size, large);
+    }
+  }
+}
+
+table.button.expand,
+table.button.expanded {
+  width: 100%;
+
+  table {
+    width: 100%;
+
+    a {
+      text-align: center;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  center {
+    min-width: 0;
+  }
+}
+
+table.button:hover,
+table.button:visited,
+table.button:active {
+  table {
+    td {
+      background: darken($btn-default-background, 10%);
+      color: $white;
+    }
+  }
+}
+
+table.button:hover,
+table.button:visited,
+table.button:active {
+  table {
+    a {
+      border: 0 solid darken($btn-default-background, 10%);
+    }
+  }
+}
+
+table.button.secondary {
+  table {
+    td {
+      background: $secondary-color;
+      color: $white;
+      border: 0px solid $secondary-color;
+    }
+
+    a {
+      color: $white;
+      border: 0 solid $secondary-color;
+    }
+  }
+}
+
+table.button.secondary:hover {
+  table {
+    td {
+      background: lighten($secondary-color, 10%);
+      color: $white;
+    }
+
+    a {
+      border: 0 solid lighten($secondary-color, 10%);
+    }
+  }
+}
+
+table.button.secondary:hover {
+  table {
+    td a {
+      color: $white;
+    }
+  }
+}
+
+table.button.secondary:active {
+  table {
+    td a {
+      color: $white;
+    }
+  }
+}
+
+table.button.secondary {
+  table {
+    td a:visited {
+      color: $white;
+    }
+  }
+}
+
+table.button.success {
+  table {
+    td {
+      background: $success-color;
+      border: 0px solid $success-color;
+    }
+
+    a {
+      border: 0 solid $success-color;
+    }
+  }
+}
+
+table.button.success:hover {
+  table {
+    td {
+      background: darken($success-color, 10%);
+    }
+
+    a {
+      border: 0 solid darken($success-color, 10%);
+    }
+  }
+}
+
+table.button.alert {
+  table {
+    td {
+      background: $alert-color;
+      border: 0px solid $alert-color;
+    }
+
+    a {
+      border: 0 solid $alert-color;
+    }
+  }
+}
+
+table.button.alert:hover {
+  table {
+    td {
+      background: darken($alert-color, 10%);
+    }
+
+    a {
+      border: 0 solid darken($alert-color, 10%);
+    }
+  }
+}
+
+table.button.warning {
+  table {
+    td {
+      background: $warning-color;
+      border: 0px solid $warning-color;
+    }
+
+    a {
+      border: 0px solid $warning-color;
+    }
+  }
+}
+
+table.button.warning:hover {
+  table {
+    td {
+      background: darken($warning-color, 10%);
+    }
+
+    a {
+      border: 0px solid darken($warning-color, 10%);
+    }
+  }
+}
