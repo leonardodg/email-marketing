@@ -149,11 +149,17 @@ gulp.task('campanhas-html-final', function() {
                 .pipe(gulp.dest('public/campanhas/2019'));
 });
 
-/* Tarefa default, monitora as pastas e executa as 5 tarefas anteriores em sequencia em qualquer mudança.*/
-gulp.task('default', function () {
-  watch(['sass/foundation-scss/*.scss','public/images/icons/*','campanhas/2019/*.html'],
+gulp.task('watch-all', function () {
+  watch(['sass/foundation-scss/*.scss','sass/foundation-scss/components/*.scss','sass/foundation-scss/grid/*.scss','sass/foundation-scss/settings/*.scss','sass/foundation-scss/util/*.scss','public/images/icons/*','campanhas/2019/*.html'],
       gulp.series('compass','css-series','replace-inline','campanhas-inline','campanhas-html-final')) 
 });
+
+/* Tarefa default, monitora as pastas e executa as 5 tarefas anteriores em sequencia em qualquer mudança.*/
+gulp.task('default',
+      gulp.series('compass','css-series','replace-inline','campanhas-inline','campanhas-html-final','watch-all') 
+);
+
+
 
 /* Tarefa para minificar e transferir os templates produzidos em 'qisat-foundation-templates' para 'public/templates'*/
 gulp.task('templates', function() {

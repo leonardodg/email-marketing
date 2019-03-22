@@ -169,12 +169,15 @@ table{
   padding-left: 8px;
 }
 
+
+
 table.list{
   width: 95%;
 }
 
 tr.list{
-  border: 1px #E5E5E5 solid; 
+  border: 1px solid #E5E5E5;
+  display: block;
 }
 
 th.list{

@@ -3,7 +3,9 @@
 // Licensed under MIT Open Source
 $header-background: #1C5485 !default;
 
-
+.alternative-btn{
+  border: 1px solid $header-background;
+}
 
 @import
   'util/util',

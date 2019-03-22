@@ -10,12 +10,24 @@
 /// @type Color
 
 $url-base : 'http://public-local.qisat.com.br';
+
+
+$color-default: #1C5485 !default;
+$color-agronomia: #006633 !default;
+$color-eletrica: #FF8C00 !default;
+$color-estrutural: #7c7c7b !default;
+$color-hidraulica: #1E7AC9 !default;
+$color-incendio: #B22222 !default;
+$color-presencial: #0000ff !default;
+
+
+
 // ------
 /// Temas Qisat padrão:
-$hidro: #1E7AC9;
-$eletrico: orange;
-$incendio: brown;
-$agronomia: #006633 ;
+$hidro: #1E90FF;
+$eletrico: #FF8C00; // #CFB53B
+$incendio: #8B4513;
+$agronomia: #006633;
 
 ///Cores Qisat padrões:
 $azul-default: #1E7AC9;
@@ -81,12 +93,12 @@ $global-width-small: 95% !default;
 /// @type length
 $global-gutter: 16px !default;
 
+
 /// Body background color.
 /// @type Length
 $body-background: $white !default;
 /// Color for the container background
 /// @type Color
-
 
 /// Color for the container background
 /// @type Color
@@ -118,7 +130,25 @@ $global-breakpoint: $global-width + $global-gutter !default;
 
 .retangulo{
 	width: 100%;
-	background-color: $verde-default;
+	background-color: $color-default;
+
+	&.eletrica{
+		background-color: $color-eletrica;
+	}
+
+	&.agronomia{
+		background-color: $color-agronomia;
+	}
+
+	&.estrutural{
+		background-color: $color-estrutural;
+	}
+
+	&.incendio{
+		background-color: $color-incendio;
+	}
+
+                                   
 }
 
 .header-hidro{
@@ -126,3 +156,7 @@ $global-breakpoint: $global-width + $global-gutter !default;
   	background-color: $hidro;	
 }
 
+.header-eletrico{
+	width: 100%;
+  	background-color: $eletrico;	
+}

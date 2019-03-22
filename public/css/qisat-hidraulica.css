@@ -1,16 +1,37 @@
 @charset "UTF-8";
+.alternative-btn {
+  border: 1px solid #1E7AC9;
+}
+
 .wrapper {
   width: 100%;
 }
 
 .retangulo {
   width: 100%;
-  background-color: #2DAD71;
+  background-color: #1C5485;
+}
+.retangulo.eletrica {
+  background-color: #FF8C00;
+}
+.retangulo.agronomia {
+  background-color: #006633;
+}
+.retangulo.estrutural {
+  background-color: #7c7c7b;
+}
+.retangulo.incendio {
+  background-color: #7c7c7b;
 }
 
 .header-hidro {
   width: 100%;
-  background-color: #1E7AC9;
+  background-color: #1E90FF;
+}
+
+.header-eletrico {
+  width: 100%;
+  background-color: #FF8C00;
 }
 
 #outlook a {
@@ -670,6 +691,10 @@ table.body table.container .hide-for-large * {
   }
 }
 
+p.destaque {
+  color: #1E7AC9;
+}
+
 /* TIPOGRAFIA titulos*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -893,32 +918,6 @@ li {
   line-height: 22px;
 }
 
-a.tiny-button, a.small-button, a.large-button {
-  background-color: #fefefe;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  text-align: center !important;
-  width: auto;
-}
-
-a.secondary-button, a.success-button, a.warning-button, a.alert-button {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-size: 16px !important;
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  padding: 16px 16px 16px 16px;
-  text-align: center !important;
-}
-
 a {
   /* PRIMEIRO LINK TOPO */
   /*///////////////////*/
@@ -937,7 +936,6 @@ a.clique-aqui.branco {
 }
 a.alternative-btn {
   background-color: #fefefe;
-  border: 1px solid #1E7AC9;
   color: #363F44;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1307,7 +1305,8 @@ table.list {
 }
 
 tr.list {
-  border: 1px #E5E5E5 solid;
+  border: 1px solid #E5E5E5;
+  display: block;
 }
 
 th.list {
@@ -1864,8 +1863,8 @@ ul {
   list-style-type: none;
 }
 
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
-  background-image: url('http://public-local.qisat.com.br/images/icons-s42a684e4db.png');
+.icons-hidraulico-sprite, .icons-hidraulico-alt-promo, .icons-hidraulico-facebook, .icons-hidraulico-facebook2, .icons-hidraulico-icon-acesso, .icons-hidraulico-icon-addcheck, .icons-hidraulico-icon-cargahor, .icons-hidraulico-icon-certificado, .icons-hidraulico-icon-encontros, .icons-hidraulico-icon-menu, .icons-hidraulico-icon-metodologia, .icons-hidraulico-icon-online, .icons-hidraulico-icon-people, .icons-hidraulico-icon-prazo, .icons-hidraulico-icon-school, .icons-hidraulico-icon-screen, .icons-hidraulico-icon-shopcart, .icons-hidraulico-instagram, .icons-hidraulico-linkedin, .icons-hidraulico-linkedin2, .icons-hidraulico-lote1, .icons-hidraulico-lote2, .icons-hidraulico-lote3, .icons-hidraulico-lote4, .icons-hidraulico-twitter2, .icons-hidraulico-youtube, .icons-hidraulico-youtube2 {
+  background-image: url('http://public-local.qisat.com.br/images/icons-hidraulico-sddfe777793.png');
   background-repeat: no-repeat;
 }
 
@@ -1876,210 +1875,162 @@ span.icon{
 	  display: inline-block; // or block
 
 }*/
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
+.icons-hidraulico-sprite, .icons-hidraulico-alt-promo, .icons-hidraulico-facebook, .icons-hidraulico-facebook2, .icons-hidraulico-icon-acesso, .icons-hidraulico-icon-addcheck, .icons-hidraulico-icon-cargahor, .icons-hidraulico-icon-certificado, .icons-hidraulico-icon-encontros, .icons-hidraulico-icon-menu, .icons-hidraulico-icon-metodologia, .icons-hidraulico-icon-online, .icons-hidraulico-icon-people, .icons-hidraulico-icon-prazo, .icons-hidraulico-icon-school, .icons-hidraulico-icon-screen, .icons-hidraulico-icon-shopcart, .icons-hidraulico-instagram, .icons-hidraulico-linkedin, .icons-hidraulico-linkedin2, .icons-hidraulico-lote1, .icons-hidraulico-lote2, .icons-hidraulico-lote3, .icons-hidraulico-lote4, .icons-hidraulico-twitter2, .icons-hidraulico-youtube, .icons-hidraulico-youtube2 {
   display: inline-block;
 }
 
-.icons-alt-cargahor {
+.icons-hidraulico-alt-promo {
   background-position: 0 0;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-certificado {
-  background-position: 0 -39px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-encontros {
-  background-position: 0 -78px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-metodologia {
-  background-position: 0 -117px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-people {
-  background-position: 0 -156px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-promo {
-  background-position: 0 -195px;
   height: 66px;
   width: 66px;
 }
 
-.icons-facebook {
-  background-position: 0 -261px;
+.icons-hidraulico-facebook {
+  background-position: 0 -66px;
   height: 30px;
   width: 31px;
 }
 
-.icons-facebook2 {
-  background-position: 0 -291px;
+.icons-hidraulico-facebook2 {
+  background-position: 0 -96px;
   height: 25px;
   width: 26px;
 }
 
-.icons-ico_choraria {
+.icons-hidraulico-icon-acesso {
+  background-position: 0 -121px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-hidraulico-icon-addcheck {
+  background-position: 0 -160px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-hidraulico-icon-cargahor {
+  background-position: 0 -199px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-hidraulico-icon-certificado {
+  background-position: 0 -238px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-hidraulico-icon-encontros {
+  background-position: 0 -277px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-hidraulico-icon-menu {
   background-position: 0 -316px;
-  height: 33px;
-  width: 33px;
-}
-
-.icons-icon-acesso {
-  background-position: 0 -349px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-addcheck {
-  background-position: 0 -388px;
+.icons-hidraulico-icon-metodologia {
+  background-position: 0 -355px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-cargahor {
-  background-position: 0 -427px;
+.icons-hidraulico-icon-online {
+  background-position: 0 -394px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-certificado {
-  background-position: 0 -466px;
+.icons-hidraulico-icon-people {
+  background-position: 0 -433px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-encontros {
-  background-position: 0 -505px;
+.icons-hidraulico-icon-prazo {
+  background-position: 0 -472px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-menu {
-  background-position: 0 -544px;
+.icons-hidraulico-icon-school {
+  background-position: 0 -511px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-metodologia {
-  background-position: 0 -583px;
+.icons-hidraulico-icon-screen {
+  background-position: 0 -550px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-online {
-  background-position: 0 -622px;
+.icons-hidraulico-icon-shopcart {
+  background-position: 0 -589px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-people {
-  background-position: 0 -661px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-prazo {
-  background-position: 0 -700px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-school {
-  background-position: 0 -739px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-screen {
-  background-position: 0 -778px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-shopcart {
-  background-position: 0 -817px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-instagram-novo {
-  background-position: 0 -856px;
-  height: 24px;
-  width: 24px;
-}
-
-.icons-instagram {
-  background-position: 0 -880px;
+.icons-hidraulico-instagram {
+  background-position: 0 -628px;
   height: 30px;
   width: 30px;
 }
 
-.icons-linkedin {
-  background-position: 0 -910px;
+.icons-hidraulico-linkedin {
+  background-position: 0 -658px;
   height: 30px;
   width: 31px;
 }
 
-.icons-linkedin2 {
-  background-position: 0 -940px;
+.icons-hidraulico-linkedin2 {
+  background-position: 0 -688px;
   height: 25px;
   width: 26px;
 }
 
-.icons-lote1 {
-  background-position: 0 -965px;
+.icons-hidraulico-lote1 {
+  background-position: 0 -713px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote2 {
-  background-position: 0 -987px;
+.icons-hidraulico-lote2 {
+  background-position: 0 -735px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote3 {
-  background-position: 0 -1009px;
+.icons-hidraulico-lote3 {
+  background-position: 0 -757px;
   height: 22px;
   width: 51px;
 }
 
-.icons-lote4 {
-  background-position: 0 -1031px;
+.icons-hidraulico-lote4 {
+  background-position: 0 -779px;
   height: 22px;
   width: 51px;
 }
 
-.icons-twitter {
-  background-position: 0 -1053px;
+.icons-hidraulico-twitter2 {
+  background-position: 0 -801px;
   height: 25px;
   width: 25px;
 }
 
-.icons-twitter2 {
-  background-position: 0 -1078px;
-  height: 25px;
-  width: 25px;
-}
-
-.icons-youtube {
-  background-position: 0 -1103px;
+.icons-hidraulico-youtube {
+  background-position: 0 -826px;
   height: 30px;
   width: 30px;
 }
 
-.icons-youtube2 {
-  background-position: 0 -1133px;
+.icons-hidraulico-youtube2 {
+  background-position: 0 -856px;
   height: 25px;
   width: 25px;
 }

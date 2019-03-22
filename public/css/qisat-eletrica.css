@@ -1,16 +1,37 @@
 @charset "UTF-8";
+.alternative-btn {
+  border: 1px solid #FF8C00;
+}
+
 .wrapper {
   width: 100%;
 }
 
 .retangulo {
   width: 100%;
-  background-color: #2DAD71;
+  background-color: #1C5485;
+}
+.retangulo.eletrica {
+  background-color: #FF8C00;
+}
+.retangulo.agronomia {
+  background-color: #006633;
+}
+.retangulo.estrutural {
+  background-color: #7c7c7b;
+}
+.retangulo.incendio {
+  background-color: #7c7c7b;
 }
 
 .header-hidro {
   width: 100%;
-  background-color: #1E7AC9;
+  background-color: #1E90FF;
+}
+
+.header-eletrico {
+  width: 100%;
+  background-color: #FF8C00;
 }
 
 #outlook a {
@@ -670,6 +691,10 @@ table.body table.container .hide-for-large * {
   }
 }
 
+p.destaque {
+  color: #FF8C00;
+}
+
 /* TIPOGRAFIA titulos*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -893,32 +918,6 @@ li {
   line-height: 22px;
 }
 
-a.tiny-button, a.small-button, a.large-button {
-  background-color: #fefefe;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  text-align: center !important;
-  width: auto;
-}
-
-a.secondary-button, a.success-button, a.warning-button, a.alert-button {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-size: 16px !important;
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  padding: 16px 16px 16px 16px;
-  text-align: center !important;
-}
-
 a {
   /* PRIMEIRO LINK TOPO */
   /*///////////////////*/
@@ -937,7 +936,6 @@ a.clique-aqui.branco {
 }
 a.alternative-btn {
   background-color: #fefefe;
-  border: 1px solid yellow;
   color: #363F44;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -957,7 +955,7 @@ a.alternative-btn:hover {
 a.default-btn {
   padding: 16px 16px 16px 16px;
   font-size: 16px;
-  background-color: yellow;
+  background-color: #FF8C00;
   color: #fefefe;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1027,8 +1025,8 @@ table.button {
 table.button table td {
   text-align: left;
   color: #fefefe;
-  background: yellow;
-  border: 2px solid yellow;
+  background: #FF8C00;
+  border: 2px solid #FF8C00;
 }
 table.button table td a {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1039,7 +1037,7 @@ table.button table td a {
   text-align: left;
   display: inline-block;
   padding: 16px 16px 16px 16px;
-  border: 0 solid yellow;
+  border: 0 solid #FF8C00;
   border-radius: 26px;
 }
 table.button.radius table td {
@@ -1109,14 +1107,14 @@ table.button.expanded center {
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td {
-  background: #cccc00;
+  background: #cc7000;
   color: #fefefe;
 }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a {
-  border: 0 solid #cccc00;
+  border: 0 solid #cc7000;
 }
 
 table.button.secondary table td {
@@ -1307,7 +1305,8 @@ table.list {
 }
 
 tr.list {
-  border: 1px #E5E5E5 solid;
+  border: 1px solid #E5E5E5;
+  display: block;
 }
 
 th.list {
@@ -1796,12 +1795,12 @@ span.cp {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-rS {
-  color: yellow;
+  color: #FF8C00;
   font-size: 40px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-preco {
-  color: yellow;
+  color: #FF8C00;
   font-size: 60px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
@@ -1864,8 +1863,8 @@ ul {
   list-style-type: none;
 }
 
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
-  background-image: url('http://public-local.qisat.com.br/images/icons-s42a684e4db.png');
+.icons-eletrico-sprite, .icons-eletrico-alt-promo, .icons-eletrico-facebook, .icons-eletrico-facebook2, .icons-eletrico-icon-acesso-eletrica, .icons-eletrico-icon-addcheck, .icons-eletrico-icon-cargahor, .icons-eletrico-icon-certificado, .icons-eletrico-icon-encontros, .icons-eletrico-icon-menu, .icons-eletrico-icon-metodologia, .icons-eletrico-icon-online, .icons-eletrico-icon-people, .icons-eletrico-icon-prazo, .icons-eletrico-icon-school, .icons-eletrico-icon-screen, .icons-eletrico-icon-shopcart, .icons-eletrico-instagram-novo, .icons-eletrico-instagram, .icons-eletrico-linkedin, .icons-eletrico-linkedin2, .icons-eletrico-lote1, .icons-eletrico-lote2, .icons-eletrico-lote3, .icons-eletrico-lote4, .icons-eletrico-twitter, .icons-eletrico-twitter2, .icons-eletrico-youtube, .icons-eletrico-youtube2 {
+  background-image: url('http://public-local.qisat.com.br/images/icons-eletrico-sd2a0135c98.png');
   background-repeat: no-repeat;
 }
 
@@ -1876,210 +1875,174 @@ span.icon{
 	  display: inline-block; // or block
 
 }*/
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
+.icons-eletrico-sprite, .icons-eletrico-alt-promo, .icons-eletrico-facebook, .icons-eletrico-facebook2, .icons-eletrico-icon-acesso-eletrica, .icons-eletrico-icon-addcheck, .icons-eletrico-icon-cargahor, .icons-eletrico-icon-certificado, .icons-eletrico-icon-encontros, .icons-eletrico-icon-menu, .icons-eletrico-icon-metodologia, .icons-eletrico-icon-online, .icons-eletrico-icon-people, .icons-eletrico-icon-prazo, .icons-eletrico-icon-school, .icons-eletrico-icon-screen, .icons-eletrico-icon-shopcart, .icons-eletrico-instagram-novo, .icons-eletrico-instagram, .icons-eletrico-linkedin, .icons-eletrico-linkedin2, .icons-eletrico-lote1, .icons-eletrico-lote2, .icons-eletrico-lote3, .icons-eletrico-lote4, .icons-eletrico-twitter, .icons-eletrico-twitter2, .icons-eletrico-youtube, .icons-eletrico-youtube2 {
   display: inline-block;
 }
 
-.icons-alt-cargahor {
+.icons-eletrico-alt-promo {
   background-position: 0 0;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-certificado {
-  background-position: 0 -39px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-encontros {
-  background-position: 0 -78px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-metodologia {
-  background-position: 0 -117px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-people {
-  background-position: 0 -156px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-promo {
-  background-position: 0 -195px;
   height: 66px;
   width: 66px;
 }
 
-.icons-facebook {
-  background-position: 0 -261px;
+.icons-eletrico-facebook {
+  background-position: 0 -66px;
   height: 30px;
   width: 31px;
 }
 
-.icons-facebook2 {
-  background-position: 0 -291px;
+.icons-eletrico-facebook2 {
+  background-position: 0 -96px;
   height: 25px;
   width: 26px;
 }
 
-.icons-ico_choraria {
+.icons-eletrico-icon-acesso-eletrica {
+  background-position: 0 -121px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-eletrico-icon-addcheck {
+  background-position: 0 -160px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-eletrico-icon-cargahor {
+  background-position: 0 -199px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-eletrico-icon-certificado {
+  background-position: 0 -238px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-eletrico-icon-encontros {
+  background-position: 0 -277px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-eletrico-icon-menu {
   background-position: 0 -316px;
-  height: 33px;
-  width: 33px;
-}
-
-.icons-icon-acesso {
-  background-position: 0 -349px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-addcheck {
-  background-position: 0 -388px;
+.icons-eletrico-icon-metodologia {
+  background-position: 0 -355px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-cargahor {
-  background-position: 0 -427px;
+.icons-eletrico-icon-online {
+  background-position: 0 -394px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-certificado {
-  background-position: 0 -466px;
+.icons-eletrico-icon-people {
+  background-position: 0 -433px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-encontros {
-  background-position: 0 -505px;
+.icons-eletrico-icon-prazo {
+  background-position: 0 -472px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-menu {
-  background-position: 0 -544px;
+.icons-eletrico-icon-school {
+  background-position: 0 -511px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-metodologia {
-  background-position: 0 -583px;
+.icons-eletrico-icon-screen {
+  background-position: 0 -550px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-online {
-  background-position: 0 -622px;
+.icons-eletrico-icon-shopcart {
+  background-position: 0 -589px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-people {
-  background-position: 0 -661px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-prazo {
-  background-position: 0 -700px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-school {
-  background-position: 0 -739px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-screen {
-  background-position: 0 -778px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-shopcart {
-  background-position: 0 -817px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-instagram-novo {
-  background-position: 0 -856px;
+.icons-eletrico-instagram-novo {
+  background-position: 0 -628px;
   height: 24px;
   width: 24px;
 }
 
-.icons-instagram {
-  background-position: 0 -880px;
+.icons-eletrico-instagram {
+  background-position: 0 -652px;
   height: 30px;
   width: 30px;
 }
 
-.icons-linkedin {
-  background-position: 0 -910px;
+.icons-eletrico-linkedin {
+  background-position: 0 -682px;
   height: 30px;
   width: 31px;
 }
 
-.icons-linkedin2 {
-  background-position: 0 -940px;
+.icons-eletrico-linkedin2 {
+  background-position: 0 -712px;
   height: 25px;
   width: 26px;
 }
 
-.icons-lote1 {
-  background-position: 0 -965px;
+.icons-eletrico-lote1 {
+  background-position: 0 -737px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote2 {
-  background-position: 0 -987px;
+.icons-eletrico-lote2 {
+  background-position: 0 -759px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote3 {
-  background-position: 0 -1009px;
+.icons-eletrico-lote3 {
+  background-position: 0 -781px;
   height: 22px;
   width: 51px;
 }
 
-.icons-lote4 {
-  background-position: 0 -1031px;
+.icons-eletrico-lote4 {
+  background-position: 0 -803px;
   height: 22px;
   width: 51px;
 }
 
-.icons-twitter {
-  background-position: 0 -1053px;
+.icons-eletrico-twitter {
+  background-position: 0 -825px;
   height: 25px;
   width: 25px;
 }
 
-.icons-twitter2 {
-  background-position: 0 -1078px;
+.icons-eletrico-twitter2 {
+  background-position: 0 -850px;
   height: 25px;
   width: 25px;
 }
 
-.icons-youtube {
-  background-position: 0 -1103px;
+.icons-eletrico-youtube {
+  background-position: 0 -875px;
   height: 30px;
   width: 30px;
 }
 
-.icons-youtube2 {
-  background-position: 0 -1133px;
+.icons-eletrico-youtube2 {
+  background-position: 0 -905px;
   height: 25px;
   width: 25px;
 }

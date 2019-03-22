@@ -207,6 +207,10 @@ $remove-ios-blue: true !default;
       line-height: 0;
     }
 }
+
+p.destaque{
+  color: $header-background;
+}
 /* TIPOGRAFIA titulos*/
 
 %titles-padrao{

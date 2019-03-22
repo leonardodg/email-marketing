@@ -1,7 +1,11 @@
 // Foundation for Emails by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
-$header-background: #2DAD71 !default;
+$header-background: #7c7c7b !default;
+
+.alternative-btn{
+  border: 1px solid $header-background;
+}
 
 @import
   'util/util',
@@ -19,6 +23,6 @@ $header-background: #2DAD71 !default;
   'components/outlook-first',
   'components/media-query',
   'components/qisat',
-  'components/icons-qisat';
+  'components/icons-estrutural';
 
 

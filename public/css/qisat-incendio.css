@@ -1,16 +1,37 @@
 @charset "UTF-8";
+.alternative-btn {
+  border: 1px solid #B22222;
+}
+
 .wrapper {
   width: 100%;
 }
 
 .retangulo {
   width: 100%;
-  background-color: #2DAD71;
+  background-color: #1C5485;
+}
+.retangulo.eletrica {
+  background-color: #FF8C00;
+}
+.retangulo.agronomia {
+  background-color: #006633;
+}
+.retangulo.estrutural {
+  background-color: #7c7c7b;
+}
+.retangulo.incendio {
+  background-color: #7c7c7b;
 }
 
 .header-hidro {
   width: 100%;
-  background-color: #1E7AC9;
+  background-color: #1E90FF;
+}
+
+.header-eletrico {
+  width: 100%;
+  background-color: #FF8C00;
 }
 
 #outlook a {
@@ -670,6 +691,10 @@ table.body table.container .hide-for-large * {
   }
 }
 
+p.destaque {
+  color: #B22222;
+}
+
 /* TIPOGRAFIA titulos*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -893,32 +918,6 @@ li {
   line-height: 22px;
 }
 
-a.tiny-button, a.small-button, a.large-button {
-  background-color: #fefefe;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  text-align: center !important;
-  width: auto;
-}
-
-a.secondary-button, a.success-button, a.warning-button, a.alert-button {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-size: 16px !important;
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  padding: 16px 16px 16px 16px;
-  text-align: center !important;
-}
-
 a {
   /* PRIMEIRO LINK TOPO */
   /*///////////////////*/
@@ -937,7 +936,6 @@ a.clique-aqui.branco {
 }
 a.alternative-btn {
   background-color: #fefefe;
-  border: 1px solid brown;
   color: #363F44;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -957,7 +955,7 @@ a.alternative-btn:hover {
 a.default-btn {
   padding: 16px 16px 16px 16px;
   font-size: 16px;
-  background-color: brown;
+  background-color: #B22222;
   color: #fefefe;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1027,8 +1025,8 @@ table.button {
 table.button table td {
   text-align: left;
   color: #fefefe;
-  background: brown;
-  border: 2px solid brown;
+  background: #B22222;
+  border: 2px solid #B22222;
 }
 table.button table td a {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1039,7 +1037,7 @@ table.button table td a {
   text-align: left;
   display: inline-block;
   padding: 16px 16px 16px 16px;
-  border: 0 solid brown;
+  border: 0 solid #B22222;
   border-radius: 26px;
 }
 table.button.radius table td {
@@ -1109,14 +1107,14 @@ table.button.expanded center {
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td {
-  background: #7c2020;
+  background: #871a1a;
   color: #fefefe;
 }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a {
-  border: 0 solid #7c2020;
+  border: 0 solid #871a1a;
 }
 
 table.button.secondary table td {
@@ -1307,7 +1305,8 @@ table.list {
 }
 
 tr.list {
-  border: 1px #E5E5E5 solid;
+  border: 1px solid #E5E5E5;
+  display: block;
 }
 
 th.list {
@@ -1796,12 +1795,12 @@ span.cp {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-rS {
-  color: brown;
+  color: #B22222;
   font-size: 40px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
 span.investimento-preco {
-  color: brown;
+  color: #B22222;
   font-size: 60px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
@@ -1864,8 +1863,8 @@ ul {
   list-style-type: none;
 }
 
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
-  background-image: url('http://public-local.qisat.com.br/images/icons-s42a684e4db.png');
+.icons-incendio-sprite, .icons-incendio-alt-promo, .icons-incendio-facebook, .icons-incendio-facebook2, .icons-incendio-icon-acesso, .icons-incendio-icon-addcheck, .icons-incendio-icon-cargahor, .icons-incendio-icon-certificado, .icons-incendio-icon-encontros, .icons-incendio-icon-menu, .icons-incendio-icon-metodologia, .icons-incendio-icon-online, .icons-incendio-icon-people, .icons-incendio-icon-prazo, .icons-incendio-icon-school, .icons-incendio-icon-screen, .icons-incendio-icon-shopcart, .icons-incendio-instagram-novo, .icons-incendio-instagram, .icons-incendio-linkedin, .icons-incendio-linkedin2, .icons-incendio-lote1, .icons-incendio-lote2, .icons-incendio-lote3, .icons-incendio-lote4, .icons-incendio-twitter, .icons-incendio-twitter2, .icons-incendio-youtube, .icons-incendio-youtube2 {
+  background-image: url('http://public-local.qisat.com.br/images/icons-incendio-s1e2affe74f.png');
   background-repeat: no-repeat;
 }
 
@@ -1876,210 +1875,174 @@ span.icon{
 	  display: inline-block; // or block
 
 }*/
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
+.icons-incendio-sprite, .icons-incendio-alt-promo, .icons-incendio-facebook, .icons-incendio-facebook2, .icons-incendio-icon-acesso, .icons-incendio-icon-addcheck, .icons-incendio-icon-cargahor, .icons-incendio-icon-certificado, .icons-incendio-icon-encontros, .icons-incendio-icon-menu, .icons-incendio-icon-metodologia, .icons-incendio-icon-online, .icons-incendio-icon-people, .icons-incendio-icon-prazo, .icons-incendio-icon-school, .icons-incendio-icon-screen, .icons-incendio-icon-shopcart, .icons-incendio-instagram-novo, .icons-incendio-instagram, .icons-incendio-linkedin, .icons-incendio-linkedin2, .icons-incendio-lote1, .icons-incendio-lote2, .icons-incendio-lote3, .icons-incendio-lote4, .icons-incendio-twitter, .icons-incendio-twitter2, .icons-incendio-youtube, .icons-incendio-youtube2 {
   display: inline-block;
 }
 
-.icons-alt-cargahor {
+.icons-incendio-alt-promo {
   background-position: 0 0;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-certificado {
-  background-position: 0 -39px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-encontros {
-  background-position: 0 -78px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-metodologia {
-  background-position: 0 -117px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-people {
-  background-position: 0 -156px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-alt-promo {
-  background-position: 0 -195px;
   height: 66px;
   width: 66px;
 }
 
-.icons-facebook {
-  background-position: 0 -261px;
+.icons-incendio-facebook {
+  background-position: 0 -66px;
   height: 30px;
   width: 31px;
 }
 
-.icons-facebook2 {
-  background-position: 0 -291px;
+.icons-incendio-facebook2 {
+  background-position: 0 -96px;
   height: 25px;
   width: 26px;
 }
 
-.icons-ico_choraria {
+.icons-incendio-icon-acesso {
+  background-position: 0 -121px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-incendio-icon-addcheck {
+  background-position: 0 -160px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-incendio-icon-cargahor {
+  background-position: 0 -199px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-incendio-icon-certificado {
+  background-position: 0 -238px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-incendio-icon-encontros {
+  background-position: 0 -277px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-incendio-icon-menu {
   background-position: 0 -316px;
-  height: 33px;
-  width: 33px;
-}
-
-.icons-icon-acesso {
-  background-position: 0 -349px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-addcheck {
-  background-position: 0 -388px;
+.icons-incendio-icon-metodologia {
+  background-position: 0 -355px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-cargahor {
-  background-position: 0 -427px;
+.icons-incendio-icon-online {
+  background-position: 0 -394px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-certificado {
-  background-position: 0 -466px;
+.icons-incendio-icon-people {
+  background-position: 0 -433px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-encontros {
-  background-position: 0 -505px;
+.icons-incendio-icon-prazo {
+  background-position: 0 -472px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-menu {
-  background-position: 0 -544px;
+.icons-incendio-icon-school {
+  background-position: 0 -511px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-metodologia {
-  background-position: 0 -583px;
+.icons-incendio-icon-screen {
+  background-position: 0 -550px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-online {
-  background-position: 0 -622px;
+.icons-incendio-icon-shopcart {
+  background-position: 0 -589px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-people {
-  background-position: 0 -661px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-prazo {
-  background-position: 0 -700px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-school {
-  background-position: 0 -739px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-screen {
-  background-position: 0 -778px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-icon-shopcart {
-  background-position: 0 -817px;
-  height: 39px;
-  width: 40px;
-}
-
-.icons-instagram-novo {
-  background-position: 0 -856px;
+.icons-incendio-instagram-novo {
+  background-position: 0 -628px;
   height: 24px;
   width: 24px;
 }
 
-.icons-instagram {
-  background-position: 0 -880px;
+.icons-incendio-instagram {
+  background-position: 0 -652px;
   height: 30px;
   width: 30px;
 }
 
-.icons-linkedin {
-  background-position: 0 -910px;
+.icons-incendio-linkedin {
+  background-position: 0 -682px;
   height: 30px;
   width: 31px;
 }
 
-.icons-linkedin2 {
-  background-position: 0 -940px;
+.icons-incendio-linkedin2 {
+  background-position: 0 -712px;
   height: 25px;
   width: 26px;
 }
 
-.icons-lote1 {
-  background-position: 0 -965px;
+.icons-incendio-lote1 {
+  background-position: 0 -737px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote2 {
-  background-position: 0 -987px;
+.icons-incendio-lote2 {
+  background-position: 0 -759px;
   height: 22px;
   width: 50px;
 }
 
-.icons-lote3 {
-  background-position: 0 -1009px;
+.icons-incendio-lote3 {
+  background-position: 0 -781px;
   height: 22px;
   width: 51px;
 }
 
-.icons-lote4 {
-  background-position: 0 -1031px;
+.icons-incendio-lote4 {
+  background-position: 0 -803px;
   height: 22px;
   width: 51px;
 }
 
-.icons-twitter {
-  background-position: 0 -1053px;
+.icons-incendio-twitter {
+  background-position: 0 -825px;
   height: 25px;
   width: 25px;
 }
 
-.icons-twitter2 {
-  background-position: 0 -1078px;
+.icons-incendio-twitter2 {
+  background-position: 0 -850px;
   height: 25px;
   width: 25px;
 }
 
-.icons-youtube {
-  background-position: 0 -1103px;
+.icons-incendio-youtube {
+  background-position: 0 -875px;
   height: 30px;
   width: 30px;
 }
 
-.icons-youtube2 {
-  background-position: 0 -1133px;
+.icons-incendio-youtube2 {
+  background-position: 0 -905px;
   height: 25px;
   width: 25px;
 }

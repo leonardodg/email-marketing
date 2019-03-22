@@ -73,31 +73,6 @@ $btn-rounded: $global-rounded !default;
 
 $color-link: $azul-default;
 
-%btn-sizes-padrao{
-  background-color: $btn-default-color; 
-  color:#fff; 
-  text-decoration: none; 
-  font-family: $global-font-family;  
-  font-weight: $btn-font-weight; 
-  border-radius:50px;
-  -webkit-border-radius: 50px; 
-  -moz-border-radius: 50px;      
-  text-align: center !important;
-  width: auto;
-} 
-
-%btn-types-padrao{
-  color:#fff; 
-  text-decoration: none; 
-  font-family: $global-font-family; 
-  font-size: map-get($btn-font-size, default); 
-  font-weight: $btn-font-weight; 
-  border-radius:50px;
-  -webkit-border-radius: 50px; 
-  -moz-border-radius: 50px;    
-  padding: map-get($btn-padding, default);
-  text-align: center !important;
-}
 
 a{
   /* PRIMEIRO LINK TOPO */
@@ -116,7 +91,6 @@ a{
 
   &.alternative-btn{
       background-color: $white;
-      border: 1px solid $header-background;
       color: $global-font-color; 
       text-decoration: none; 
       font-family: $global-font-family; 
@@ -131,7 +105,7 @@ a{
       display: inline-block;
       &:hover{ background-color: $alternative-hover-background !important; }
   }
-
+  
   &.default-btn{
     padding: map-get($btn-padding, default);
     font-size: $global-font-size;

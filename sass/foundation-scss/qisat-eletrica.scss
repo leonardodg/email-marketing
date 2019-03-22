@@ -3,7 +3,11 @@
 // Licensed under MIT Open Source
 
 
-$header-background: yellow !default;
+$header-background: #FF8C00 !default;
+
+.alternative-btn{
+  border: 1px solid $header-background;
+}
 
 @import
   'util/util',
@@ -21,6 +25,6 @@ $header-background: yellow !default;
   'components/outlook-first',
   'components/media-query',
   'components/qisat',
-  'components/icons-qisat';
+  'components/icons-eletrico';
 
 
