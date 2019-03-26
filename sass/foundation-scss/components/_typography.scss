@@ -209,7 +209,43 @@ $remove-ios-blue: true !default;
 }
 
 p.destaque{
-  color: $header-background;
+  color: $color-default;
+  &.eletrica{
+    color: $color-eletrica;
+  }
+
+  &.agronomia{
+    color: $color-agronomia;
+  }
+
+  &.estrutural{
+    color: $color-estrutural;
+  }
+
+  &.incendio{
+    color: $color-incendio;
+  }
+  &.hidraulica{
+    color: $color-hidraulica;
+  }
+  &.arquitetonica{
+    color: $color-arquitetonica;
+  }
+  &.cad{
+    color: $color-cad;
+  }
+  &.curso-presencial{
+    color: $color-curso-presencial;
+  }
+  &.administracao{
+    color: $color-administracao;
+  }
+  &.qualidade-desempenho{
+    color: $color-qualidade-desempenho;
+  }
+  &.gestao-projetos{
+    color: $color-gestao-projetos;
+  }
 }
 /* TIPOGRAFIA titulos*/
 

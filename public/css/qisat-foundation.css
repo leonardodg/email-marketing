@@ -1,37 +1,34 @@
-@charset "UTF-8";
-.alternative-btn {
-  border: 1px solid #1C5485;
-}
-
 .wrapper {
   width: 100%;
 }
 
-.retangulo {
+.retangulo, .header {
   width: 100%;
   background-color: #1C5485;
 }
-.retangulo.eletrica {
+.retangulo.eletrica, .header.eletrica {
   background-color: #FF8C00;
 }
-.retangulo.agronomia {
+.retangulo.agronomia, .header.agronomia {
   background-color: #006633;
 }
-.retangulo.estrutural {
+.retangulo.estrutural, .header.estrutural {
   background-color: #7c7c7b;
 }
-.retangulo.incendio {
-  background-color: #7c7c7b;
+.retangulo.incendio, .header.incendio {
+  background-color: #B22222;
 }
-
-.header-hidro {
-  width: 100%;
-  background-color: #1E90FF;
+.retangulo.hidraulica, .header.hidraulica {
+  background-color: #1E7AC9;
 }
-
-.header-eletrico {
-  width: 100%;
-  background-color: #FF8C00;
+.retangulo.arquitetonica, .header.arquitetonica {
+  background-color: #ebe4cc;
+}
+.retangulo.cad, .header.cad {
+  background-color: #736357;
+}
+.retangulo.curso-presencial, .header.curso-presencial {
+  background-color: #0000ff;
 }
 
 #outlook a {
@@ -694,6 +691,39 @@ table.body table.container .hide-for-large * {
 p.destaque {
   color: #1C5485;
 }
+p.destaque.eletrica {
+  color: #FF8C00;
+}
+p.destaque.agronomia {
+  color: #006633;
+}
+p.destaque.estrutural {
+  color: #7c7c7b;
+}
+p.destaque.incendio {
+  color: #B22222;
+}
+p.destaque.hidraulica {
+  color: #1E7AC9;
+}
+p.destaque.arquitetonica {
+  color: #ebe4cc;
+}
+p.destaque.cad {
+  color: #736357;
+}
+p.destaque.curso-presencial {
+  color: #0000ff;
+}
+p.destaque.administracao {
+  color: #ebe4cc;
+}
+p.destaque.qualidade-desempenho {
+  color: #736357;
+}
+p.destaque.gestao-projetos {
+  color: #0000ff;
+}
 
 /* TIPOGRAFIA titulos*/
 h1, h2, h3, h4, h5, h6 {
@@ -936,6 +966,7 @@ a.clique-aqui.branco {
 }
 a.alternative-btn {
   background-color: #fefefe;
+  border: 1px solid #1C5485;
   color: #363F44;
   text-decoration: none;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -948,6 +979,39 @@ a.alternative-btn {
   text-align: center !important;
   width: 200px;
   display: inline-block;
+}
+a.alternative-btn.eletrica {
+  border: 1px solid #FF8C00;
+}
+a.alternative-btn.agronomia {
+  border: 1px solid #006633;
+}
+a.alternative-btn.estrutural {
+  border: 1px solid #7c7c7b;
+}
+a.alternative-btn.incendio {
+  border: 1px solid #B22222;
+}
+a.alternative-btn.hidraulica {
+  border: 1px solid #1E7AC9;
+}
+a.alternative-btn.arquitetonica {
+  border: 1px solid #ebe4cc;
+}
+a.alternative-btn.cad {
+  border: 1px solid #736357;
+}
+a.alternative-btn.curso-presencial {
+  border: 1px solid #0000ff;
+}
+a.alternative-btn.administracao {
+  border: 1px solid #ebe4cc;
+}
+a.alternative-btn.qualidade-desempenho {
+  border: 1px solid #736357;
+}
+a.alternative-btn.gestao-projetos {
+  border: 1px solid #0000ff;
 }
 a.alternative-btn:hover {
   background-color: #D9E8F6 !important;
@@ -965,6 +1029,39 @@ a.default-btn {
   -moz-border-radius: 26px;
   text-align: center !important;
   width: auto;
+}
+a.default-btn.eletrica {
+  background-color: #FF8C00;
+}
+a.default-btn.agronomia {
+  background-color: #006633;
+}
+a.default-btn.estrutural {
+  background-color: #7c7c7b;
+}
+a.default-btn.incendio {
+  background-color: #B22222;
+}
+a.default-btn.hidraulica {
+  background-color: #1E7AC9;
+}
+a.default-btn.arquitetonica {
+  background-color: #ebe4cc;
+}
+a.default-btn.cad {
+  background-color: #736357;
+}
+a.default-btn.curso-presencial {
+  background-color: #0000ff;
+}
+a.default-btn.administracao {
+  background-color: #ebe4cc;
+}
+a.default-btn.qualidade-desempenho {
+  background-color: #736357;
+}
+a.default-btn.gestao-projetos {
+  background-color: #0000ff;
 }
 a.default-btn:hover {
   background-color: #1560A0 !important;
@@ -1595,106 +1692,8 @@ body {
   background: #eaeced;
 }
 
-a.secondary-button, a.success-button, a.warning-button, a.alert-button {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-size: 16px !important;
-  font-weight: bold;
-  border-radius: 50px;
-  padding: 8px 16px 8px 16px;
-  text-align: center !important;
-}
-
-a.tiny-button, a.small-button, a.large-button {
-  background-color: #1678ea;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  text-align: center !important;
-  width: auto;
-}
-
-a.btn-branco-large, a.btn-branco-default, a.btn-branco-small, a.btn-branco-tiny {
-  background-color: #fefefe;
-  color: #24CFE0;
-  border: 2px solid #24CFE0;
-  margin: 0 auto;
-  border-radius: 50px;
-  text-decoration: none;
-  font-family: "Titillium Web", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 30px;
-}
-
 a {
-  /* BOTAO FORA quero me inscrever fundo azul*/
   /*LINKS*/
-}
-a.secondary-button {
-  background: #777777;
-  border: 0px solid #777777;
-}
-a.success-button {
-  background: #3adb76;
-  border: 0px solid #3adb76;
-}
-a.warning-button {
-  background: #ffae00;
-  border: 0px solid #ffae00;
-}
-a.alert-button {
-  background: #ec5840;
-  border: 0px solid #ec5840;
-}
-a.tiny-button {
-  padding: 4px 8px 4px 8px;
-  font-size: 10px !important;
-}
-a.small-button {
-  padding: 5px 10px 5px 10px;
-  font-size: 12px !important;
-}
-a.large-button {
-  padding: 10px 20px 10px 20px;
-  font-size: 20px !important;
-}
-a.btn-branco-large {
-  padding: 10px 20px 10px 20px;
-  font-size: 20px !important;
-}
-a.btn-branco-default {
-  padding: 8px 16px 8px 16px;
-  font-size: 16px !important;
-}
-a.btn-branco-small {
-  padding: 5px 10px 5px 10px;
-  font-size: 12px !important;
-}
-a.btn-branco-tiny {
-  padding: 4px 8px 4px 8px;
-  font-size: 10px !important;
-}
-a.inscrever-button {
-  background-color: #24CFE0;
-  color: #fff;
-  padding: 8px 16px 8px 16px;
-  margin: 0 auto;
-  border-radius: 50px;
-  text-decoration: none;
-  font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
-  font-weight: bold;
-  font-size: 16px;
-  border: 2px solid #24CFE0;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
 }
 a.link {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1708,46 +1707,6 @@ a.investimento-adquirir {
 }
 
 /*/////////////////////////*/
-/* RODAPE */
-td.rodape-duvidas, th.rodape-duvidas, span.rodape-duvidas {
-  font-family: 'Titillium Web','Helvetica','Arial','sans-serif';
-  font-size: 12px;
-  padding-bottom: 10px;
-  /* CONFIRMA ESPA├çAMENTO */
-  padding-top: 30px;
-}
-
-a.rodape-duvidas {
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  font-size: 12px;
-  color: #777;
-}
-
-th.rodape-padding {
-  padding: 0 40% 0 40%;
-}
-
-.rodape-logo-td {
-  padding: 50px 0 28px 0;
-  margin-top: 150px;
-}
-
-.rodape-logos {
-  margin-top: 150px;
-}
-
-.rodape-duvida {
-  padding: 20px 0 55px 10px;
-  font-size: 18px;
-  line-height: 22px;
-  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
-  color: #666666;
-}
-
-.none {
-  display: none;
-}
-
 img.professores2 {
   display: inline-block;
   margin: 10px 25px 0 0px;
@@ -1763,15 +1722,6 @@ img.professores-curso {
 }
 
 /* BOTOES e links */
-table.btn-margin {
-  margin: 30px 0px 30px 0px;
-}
-
-/* BOTAO FORA DO BLOCO default-button*/
-table.btn-fora-margin {
-  margin: 50px 0px 50px 0px;
-}
-
 span.eberick {
   color: #363F44;
   font-size: 3;
@@ -1799,10 +1749,58 @@ span.investimento-rS {
   font-size: 40px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
 }
+span.investimento-rS.eletrica {
+  color: #FF8C00;
+}
+span.investimento-rS.agronomia {
+  color: #006633;
+}
+span.investimento-rS.estrutural {
+  color: #7c7c7b;
+}
+span.investimento-rS.incendio {
+  color: #B22222;
+}
+span.investimento-rS.hidraulica {
+  color: #1E7AC9;
+}
+span.investimento-rS.arquitetonica {
+  color: #ebe4cc;
+}
+span.investimento-rS.cad {
+  color: #736357;
+}
+span.investimento-rS.curso-presencial {
+  color: #0000ff;
+}
 span.investimento-preco {
   color: #1C5485;
   font-size: 60px;
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+}
+span.investimento-preco.eletrica {
+  color: #FF8C00;
+}
+span.investimento-preco.agronomia {
+  color: #006633;
+}
+span.investimento-preco.estrutural {
+  color: #7c7c7b;
+}
+span.investimento-preco.incendio {
+  color: #B22222;
+}
+span.investimento-preco.hidraulica {
+  color: #1E7AC9;
+}
+span.investimento-preco.arquitetonica {
+  color: #ebe4cc;
+}
+span.investimento-preco.cad {
+  color: #736357;
+}
+span.investimento-preco.curso-presencial {
+  color: #0000ff;
 }
 span.investimento-adquirir {
   color: #363F44;
@@ -1863,8 +1861,13 @@ ul {
   list-style-type: none;
 }
 
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso-eletrica, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
-  background-image: url('http://public-local.qisat.com.br/images/icons-sd25a0e54ce.png');
+span.rodape-duvidas {
+  color: #363F44;
+  font-size: 10px;
+}
+
+.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso-agronomia, .icons-icon-acesso-eletrica, .icons-icon-acesso-hidraulica, .icons-icon-acesso-incendio, .icons-icon-acesso, .icons-icon-addcheck-agronomia, .icons-icon-addcheck-eletrica, .icons-icon-addcheck-incendio, .icons-icon-addcheck, .icons-icon-cargahor-agronomia, .icons-icon-cargahor-eletrica, .icons-icon-cargahor-hidraulica, .icons-icon-cargahor-incendio, .icons-icon-cargahor, .icons-icon-certificado-agronomia, .icons-icon-certificado-eletrica, .icons-icon-certificado-hidraulica, .icons-icon-certificado-incendio, .icons-icon-certificado, .icons-icon-encontros-agronomia, .icons-icon-encontros-eletrica, .icons-icon-encontros-hidraulica, .icons-icon-encontros-incendio, .icons-icon-encontros, .icons-icon-menu-agronomia, .icons-icon-menu-eletrica, .icons-icon-menu-hidraulica, .icons-icon-menu-incendio, .icons-icon-menu, .icons-icon-metodologia-agronomia, .icons-icon-metodologia-eletrica, .icons-icon-metodologia-hidraulica, .icons-icon-metodologia-incendio, .icons-icon-metodologia, .icons-icon-online-agronomia, .icons-icon-online-eletrica, .icons-icon-online-hidraulica, .icons-icon-online-incendio, .icons-icon-online, .icons-icon-people-agronomia, .icons-icon-people-eletrica, .icons-icon-people-hidraulica, .icons-icon-people-incendio, .icons-icon-people, .icons-icon-prazo-agronomia, .icons-icon-prazo-eletrica, .icons-icon-prazo-hidraulica, .icons-icon-prazo-incendio, .icons-icon-prazo, .icons-icon-school-agronomia, .icons-icon-school-eletrica, .icons-icon-school-incendio, .icons-icon-school, .icons-icon-screen-agronomia, .icons-icon-screen-eletrica, .icons-icon-screen-incendio, .icons-icon-screen, .icons-icon-shopcart-agronomia, .icons-icon-shopcart-eletrica, .icons-icon-shopcart-incendio, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
+  background-image: url('http://public-local.qisat.com.br/images/icons-s7f2a38a5f9.png');
   background-repeat: no-repeat;
 }
 
@@ -1875,7 +1878,7 @@ span.icon{
 	  display: inline-block; // or block
 
 }*/
-.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso-eletrica, .icons-icon-acesso, .icons-icon-addcheck, .icons-icon-cargahor, .icons-icon-certificado, .icons-icon-encontros, .icons-icon-menu, .icons-icon-metodologia, .icons-icon-online, .icons-icon-people, .icons-icon-prazo, .icons-icon-school, .icons-icon-screen, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
+.icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso-agronomia, .icons-icon-acesso-eletrica, .icons-icon-acesso-hidraulica, .icons-icon-acesso-incendio, .icons-icon-acesso, .icons-icon-addcheck-agronomia, .icons-icon-addcheck-eletrica, .icons-icon-addcheck-incendio, .icons-icon-addcheck, .icons-icon-cargahor-agronomia, .icons-icon-cargahor-eletrica, .icons-icon-cargahor-hidraulica, .icons-icon-cargahor-incendio, .icons-icon-cargahor, .icons-icon-certificado-agronomia, .icons-icon-certificado-eletrica, .icons-icon-certificado-hidraulica, .icons-icon-certificado-incendio, .icons-icon-certificado, .icons-icon-encontros-agronomia, .icons-icon-encontros-eletrica, .icons-icon-encontros-hidraulica, .icons-icon-encontros-incendio, .icons-icon-encontros, .icons-icon-menu-agronomia, .icons-icon-menu-eletrica, .icons-icon-menu-hidraulica, .icons-icon-menu-incendio, .icons-icon-menu, .icons-icon-metodologia-agronomia, .icons-icon-metodologia-eletrica, .icons-icon-metodologia-hidraulica, .icons-icon-metodologia-incendio, .icons-icon-metodologia, .icons-icon-online-agronomia, .icons-icon-online-eletrica, .icons-icon-online-hidraulica, .icons-icon-online-incendio, .icons-icon-online, .icons-icon-people-agronomia, .icons-icon-people-eletrica, .icons-icon-people-hidraulica, .icons-icon-people-incendio, .icons-icon-people, .icons-icon-prazo-agronomia, .icons-icon-prazo-eletrica, .icons-icon-prazo-hidraulica, .icons-icon-prazo-incendio, .icons-icon-prazo, .icons-icon-school-agronomia, .icons-icon-school-eletrica, .icons-icon-school-incendio, .icons-icon-school, .icons-icon-screen-agronomia, .icons-icon-screen-eletrica, .icons-icon-screen-incendio, .icons-icon-screen, .icons-icon-shopcart-agronomia, .icons-icon-shopcart-eletrica, .icons-icon-shopcart-incendio, .icons-icon-shopcart, .icons-instagram-novo, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-twitter, .icons-twitter2, .icons-youtube, .icons-youtube2 {
   display: inline-block;
 }
 
@@ -1933,158 +1936,440 @@ span.icon{
   width: 33px;
 }
 
-.icons-icon-acesso-eletrica {
+.icons-icon-acesso-agronomia {
   background-position: 0 -349px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-acesso {
+.icons-icon-acesso-eletrica {
   background-position: 0 -388px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-addcheck {
+.icons-icon-acesso-hidraulica {
   background-position: 0 -427px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-cargahor {
+.icons-icon-acesso-incendio {
   background-position: 0 -466px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-certificado {
+.icons-icon-acesso {
   background-position: 0 -505px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-encontros {
+.icons-icon-addcheck-agronomia {
   background-position: 0 -544px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-menu {
+.icons-icon-addcheck-eletrica {
   background-position: 0 -583px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-metodologia {
+.icons-icon-addcheck-incendio {
   background-position: 0 -622px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-online {
+.icons-icon-addcheck {
   background-position: 0 -661px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-people {
+.icons-icon-cargahor-agronomia {
   background-position: 0 -700px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-prazo {
+.icons-icon-cargahor-eletrica {
   background-position: 0 -739px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-school {
+.icons-icon-cargahor-hidraulica {
   background-position: 0 -778px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-screen {
+.icons-icon-cargahor-incendio {
   background-position: 0 -817px;
   height: 39px;
   width: 40px;
 }
 
-.icons-icon-shopcart {
+.icons-icon-cargahor {
   background-position: 0 -856px;
   height: 39px;
   width: 40px;
 }
 
-.icons-instagram-novo {
+.icons-icon-certificado-agronomia {
   background-position: 0 -895px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-certificado-eletrica {
+  background-position: 0 -934px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-certificado-hidraulica {
+  background-position: 0 -973px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-certificado-incendio {
+  background-position: 0 -1012px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-certificado {
+  background-position: 0 -1051px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-encontros-agronomia {
+  background-position: 0 -1090px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-encontros-eletrica {
+  background-position: 0 -1129px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-encontros-hidraulica {
+  background-position: 0 -1168px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-encontros-incendio {
+  background-position: 0 -1207px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-encontros {
+  background-position: 0 -1246px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-menu-agronomia {
+  background-position: 0 -1285px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-menu-eletrica {
+  background-position: 0 -1324px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-menu-hidraulica {
+  background-position: 0 -1363px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-menu-incendio {
+  background-position: 0 -1402px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-menu {
+  background-position: 0 -1441px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-metodologia-agronomia {
+  background-position: 0 -1480px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-metodologia-eletrica {
+  background-position: 0 -1519px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-metodologia-hidraulica {
+  background-position: 0 -1558px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-metodologia-incendio {
+  background-position: 0 -1597px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-metodologia {
+  background-position: 0 -1636px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-online-agronomia {
+  background-position: 0 -1675px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-online-eletrica {
+  background-position: 0 -1714px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-online-hidraulica {
+  background-position: 0 -1753px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-online-incendio {
+  background-position: 0 -1792px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-online {
+  background-position: 0 -1831px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-people-agronomia {
+  background-position: 0 -1870px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-people-eletrica {
+  background-position: 0 -1909px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-people-hidraulica {
+  background-position: 0 -1948px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-people-incendio {
+  background-position: 0 -1987px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-people {
+  background-position: 0 -2026px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-prazo-agronomia {
+  background-position: 0 -2065px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-prazo-eletrica {
+  background-position: 0 -2104px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-prazo-hidraulica {
+  background-position: 0 -2143px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-prazo-incendio {
+  background-position: 0 -2182px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-prazo {
+  background-position: 0 -2221px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-school-agronomia {
+  background-position: 0 -2260px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-school-eletrica {
+  background-position: 0 -2299px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-school-incendio {
+  background-position: 0 -2338px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-school {
+  background-position: 0 -2377px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-screen-agronomia {
+  background-position: 0 -2416px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-screen-eletrica {
+  background-position: 0 -2455px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-screen-incendio {
+  background-position: 0 -2494px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-screen {
+  background-position: 0 -2533px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-shopcart-agronomia {
+  background-position: 0 -2572px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-shopcart-eletrica {
+  background-position: 0 -2611px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-shopcart-incendio {
+  background-position: 0 -2650px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-icon-shopcart {
+  background-position: 0 -2689px;
+  height: 39px;
+  width: 40px;
+}
+
+.icons-instagram-novo {
+  background-position: 0 -2728px;
   height: 24px;
   width: 24px;
 }
 
 .icons-instagram {
-  background-position: 0 -919px;
+  background-position: 0 -2752px;
   height: 30px;
   width: 30px;
 }
 
 .icons-linkedin {
-  background-position: 0 -949px;
+  background-position: 0 -2782px;
   height: 30px;
   width: 31px;
 }
 
 .icons-linkedin2 {
-  background-position: 0 -979px;
+  background-position: 0 -2812px;
   height: 25px;
   width: 26px;
 }
 
 .icons-lote1 {
-  background-position: 0 -1004px;
+  background-position: 0 -2837px;
   height: 22px;
   width: 50px;
 }
 
 .icons-lote2 {
-  background-position: 0 -1026px;
+  background-position: 0 -2859px;
   height: 22px;
   width: 50px;
 }
 
 .icons-lote3 {
-  background-position: 0 -1048px;
+  background-position: 0 -2881px;
   height: 22px;
   width: 51px;
 }
 
 .icons-lote4 {
-  background-position: 0 -1070px;
+  background-position: 0 -2903px;
   height: 22px;
   width: 51px;
 }
 
 .icons-twitter {
-  background-position: 0 -1092px;
+  background-position: 0 -2925px;
   height: 25px;
   width: 25px;
 }
 
 .icons-twitter2 {
-  background-position: 0 -1117px;
+  background-position: 0 -2950px;
   height: 25px;
   width: 25px;
 }
 
 .icons-youtube {
-  background-position: 0 -1142px;
+  background-position: 0 -2975px;
   height: 30px;
   width: 30px;
 }
 
 .icons-youtube2 {
-  background-position: 0 -1172px;
+  background-position: 0 -3005px;
   height: 25px;
   width: 25px;
 }

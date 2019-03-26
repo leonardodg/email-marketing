@@ -12,7 +12,6 @@ $color-alert: #ec5840;
 
 $background: #eaeced;
 
-$btn-default-color: #1678ea;
 $btn-default-fonte: 'Lato','Helvetica','Arial','sans-serif';
 $btn-branco-fonte: 'Titillium Web','Helvetica','Arial','sans-serif';
 $btn-margin: 30px 0px 30px 0px;
@@ -31,11 +30,6 @@ $btn-font-size: (
 );
 
 $azul-default: #1E7AC9;
-$color-primary: #2199e8;
-$color-secondary: #777777;
-$color-success: #3adb76;
-$color-warning: #ffae00;
-$color-alert: #ec5840;
 $color-link: $azul-default;
 
 
@@ -95,89 +89,6 @@ body {
 }
 
 a{
-
-	&.secondary-button{
-		background: $color-secondary;
-  		border: 0px solid $color-secondary;
-  		@extend %btn-types-padrao;
-	}
-
-	&.success-button{
-		background: $color-success;
-	  	border: 0px solid $color-success;
-	  	@extend %btn-types-padrao; 
-	}
-
-	&.warning-button{
-		background: $color-warning;
-	  	border: 0px solid $color-warning;
-	  	@extend %btn-types-padrao; 
-	}
-
-	&.alert-button{
-		background: $color-alert;
-	  	border: 0px solid $color-alert;
-	  	@extend %btn-types-padrao; 
-	}
-
-	&.tiny-button{
-		padding: map-get($btn-padding, tiny);
-		font-size: map-get($btn-font-size, tiny);
-		@extend %btn-sizes-padrao;
-	}
-
-	&.small-button{
-		padding: map-get($btn-padding, small);
-	  	font-size: map-get($btn-font-size, small);
-	  	@extend %btn-sizes-padrao;
-	  	
-	}
-
-	&.large-button{
-		padding: map-get($btn-padding, large);
-		font-size: map-get($btn-font-size, large);		
-		@extend %btn-sizes-padrao;
-	}
-
-	&.btn-branco-large{
-		@extend %btn-branco-padrao;
-		padding: map-get($btn-padding, large);  
-		font-size: map-get($btn-font-size, large);
-	}
-
-	&.btn-branco-default{
-		@extend %btn-branco-padrao;
-		padding: map-get($btn-padding, default);
-		font-size: map-get($btn-font-size, default);
-	}
-
-	&.btn-branco-small{
-		@extend %btn-branco-padrao;
-		padding: map-get($btn-padding, small);
-		font-size: map-get($btn-font-size, small); 
-	}
-
-	&.btn-branco-tiny{
-		@extend %btn-branco-padrao;
-		padding: map-get($btn-padding, tiny); 
-		font-size: map-get($btn-font-size, tiny);
-	}
-		/* BOTAO FORA quero me inscrever fundo azul*/
-	&.inscrever-button{
-		background-color:#24CFE0; 
-		color:#fff;
-		padding: 8px 16px 8px 16px;
-		margin:0 auto; 
-		border-radius:50px; 
-		text-decoration: none;  
-		font-family:'Titillium Web','Helvetica','Arial','sans-serif'; 
-		font-weight: bold; 
-		font-size:16px; 
-		border:2px solid #24CFE0; 
-		-moz-border-radius:30px; 
-		-webkit-border-radius:30px; 
-		border-radius:30px;
-	}
 		/*LINKS*/
 	&.link{
 		font-family: $global-font-family; 
@@ -194,43 +105,6 @@ a{
 
 
 
-/* RODAPE */
-
-td.rodape-duvidas,th.rodape-duvidas,span.rodape-duvidas{
-	font-family: 'Titillium Web','Helvetica','Arial','sans-serif';  
-	font-size: 12px; 
-	padding-bottom: 10px; /* CONFIRMA ESPAÇAMENTO */ 
-	padding-top: 30px;
-}
-a.rodape-duvidas{
-	font-family: $global-font-family; 
-	font-size: 12px; 
-	color: #777;
-}
-th.rodape-padding{
-	padding: 0 40% 0 40%;
-}
-
-.rodape-logo-td{
-	padding: 50px 0 28px 0; 
-	margin-top: 150px;
-}
-
-.rodape-logos{
-	margin-top: 150px;
-}
-
-.rodape-duvida{
-	padding: 20px 0 55px 10px; 
-	font-size: 18px; 
-	line-height: 22px; 
-	font-family: $global-font-family; 
-	color: #666666;
-}
-
-.none{
-	display: none;
-}
 
 img.professores2{
 	display: inline-block; 
@@ -251,15 +125,6 @@ img.professores-curso{
 
 
 /* BOTOES e links */
-
-table.btn-margin{
-	margin: $btn-margin;
-}
-
-	/* BOTAO FORA DO BLOCO default-button*/
-table.btn-fora-margin{
-	margin: $btn-fora-margin;
-}
 
 
 
@@ -291,13 +156,82 @@ span{
 	}
 
 	&.investimento-rS{
-		color: $header-background;
-		font-size: 40px; 
-		font-family: $global-font-family;
-	}
+		color: $color-default;
+			&.eletrica{
+				color: $color-eletrica;
+			}
+			&.agronomia{
+				color: $color-agronomia;
+			}
+			&.estrutural{
+				color: $color-estrutural;
+			}
+			&.incendio{
+				color: $color-incendio;
+			}
+			&.hidraulica{
+				color: $color-hidraulica;
+		  }
+			&.arquitetonica{
+		    color: $color-arquitetonica;
+		  }
+		  &.cad{
+		    color: $color-cad;
+		  }
+		  &.curso-presencial{
+		    color: $color-curso-presencial;
+		  }
+	    &.administracao{
+		    color: $color-administracao;
+		  }
+		  &.qualidade-desempenho{
+		    color: $color-qualidade-desempenho;
+		  }
+		  &.gestao-projetos{
+		    color: $color-gestao-projetos;
+		  }
+			font-size: 40px; 
+			font-family: $global-font-family;
+		}
 
 	&.investimento-preco{
-		color: $header-background; 
+		color: $color-default;
+		&.eletrica{
+			color: $color-eletrica;
+		}
+
+		&.agronomia{
+			color: $color-agronomia;
+		}
+
+		&.estrutural{
+			color: $color-estrutural;
+		}
+
+		&.incendio{
+			color: $color-incendio;
+		} 
+		&.hidraulica{
+			color: $color-hidraulica;
+		}
+		&.arquitetonica{
+	    color: $color-arquitetonica;
+	  }
+	  &.cad{
+	    color: $color-cad;
+	  }
+	  &.curso-presencial{
+	    color: $color-curso-presencial;
+	  }
+    &.administracao{
+	    color: $color-administracao;
+	  }
+	  &.qualidade-desempenho{
+	    color: $color-qualidade-desempenho;
+	  }
+	  &.gestao-projetos{
+	    color: $color-gestao-projetos;
+	  }      
 		font-size: 60px; 
 		font-family: $global-font-family;
 	}
@@ -369,4 +303,10 @@ h3 {
 
 ul{
 	list-style-type: none;
+}
+
+span.rodape-duvidas{
+	color: $global-font-color;
+	font-size: 12px;
+
 }

@@ -49,7 +49,7 @@ $btn-fora-margin: 50px 0px 50px 0px;
 
 /// Background color of buttons.
 /// @type Color
-$btn-default-background: $header-background !default;
+$btn-default-background: $color-default !default;
 
 /// Background color of buttons hover.
 /// @type Color
@@ -91,6 +91,47 @@ a{
 
   &.alternative-btn{
       background-color: $white;
+      border: 1px solid $color-default;
+      &.eletrica{
+        border: 1px solid $color-eletrica;
+      }
+
+      &.agronomia{
+        border: 1px solid $color-agronomia;
+      }
+
+      &.estrutural{
+        border: 1px solid $color-estrutural;
+      }
+
+      &.incendio{
+        border: 1px solid $color-incendio;
+      }
+
+      &.hidraulica{
+        border: 1px solid $color-hidraulica;
+      }
+
+      &.arquitetonica{
+        border: 1px solid $color-arquitetonica;
+      }
+
+      &.cad{
+        border: 1px solid $color-cad;
+      }
+
+      &.curso-presencial{
+        border: 1px solid $color-curso-presencial;
+      }
+      &.administracao{
+        border: 1px solid $color-administracao;
+      }
+      &.qualidade-desempenho{
+        border: 1px solid $color-qualidade-desempenho;
+      }
+      &.gestao-projetos{
+        border: 1px solid $color-gestao-projetos;
+      }
       color: $global-font-color; 
       text-decoration: none; 
       font-family: $global-font-family; 
@@ -109,7 +150,47 @@ a{
   &.default-btn{
     padding: map-get($btn-padding, default);
     font-size: $global-font-size;
-    background-color: $btn-default-background; 
+    background-color: $color-default;
+      &.eletrica{
+      background-color: $color-eletrica;
+      }
+
+      &.agronomia{
+        background-color: $color-agronomia;
+      }
+
+      &.estrutural{
+        background-color: $color-estrutural;
+      }
+
+      &.incendio{
+        background-color: $color-incendio;
+      } 
+
+      &.hidraulica{
+        background-color: $color-hidraulica;
+      }
+
+      &.arquitetonica{
+        background-color: $color-arquitetonica;
+      }
+
+      &.cad{
+        background-color: $color-cad;
+      }
+
+      &.curso-presencial{
+        background-color: $color-curso-presencial;
+      }
+      &.administracao{
+        background-color: $color-administracao;
+      }
+      &.qualidade-desempenho{
+        background-color: $color-qualidade-desempenho;
+      }
+      &.gestao-projetos{
+        background-color: $color-gestao-projetos;
+      } 
     color: $white; 
     text-decoration: none; 
     font-family: $global-font-family;  

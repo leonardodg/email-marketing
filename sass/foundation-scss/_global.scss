@@ -18,8 +18,12 @@ $color-eletrica: #FF8C00 !default;
 $color-estrutural: #7c7c7b !default;
 $color-hidraulica: #1E7AC9 !default;
 $color-incendio: #B22222 !default;
-$color-presencial: #0000ff !default;
-
+$color-arquitetonica: #ebe4cc !default;
+$color-cad: #736357 !default;
+$color-curso-presencial: #0000ff !default;
+$color-administracao: #ebe4cc !default;
+$color-qualidade-desempenho: #736357 !default;
+$color-gestao-projetos: #0000ff !default;
 
 
 // ------
@@ -128,7 +132,7 @@ $global-breakpoint: $global-width + $global-gutter !default;
   width: 100%;
 }
 
-.retangulo{
+.retangulo,.header{
 	width: 100%;
 	background-color: $color-default;
 
@@ -148,15 +152,18 @@ $global-breakpoint: $global-width + $global-gutter !default;
 		background-color: $color-incendio;
 	}
 
+	&.hidraulica{
+		background-color: $color-hidraulica;
+	}
+
+	&.arquitetonica{
+    background-color: $color-arquitetonica;
+  }
+  &.cad{
+    background-color: $color-cad;
+  }
+  &.curso-presencial{
+    background-color: $color-curso-presencial;
+  }
                                    
-}
-
-.header-hidro{
-	width: 100%;
-  	background-color: $hidro;	
-}
-
-.header-eletrico{
-	width: 100%;
-  	background-color: $eletrico;	
 }
