@@ -165,5 +165,15 @@ $global-breakpoint: $global-width + $global-gutter !default;
   &.curso-presencial{
     background-color: $color-curso-presencial;
   }
+
+  &.administracao{
+    background-color: $color-administracao;
+  }
+  &.qualidade-e-desempenho{
+    background-color: $color-qualidade-desempenho;
+  }
+  &.gestao-de-projetos{
+    background-color: $color-gestao-projetos;
+  }
                                    
 }
