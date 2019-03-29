@@ -5,9 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "compass": "^0.1.1",
+    "del": "^4.0.0",
     "dependencies": "0.0.1",
     "gulp": "^4.0.0",
-    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
@@ -28,7 +28,9 @@
     "gulp-watch": "^5.0.1",
     "jshint": "^2.9.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-clean": "^0.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -208,7 +208,7 @@ $remove-ios-blue: true !default;
     }
 }
 
-p.destaque{
+p.destaque,span.destaque{
   color: $color-default;
   &.eletrica{
     color: $color-eletrica;

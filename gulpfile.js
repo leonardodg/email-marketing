@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     htmlhint = require('gulp-htmlhint'),
     concat = require('gulp-concat'),
+    clean = require('gulp-clean'),
     htmlmin = require('gulp-htmlmin'),
     uglify = require ('gulp-uglify'),
     less  = require('gulp-less'),
@@ -17,6 +18,7 @@ var gulp = require('gulp'),
     removeEmptyLines = require('gulp-remove-empty-lines'),
     watch = require('gulp-watch'),
     compass = require('gulp-compass');
+const del = require('del');    
 
 
 var url_base = 'http://public-local.qisat.com.br'; // LOCAL
@@ -61,8 +63,10 @@ gulp.task('check-templates', function() {
 });*/
 /////////////////////////////////////////////////////////////////
 
-
-
+/*Pré-tarefa*/
+gulp.task('clean', function () {
+    return del(['public/css/**', '!css']);
+});
 
 /*1° Tarefa, monitora alterações e produz um arquivo .css final na pasta "public/css",
 além de produzir um arquivo css minificado com o mesmo conteúdo na mesma pasta*/    
@@ -156,7 +160,7 @@ gulp.task('watch-all', function () {
 
 /* Tarefa default, monitora as pastas e executa as 5 tarefas anteriores em sequencia em qualquer mudança.*/
 gulp.task('default',
-      gulp.series('compass','css-series','replace-inline','campanhas-inline','campanhas-html-final','watch-all') 
+      gulp.series('clean','compass','css-series','replace-inline','campanhas-inline','campanhas-html-final','watch-all') 
 );
 
 
