@@ -33,10 +33,11 @@ $btn-font-size: (
 /// @type Color
 $btn-default-color: $white;
 
+$btn-alt-color: $global-font-color;
+
 /// Text color of buttons with a light background.
 /// @type Color
 $button-color-alt: $medium-gray;
-$btn-branco-color: #24CFE0;
 
 /// Font weight of buttons.
 /// @type Weight
@@ -50,6 +51,7 @@ $btn-fora-margin: 50px 0px 50px 0px;
 /// Background color of buttons.
 /// @type Color
 $btn-default-background: $color-default !default;
+$btn-alt-background: $white !default;
 
 /// Background color of buttons hover.
 /// @type Color
@@ -90,7 +92,7 @@ a{
   /*///////////////////*/
 
   &.alternative-btn{
-      background-color: $white;
+      background-color: $btn-alt-background;
       border: 1px solid $color-default;
       &.eletrica{
         border: 1px solid $color-eletrica;
@@ -132,7 +134,7 @@ a{
       &.gestao-de-projetos{
         border: 1px solid $color-gestao-projetos;
       }
-      color: $global-font-color; 
+      color: $btn-alt-color; 
       text-decoration: none; 
       font-family: $global-font-family; 
       font-size: $global-font-size; 
@@ -191,7 +193,7 @@ a{
       &.gestao-projetos{
         background-color: $color-gestao-projetos;
       } 
-    color: $white; 
+    color: $btn-default-color; 
     text-decoration: none; 
     font-family: $global-font-family;  
     font-weight: $btn-font-weight; 

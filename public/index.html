@@ -12,6 +12,37 @@
     @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
     @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
   </style>
+  <style>
+    .sidenav {
+      width: 130px;
+      position: fixed;
+      z-index: 1;
+      top: 200px;
+      left: 10px;
+      background: #eee;
+      overflow-x: hidden;
+      padding: 8px 0;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #2196F3;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #064579;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+      .sidenav {display: none;}
+    }
+  </style>
+
 </head>
   <body>
 
@@ -30,7 +61,7 @@
                               <tr>
                                 <th class="small-6 large-6 columns">
                                   <a href="https://www.qisat.com.br" target="_blank">
-                                    <img src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                                    <img id="requisitos" name="requisitos" src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
                                   </a>
                                 </th>
                               </tr>
@@ -40,7 +71,8 @@
                             <tbody>
                               <tr>
                                 <th class="small-6 large-6 columns">
-                                  <h2 class="subtitle text-center">Funcionamento do Projeto</h2>
+                                  <h2 class="subtitle text-center">First Guide</h2>
+                                  <h4 class="subtitle text-center">Email-Marketing QiSat</h4>
                                 </th>
                               </tr>
                             </tbody>
@@ -49,7 +81,7 @@
                             <tbody>
                               <tr>
                                 <th class="small-6 large-6 columns">
-                                  <img src="/images/emailmarketing.jpg" class="float-center">
+                                  <img src="/images/email-marketing.jpg" class="float-center">
                                 </th>
                               </tr>
                             </tbody>
@@ -71,6 +103,16 @@
                           <td height="30px"></td>
                         </tr>
                       </tbody>
+                    </table>
+                    <table class="sidenav">
+                      <tr>
+                        <th>
+                          <a href="#requisitos">Requisitos</a>
+                          <a href="#gulp">Gulp</a>
+                          <a href="#sass">Sass</a>
+                          <a href="#templates">Templates</a>
+                        </th>
+                      </tr>  
                     </table>
                     <table class="row">
                       <tr>
@@ -194,14 +236,7 @@
                   <table class="row">
                     <tr>
                       <th>
-                        <h2 class="subtitle text-center">Gulp 4</h2>
-                      </th>
-                    </tr>
-                  </table>
-                  <table class="row">
-                    <tr>
-                      <th>
-                        <img src="https://pbs.twimg.com/profile_images/426240683704209409/95FQxeT2.png" class=" float-center" height="200px">
+                        <img id="gulp" name="gulp" src="/images/gulp.png" class=" float-center" height="200px">
                       </th>
                     </tr>
                   </table>
@@ -459,11 +494,171 @@
                       </tr>
                     </tbody>
                   </table>
+                </th>
+              </tr>
+            </table>    
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="sass" name="sass" src="/images/sass.png" class=" float-center" height="250px">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>        
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2>Sass</h2></strong>
+                          <p class="content" style="text-align: justify;">
+                            O Sass que será compilado para formar o Css está dividido em diversas áreas: 
+                          </p>
+                          <ul>
+                            <li>Alinhamentos: "aligment.scss"</li>
+                            <li>Botões: "button.scss"</li>
+                            <li>Cards e Blocos: "callout.scss"</li>
+                            <li>Sprite de ícones: "icons-qisat.scss"</li>
+                            <li>Media Query: "media-query.scss"</li>
+                            <li>Menu: "menu.scss"</li>
+                            <li>Ajustes: "normalize.scss"</li>
+                            <li>Outlook: "outlook-first.scss"</li>
+                            <li>Thumbnail: "thumbnail.scss"</li>
+                            <li>Tipografia: "typoography.scss"</li>
+                            <li>Qisat: "qisat.scss"</li>
+                            <li>Global: "global.scss"</li>
+                          </ul> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content" style="text-align: justify;">Variáveis QiSat:</h3></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content" style="text-align: justify;">Tipografia</h4>
+                          <ul>
+                            <li>$global-font-size - Tamanho da fonte de texto comum</li><br>
+                            <li>$global-font-weight - Peso da fonte de texto comum (normal/bold)</li><br>
+                            <li>$global-font-color - Cor da fonte de texto comum </li><br>
+                            <li>$global-font-family - Tipo de fonte de texto comum</li><br>
+                            <li>$global-line-height - Espaço entre linhas</li><br>
+                            <li>$title-line-height - Espaço entre linhas de títulos e subtítulos</li><br>
+                            <li>$h1-font-size - Tamanho da fonte de título h1</li><br>
+                            <li>$h2-font-size - Tamanho da fonte de título h2</li><br>
+                            <li>$h3-font-size - Tamanho da fonte de título h3</li><br>
+                            <li>$h4-font-size - Tamanho da fonte de título h4</li><br>
+                            <li>$h5-font-size - Tamanho da fonte de título h5</li><br>
+                            <li>$h6-font-size - Tamanho da fonte de título h6</li><br>
+                            <li>$content-padding - Padding em textos da classe "content"</li><br>
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content" style="text-align: justify;">Botões</h4>
+                          <ul>
+                            <li>$btn-padding - Padding dos botões (ajustável em tiny, small default e large)</li><br>
+                            <li>$btn-font-size - Tamanho da fonte dos botões (ajustável em tiny, small, default e large)</li><br>
+                            <li>$btn-default-color - Cor da fonte de botões default</li><br>                          
+                            <li>$btn-alt-color - Cor da fonte de botões alternative</li><br>
+                            <li>$btn-font-weight - Peso da fonte de botões (normal/bold)</li><br>
+                            <li>$btn-default-background - Cor de background de botões default</li><br>
+                            <li>$btn-alt-background - Cor de background de botões alternative</li><br>
+                            <li>$default-hover-background - Cor de hover de botões default</li><br>
+                            <li>$alternative-hover-background - Cor de hover de botões alternative</li><br>
+                            <li>$btn-radius - Curva da borda de botões</li><br>
+                            <li>$color-link - Cor de links</li><br>
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content" style="text-align: justify;">Cards (callout)</h4>
+                          <ul>
+                            <li>$card-width - Largura do card</li><br>
+                            <li>$card-margin - Margem do card</li><br>
+                            <li>$card-box-shadow - Borda sombreada do card</li><br>
+                            <li>$card-background - Cor do background do card</li><br>
+                            <li>$card-padding - Padding do card</li><br>
+                            <li>$card-align - Alinhamento do texto do card</li><br>
+                            <li>$card-border-radius - Curva da borda do card</li><br>
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content" style="text-align: justify;">1 - Global</h4>
+                          <ul>
+                            <li>$global-width - Largura do container</li><br>
+                            <li>$container-background - Cor do background do container </li><br>
+                            <li>$global-breakpoint - Ponto de mudança de estilos Desktop para Mobile</li><br>
+                            <li>$global-padding - Padding global para o conteúdo</li><br>
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content" style="text-align: justify;">2 - Global (cores)</h4>
+                          <ul>
+                            <li>$color-agronomia - Cor para campanha Ambiental e Agronômica (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-eletrica - Cor para campanha Elétrica (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-estrutural - Cor para campanha Estrutural (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-hidraulica - Cor para campanha Hidráulica (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-incendio - Cor para campanha Incêndio (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-arquitetonica - Cor para campanha Arquitetônica (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-cad - Cor para campanha CAD (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-qualidade-desempenho - Cor para campanha Qualidade e Desempenho (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-gestao-projetos - Cor para campanha Gestão de Projetos (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-curso-presencial - Cor para campanha Curso Presencial (cabeçalho, botões e bordas de botões)</li><br>
+                            <li>$color-default - Cor para campanha default (cabeçalho, botões e bordas de botões)</li><br>                         
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
                   <table class="row">
                     <tbody>
                       <tr>  
-                        <th class="small-6 large-6">
-                          <h2><a href="http://public-local.qisat.com.br/templates/">Templates QiSat</a></h2>
+                        <th id="templates" name="templates" class="small-6 large-6">
+                          <h2><a href="/templates/">Templates QiSat</a></h2>
                           <p class="content"><a href="/templates/qisat-catalogo-agronomia.html" class="link-arrow">Template Catálogo Agronomia</a></p>
                           <p class="content"><a href="/templates/qisat-catalogo-arquitetonico.html" class="link-arrow">Template Catálogo Arquitetônico</a></p>
                           <p class="content"><a href="/templates/qisat-catalogo-cad.html" class="link-arrow">Template Catálogo CAD</a></p>

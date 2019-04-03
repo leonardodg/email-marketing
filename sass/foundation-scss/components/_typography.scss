@@ -6,7 +6,6 @@
 /// @group typography
 ////
 $content-padding: 0px 32px 0px 32px;
-$first-content-padding: 0px 50px 0px 50px;
 /// Global font color.
 /// @type Color
 $global-font-color: #363F44 !default;
@@ -355,10 +354,6 @@ p {
 
   &.content{
     padding: $content-padding;
-  }
-
-  &.first-content{
-    padding: $first-content-padding;
   }
 }
 

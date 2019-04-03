@@ -830,9 +830,6 @@ p.subheader {
 p.content {
   padding: 0px 32px 0px 32px;
 }
-p.first-content {
-  padding: 0px 50px 0px 50px;
-}
 
 small {
   font-size: 80%;
@@ -1695,10 +1692,6 @@ body.outlook p {
   border: 0;
   padding: 0;
   margin: 0;
-}
-
-body {
-  background: #eaeced;
 }
 
 a {
