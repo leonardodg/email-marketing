@@ -12,36 +12,6 @@
     @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
     @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
   </style>
-  <style>
-    .sidenav {
-      width: 130px;
-      position: fixed;
-      z-index: 1;
-      top: 200px;
-      left: 10px;
-      background: #eee;
-      overflow-x: hidden;
-      padding: 8px 0;
-    }
-
-    .sidenav a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #2196F3;
-      display: block;
-    }
-
-    .sidenav a:hover {
-      color: #064579;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-      .sidenav {display: none;}
-    }
-  </style>
 
 </head>
   <body>
@@ -51,7 +21,7 @@
         <td class="float-center">
             <table align="center" class="retangulo header float-center">
               <tr>
-                <td class="wrapper-inner">
+                <td>
                   <table align="center">
                     <tbody>
                       <tr>
@@ -110,13 +80,23 @@
                           <a href="#requisitos">Requisitos</a>
                           <a href="#gulp">Gulp</a>
                           <a href="#sass">Sass</a>
-                          <a href="#templates">Templates</a>
+                          <a href="#alinhamentos">Alinhamentos</a>
+                          <a href="#botões">Botões</a>
+                          <a href="#cabeçalhos">Cabeçalho</a>
+                          <a href="#rodapé">Rodapé</a>
+                          <a href="#ícones">Ícones</a>
+                          <a href="#listas">Listas</a>
+                          <a href="#cards">Cards</a>
+                          <a href="#grid">Grid</a>
+                          <a href="#foundation">Foundation</a>
+                          <a href="#template-basico">Template Básico</a>
+                          <a href="#templates-qisat">Templates Qisat</a>
                         </th>
                       </tr>  
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>Requisitos:</h3>
                           <ul>
                             <li>1: Git/Github para clonar repositório</li>
@@ -131,7 +111,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>1 - Instalação Git:</h3>
                           <p class="content">O download para instalação do Git pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
@@ -146,7 +126,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>2 - Instalação Ruby:</h3>
                           <p class="content">O download para instalação do Ruby pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://rubyinstaller.org/downloads/">https://rubyinstaller.org/downloads/</a></p>
@@ -156,7 +136,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>3 - Instalação Node JS:</h3>
                           <p class="content">O download para instalação do Node JS pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
@@ -166,7 +146,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>4 - Instalação Compass:</h3>
                           <p class="content">A instalação do Compass é feita de uma forma mais manual, será necessário acessar a linha de comando (CLI) e digitar os seguintes comandos respectivamente:</p>
                           <p class="content">gem update --system</p>
@@ -177,7 +157,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>5 - Instalação Gulp:</h3>
                           <ul>
                             <li>Abra o prompt de comando (CLI)</li>
@@ -190,7 +170,7 @@
                     </table>
                     <table class="row">
                       <tr>
-                        <th class="small-6 large-6 columns first last">
+                        <th class="small-6 large-6 columns first last doc-alignment">
                           <h3>6 - Servidor Web:</h3>
                           <p class="content">Caso já não possua um servidor web faça o download de um servidor do Chrome no link a seguir:</p>
                           <p class="content"><a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en">https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en</a></p>
@@ -251,7 +231,7 @@
                       <tr>
                         <th class="small-6 large-6 columns first last">
                           <strong><h2 class="">Gulp 4</h2></strong>
-                          <p class="content" style="text-align: justify;">
+                          <p class="content doc-alignment">
                               Caso você não tenha ainda o Gulp 4 e/ou os plugins necessários instalado na sua máquina, a instalação é simples, siga os passos abaixo: 
                           </p> 
                         </th>
@@ -274,8 +254,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Detalhe:</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Detalhe:</h4></strong>
+                          <p class="content doc-alignment">
                               O gulp deve sempre ser utilizado pelo CLI na pasta raíz do projeto onde deverá estar localizado o arquivo "gulpfile.js".
                           </p>
                           <table class="spacer">
@@ -292,7 +272,7 @@
                       <tr>
                         <th class="small-6 large-6 columns first last">
                           <strong><h2 class="">Funcionamento do Gulp para a produção de Campanhas</h2></strong>
-                          <p class="content" style="text-align: justify;">
+                          <p class="content doc-alignment">
                               Para a Produção de uma campanha de Email será necessário a utilização do Gulp, portanto listamos a seguir as tarefas que serão realizadas por ele:
                           </p>
                           <table class="spacer">
@@ -308,8 +288,8 @@
                     <tbody>
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h3 class="content" style="text-align: justify;">Automatização</h3></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h3 class="content doc-alignment">Automatização</h3></strong>
+                          <p class="content doc-alignment">
                               O gulp como um automatizador de tarefas tem como função principal otimizar o tempo gasto com tarefas manuais, portanto criamos a tarefa "default", para evitar que todas as tarefas listadas sejam executadas uma a uma.
                           </p>
                           <table class="spacer">
@@ -325,8 +305,8 @@
                     <tbody>
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa default ("gulp")</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa default ("gulp")</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa terá como função um "watch", que irá monitorar as pastas 'campanhas/2019/' 'public/images/icons/' e 'sass/foundation-scss/', assim havendo qualquer mudança em algumas das pastas, ele realizará todas as tarefas em sequência de forma automática.<br><br>
                               A tarefa default pode ser chamada simplesmente digitando "gulp" na linha de comando no diretório raíz do projeto.
                           </p>
@@ -341,7 +321,7 @@
                   </table>
                   <table class="row">  
                     <tr>  
-                      <th class="small-6 large-6 columns last">
+                      <th class="small-6 large-6 columns last doc-alignment">
                         <h3 class="small-text-center"><strong>Tarefas do gulp a serem executadas</strong></h3>
                         <ul>
                           <li>Tarefa 1: "gulp clean"</li>
@@ -358,8 +338,8 @@
                     <tbody>
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 1 - "gulp clean"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 1 - "gulp clean"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa será responsável por deletar o css antigo para que o gulp compile um novo com as mudanças após o ciclo do watch.<br>
                               A tarefa clean só será executada no primeiro ciclo da tarefa default e não voltará a ser executada.
                           </p>
@@ -376,8 +356,8 @@
                     <tbody>
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 2 - "gulp compass"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 2 - "gulp compass"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa terá função de monitorar mudanças no sass e assim então compilar e criar os arquivos "qisat-foundation.css" e "qisat-foundation.min.css", que deverão estar localizados na pasta 'public/css'.
                           </p>
                           <table class="spacer">
@@ -393,8 +373,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 3 - "gulp css-series"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 3 - "gulp css-series"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa terá a função de renomear os caminhos dos ícones para caminhos reais, e caminhos em relação a pasta raíz respectivamente.
                           </p>
                           <table class="spacer">
@@ -410,8 +390,8 @@
                     <tbody> 
                       <tr>
                         <th class="small6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 4 - "gulp replace-inline"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 4 - "gulp replace-inline"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa será responsável por alterar nos html os endereços raízes para endereços reais, para assim 
                               o css poder ser aplicado inline pela tarefa "campanhas-inline" posteiormente.
                           </p>
@@ -428,8 +408,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 5 - "gulp campanhas-inline"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 5 - "gulp campanhas-inline"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa seleciona todos os arquivos html do endereço "public/campanhas/2019/inline/", e insere inline o documento css externo utilizado nos html; 
                               Além de inserir estilos específicos no cabeçalho do email e também minificar o html.
                           </p>
@@ -446,8 +426,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Tarefa 6 - "gulp campanhas-html-final"</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Tarefa 6 - "gulp campanhas-html-final"</h4></strong>
+                          <p class="content doc-alignment">
                               Esta tarefa é a última a ser realizada, ela minifica e transfere o html produzido em "campanhas/2019", para "public/campanhas/2019".
                           </p>
                           <table class="spacer">
@@ -463,8 +443,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h4 class="content" style="text-align: justify;">Importante:</h4></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h4 class="content doc-alignment">Importante:</h4></strong>
+                          <p class="content doc-alignment">
                               Com a tarefa default sendo executada, ao renomear um arquivo na pasta 'campanhas/2019' o gulp criará um novo arquivo na pasta 'public/campanhas/2019' tendo então dois arquivos, portanto o arquivo de nome antigo deve ser deletado manualmente da pasta 'public/campanhas/2019'e da pasta 'public/campanhas/2019/inline'.
                           </p>
                           <table class="spacer">
@@ -480,8 +460,8 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h3 class="content" style="text-align: justify;">Variáveis</h3></strong>
-                          <p class="content" style="text-align: justify;">
+                          <strong><h3 class="content doc-alignment">Variáveis</h3></strong>
+                          <p class="content doc-alignment">
                               As variáveis "url-html", "url_imagens", "url_css" existem em função da variável "url_base" que é a única a ser modificada.<br>
                               A variável url_base deverá ter como valor padrão "https://public.qisat.com.br", mas deve ser alterado conforme o host.
                           </p>
@@ -518,7 +498,7 @@
                       <tr>
                         <th class="small-6 large-6 columns first last">
                           <strong><h2>Sass</h2></strong>
-                          <p class="content" style="text-align: justify;">
+                          <p class="content doc-alignment">
                             O Sass que será compilado para formar o Css está dividido em diversas áreas: 
                           </p>
                           <ul>
@@ -543,7 +523,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <strong><h3 class="content" style="text-align: justify;">Variáveis QiSat:</h3></strong>
+                          <strong><h3 class="content doc-alignment">Variáveis QiSat:</h3></strong>
                         </th>
                       </tr>
                     </tbody>
@@ -552,7 +532,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content" style="text-align: justify;">Tipografia</h4>
+                          <h4 class="content doc-alignment">Tipografia</h4>
                           <ul>
                             <li>$global-font-size - Tamanho da fonte de texto comum</li><br>
                             <li>$global-font-weight - Peso da fonte de texto comum (normal/bold)</li><br>
@@ -576,7 +556,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content" style="text-align: justify;">Botões</h4>
+                          <h4 class="content doc-alignment">Botões</h4>
                           <ul>
                             <li>$btn-padding - Padding dos botões (ajustável em tiny, small default e large)</li><br>
                             <li>$btn-font-size - Tamanho da fonte dos botões (ajustável em tiny, small, default e large)</li><br>
@@ -598,7 +578,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content" style="text-align: justify;">Cards (callout)</h4>
+                          <h4 class="content doc-alignment">Cards (callout)</h4>
                           <ul>
                             <li>$card-width - Largura do card</li><br>
                             <li>$card-margin - Margem do card</li><br>
@@ -616,7 +596,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content" style="text-align: justify;">1 - Global</h4>
+                          <h4 class="content doc-alignment">1 - Global</h4>
                           <ul>
                             <li>$global-width - Largura do container</li><br>
                             <li>$container-background - Cor do background do container </li><br>
@@ -631,7 +611,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content" style="text-align: justify;">2 - Global (cores)</h4>
+                          <h4 class="content doc-alignment">2 - Global (cores)</h4>
                           <ul>
                             <li>$color-agronomia - Cor para campanha Ambiental e Agronômica (cabeçalho, botões e bordas de botões)</li><br>
                             <li>$color-eletrica - Cor para campanha Elétrica (cabeçalho, botões e bordas de botões)</li><br>
@@ -654,10 +634,1646 @@
                       <td height="30px"></td>
                     </tr>
                   </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="alinhamentos" name="alinhamentos" src="/images/alinhamento-doc.png" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>        
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h2 class="content doc-alignment">Tipos de Alinhamentos</h2></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h4 class="content doc-alignment">Alinhamento de Texto (.text-x):</h4></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="35" cols="100" disabled="true" readonly>
+  <table class="row list">
+    <tbody>
+      <tr class="list">
+        <th class="small-6 large-2 columns first">
+          <table>
+            <tr>
+              <th>
+                <p class="text-left"><strong>Left (default)</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+        <th class="small-6 large-2 columns">
+          <table>
+            <tr>
+              <th>
+                <p class="text-center"><strong>Center</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+        <th class="small-6 large-2 columns last">
+          <table>
+            <tr>
+              <th>
+                <p class="text-right"><strong>Right</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row list">
+                    <tbody>
+                      <tr class="list">
+                        <th class="small-6 large-2 columns first">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="text-left"><strong>Left (default)</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-6 large-2 columns">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="text-center"><strong>center</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-6 large-2 columns last">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="text-right"><strong>right</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h4 class="content doc-alignment">Alinhamentos text em mobile (.small-text-x):</h4></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="35" cols="100" disabled="true" readonly>
+  <table class="row list">
+    <tbody>
+      <tr class="list">
+        <th class="small-6 large-2 columns first">
+          <table>
+            <tr>
+              <th>
+                <p class="small-text-left"><strong>Left mobile</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+        <th class="small-6 large-2 columns">
+          <table>
+            <tr>
+              <th>
+                <p class="small-text-center"><strong>Center mobile</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+        <th class="small-6 large-2 columns last">
+          <table>
+            <tr>
+              <th>
+                <p class="small-text-right"><strong>Right mobile</strong></p>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row list">
+                    <tbody>
+                      <tr class="list">
+                        <th class="small-6 large-2 columns first">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="small-text-left"><strong>Left mobile</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-6 large-2 columns">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="small-text-center"><strong>Center mobile</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-6 large-2 columns last">
+                          <table>
+                            <tr>
+                              <th>
+                                <p class="small-text-right"><strong>Right mobile</strong></p>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h4 class="content doc-alignment">Alinhamentos de imagem, botão ou bloco (.float-x):</h4></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="18" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th>
+                <img src="https://placehold.it/200?text=left" alt="" class="float-left">
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>  
+      <tr>  
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th>
+                <center>
+                  <img src="https://placehold.it/200?text=center" alt="" class="float-center">
+                </center>
+              </th>
+            </tr>
+          </table>
+        </th>
+       </tr> 
+       <tr> 
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th>
+                <img src="https://placehold.it/200?text=right" alt="" class="float-right">
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th>
+                                <img src="https://placehold.it/200?text=left" alt="" class="float-left">
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                      <tr>  
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th>
+                                <center>
+                                  <img src="https://placehold.it/200?text=center" alt="" class="float-center">
+                                </center>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th>
+                                <img src="https://placehold.it/200?text=right" alt="" class="float-right">
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h5>Detalhes:</h5></strong>
+                          <p class="content">Para dispositivos de telas menores, o método a ser utilizado é semelhante ao de alinhamento de texto, ou seja, apenas digite "small-" na frente da classe (Ex: small-float-center).</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="botões" name="botões" src="/images/botao.jpg" class=" float-center" height="200px">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>        
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="">Botões</h2></strong>
+                          <p class="content doc-alignment">
+                              Os Botões QiSat são divididos em dois modelos, são eles: 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content doc-alignment">1 - Padrão (default-btn)</h4>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="default-btn">Botão 1</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="default-btn">Botão 1</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h4 class="content doc-alignment">2 - Vazado (alternative-btn)</h4>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="alternative-btn">Botão 2</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="alternative-btn">Botão 2</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>            
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Botões por Área</h3></strong>
+                          <p class="content doc-alignment">Para ter um botão estilizado com a cor da área selecionada, basta adicionar a classe do botão seguida da classe da área. Veja exemplos a seguir:</p>  
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="default-btn agronomia">Botão 1</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="default-btn agronomia">Botão 1</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="alternative-btn agronomia">Botão 2</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="alternative-btn agronomia">Botão 2</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="default-btn eletrica">Botão 1</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="default-btn eletrica">Botão 1</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <table>
+                            <tr>
+                              <th class="float-center">
+                                <a href="" class="alternative-btn eletrica">Botão 2</a>
+                              </th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns first last">
+          <table>
+            <tr>
+              <th class="float-center">
+                <a href="#" class="alternative-btn eletrica">Botão 2</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                </th>
+              </tr>
+            </table>
+            <table class="spacer">
+              <tr>
+                <td height="40px"></td>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="cabeçalhos" name="cabeçalhos" src="/images/cabecalho-foto.png" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>        
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="">Cabeçalhos</h2></strong>
+                          <p class="content doc-alignment">
+                              O código html do cabeçalho QiSat é feito dessa maneira: 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="60" cols="100" disabled="true" readonly>
+  <table align="center" class="header float-center">
+    <tr>
+      <td>
+        <table align="center">
+          <tbody>
+            <tr>
+              <td>
+                //Linha com link;
+                <table class="row">
+                  <tbody>
+                    <tr>
+                      <th class="small-6 large-6 columns first">
+                        <center><a href="" target="_blank" class="clique-aqui branco">
+                          Não consegue visualizar? Clique aqui.
+                        </a></center>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+                //Linha com imagem do logo;
+                <table class="row">
+                  <tbody>
+                    <tr>
+                      <th class="small-6 large-6 columns">
+                        <a href="https://www.qisat.com.br" target="_blank">
+                          <img src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                        </a>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+                //Linha com texto; 
+                <table class="row">
+                  <tbody>
+                    <tr>
+                      <th class="small-6 large-6 columns">
+                        <h4 class="subtitle text-center">Subtítulo qualquer</h4>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+                //Linha com imagem;
+                <table class="row">
+                  <tbody>
+                    <tr>
+                      <th class="small-6 large-6 columns">
+                        <img src="/images/imagem-qualquer" class="float-center">
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4 class="">Detalhes:</h4></strong>
+                          <p class="content doc-alignment">
+                              -- A classe "header" deve ser escrita seguida da área (ex: header eletrica), caso contrário a cor do cabeçalho será a cor da variável $color-default.
+                          </p>
+                          <p class="content doc-alignment">
+                              -- A classe "clique-aqui" deve ser escrita seguida de "branco" (para backgrounds de cor escura), ou default (para backgrounds de cor clara).
+                          </p>
+                          <p class="content doc-alignment">
+                              -- A classe "subtitle" pode ser usada em qualquer texto, somente em backgrounds de cor escura, pois o texto permanece na cor branca.
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="rodapé" name="rodapé" src="/images/rodape-doc.jpg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="">Rodapé</h2></strong>
+                          <p class="content doc-alignment">
+                            O código html do Rodapé QiSat é feito dessa maneira: 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="55" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tr>
+      <td valign="top">
+        <a href="https://www.qisat.com.br" target="_blank" >
+          <img alt="Logo" class="float-center mobile-logo" src="/images/logo_topo.png">
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <table class="row">
+    <tr>
+      <th class="small-1 large-1 columns rodape"></th>
+      <th class="small-1 large-1 columns first float-center rodape">
+        <a href="https://www.facebook.com/qisat" target="_blank">
+          <p class="small-text-center icons-sprite icons-facebook"></p>
+        </a>
+      </th>
+      <th class="small-1 large-1 columns float-center rodape">
+        <a href="https://www.instagram.com/qisat/" target="_blank">
+          <p class="small-text-center icons-sprite icons-instagram"></p>
+        </a>
+      </th>
+      <th class="small-1 large-1 columns float-center rodape">
+        <a href="https://br.linkedin.com/in/qisat" target="_blank">
+          <p class=" icons-sprite icons-linkedin"></p>
+        </a>
+      </th>
+      <th class="small-1 large-1 columns last float-center rodape">
+        <a href="https://www.youtube.com/user/qisat" target="_blank">
+          <p class="small-text-center icons-sprite icons-youtube"></p>
+        </a>
+      </th>
+      <th class="small-1 large-1 columns rodape"></th>
+    </tr>
+  </table>
+  <table class="row">
+    <tr>
+      <th class="small-6 large-6 columns first last">
+        <center><span class="rodape-duvidas">Em caso de dúvidas, responda esse e-mail ou entre em contato pelo telefone/whatsapp:<br><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5548998151222" title="WhatsApp" class="clique-aqui default">+55 48 99815 1222</a></span></center>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4>Detalhe:</h4></strong>
+                          <p class="content doc-alignment">
+                              -- O código do rodapé é envolvido pela tabela container; 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="ícones" name="ícones" src="/images/icones-doc.jpg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="">Ícones</h2></strong>
+                          <p class="content doc-alignment">
+                              Os ícones são inseridos via css sprite das imagens dos mesmos, segue alguns exemplos de como aplicar: 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="35" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tr>
+      <th class="small-6 large-2 columns">
+        <table class="card">
+          <tr>
+            <th class="small-6 large-6 columns float-center">
+              <p class="small-text-center icons-sprite icons-icon-people"></p>
+              <p class="card-padding">Modalidade Presencial</p>
+            </th>
+          </tr>
+        </table>
+      </th>
+      <th class="small-6 large-2 columns">
+        <table class="card">
+          <tr>
+            <th class="small-6 large-6 columns float-center">
+              <p class="small-text-center icons-sprite icons-icon-encontros"></p>
+              <p class="card-padding">Quantidade de encontros</p>
+            </th>
+          </tr>
+        </table>
+      </th>
+      <th class="small-6 large-2 columns">
+        <table class="card">
+          <tr>
+            <th class="small-6 large-6 columns float-center">
+              <p class="small-text-center icons-sprite icons-icon-cargahor"></p>
+              <p class="card-padding">Carga horária 18 horas</p>
+            </th>
+          </tr>
+        </table>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tr>
+                      <th class="small-6 large-2 columns">
+                        <table class="card">
+                          <tr>
+                            <th class="small-6 large-6 columns float-center">
+                              <p class="small-text-center icons-sprite icons-icon-people"></p>
+                              <p class="card-padding">Modalidade Presencial</p>
+                            </th>
+                          </tr>
+                        </table>
+                      </th>
+                      <th class="small-6 large-2 columns">
+                        <table class="card">
+                          <tr>
+                            <th class="small-6 large-6 columns float-center">
+                              <p class="small-text-center icons-sprite icons-icon-school"></p>
+                              <p class="card-padding">Aulas Online</p>
+                            </th>
+                          </tr>
+                        </table>
+                      </th>
+                      <th class="small-6 large-2 columns">
+                        <table class="card">
+                          <tr>
+                            <th class="small-6 large-6 columns float-center">
+                              <p class="small-text-center icons-sprite icons-icon-cargahor"></p>
+                              <p class="card-padding">Carga horária 18 horas</p>
+                            </th>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4 class="">Detalhes:</h4></strong>
+                          <p class="content doc-alignment">
+                            -- Os ícones normalmente são inseridos dentro de uma tabela "card";  
+                          </p>
+                          <p class="content doc-alignment">
+                            -- Os ícones são inseridos por classes em uma tag de parágrafo;  
+                          </p>
+                          <p class="content doc-alignment">
+                            -- Para inserir os ícones as classes devem ser escritas da seguinte forma:<br>
+                            ---- class="icons-sprite icons-'nome do ícone salvo'";  
+                          </p>
+                          <p class="content doc-alignment">
+                            -- Os ícones devem ser salvos na pasta "icons" dentro do images no public;  
+                          </p>
+                          <p class="content doc-alignment">
+                            -- Por padrão, ícones de cada área devem ser salvos com o nome da área no final (ex: icon-school-hidraulica);  
+                          </p> 
+                          <p class="content doc-alignment">
+                            -- Sempre que um novo ícone for salvo na pasta, a tarefa gulp deve ser executada novamente, para criar um novo sprite.  
+                          </p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="listas" name="listas" src="/images/lista-doc.jpg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h2 class=" content doc-alignment">Tipos de Listas</h2></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h3 class=" content doc-alignment">Lista Desordenada (ul):</h3></strong>
+                          <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                          </ul>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="15" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="columns large-6 small-6 first last">
+          <strong><h3>Lista Desordenada (ul):</h3></strong>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h3 class=" content doc-alignment">Lista Ordenada (ol):</h3></strong>
+                          <ol>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                          </ol>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="15" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="columns large-6 small-6 first last">
+          <strong><h3 class=" content doc-alignment">Lista Ordenada (ol):</h3></strong>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h3 class=" content doc-alignment">Lista Destacada com link (Catálogos):</h3></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row list">  
+                    <tr class="list">
+                      <th class="small-4 large-5 columns list">
+                        <a href="" class="link-list"><span>Item 1</span></a>
+                      </th>
+                      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+                        <a href="" class="link-list"><span>R$500,°°</span></a>
+                      </th>
+                    </tr>
+                    <tr class="list">
+                      <th class="small-4 large-5 columns list">
+                        <a href="" class="link-list"><span>Item 2</span></a>
+                      </th>
+                      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+                        <a href="" class="link-list"><span>R$1.000,°°</span></a>
+                      </th>
+                    </tr>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+<textarea rows="30" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="columns large-6 small-6 first last">
+          <strong><h3 class=" content doc-alignment">Lista Destacada com link (Catálogos):</h3></strong>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <table class="row list">  
+    <tr class="list">
+      <th class="small-4 large-5 columns list">
+        <a href="" class="link-list"><span>Item 1</span></a>
+      </th>
+      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+        <a href="" class="link-list"><span>R$500,°°</span></a>
+      </th>
+    </tr>
+    <tr class="list">
+      <th class="small-4 large-5 columns list">
+        <a href="" class="link-list"><span>Item 2</span></a>
+      </th>
+      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+        <a href="" class="link-list"><span>R$1.000,°°</span></a>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="cards" name="cards" src="/images/cards-doc.jpg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class=" content doc-alignment">Cards</h2></strong>
+                          <p class="content doc-alignment">
+                              Os Cards são blocos com bordas sombreadas que geralmente são usados para envolver os ícones. Segue abaixo um exemplo de Card: 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="15" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tr>
+      <th class="small-6 large-2 columns">
+        <table class="card">
+          <tr>
+            <th class="small-6 large-6 columns float-center">
+              <p class="small-text-center icons-sprite icons-icon-people"></p>
+              <p class="card-padding">Modalidade Presencial</p>
+            </th>
+          </tr>
+        </table>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tr>
+                      <th class="small-6 large-6 columns">
+                        <table class="card">
+                          <tr>
+                            <th class="small-6 large-6 columns float-center">
+                              <p class="small-text-center icons-sprite icons-icon-people"></p>
+                              <p class="card-padding">Modalidade Presencial</p>
+                            </th>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4 class="content doc-alignment">Detalhes:</h4></strong>
+                          <p class="content doc-alignment">
+                              -- A quantidade de Cards que caberá em uma linha irá depender de quantas colunas cada célula(na qual a tabela card está inscrita) ocupa na linha; Lembrando que o número de colunas é variável de 1 até 6, tanto em small como em large. 
+                          </p> 
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table> 
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="grid" name="grid" src="/images/grid-doc.jpg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="content doc-alignment">Grid</h2></strong>
+                          <p class="content doc-alignment">O grid é o método utilizado para formar a estrutura do código, basicamente formado por linhas (row) e colunas (columns), vejamos a seguir alguns componentes:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Container</h3></strong>
+                          <p class="content doc-alignment">É a tabela container a responsável por envolver as linhas e colunas do corpo do email, somente não envolve o header veja um exemplo:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="6" cols="100" disabled="true" readonly>
+  <table class="container">
+    <tr>
+      <th>Todas as linhas vão aqui</th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Row</h3></strong>
+                          <p class="content doc-alignment">Nas rows (linhas) serão inseridas individualmente cada uma das columns (colunas):</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="12" cols="100" disabled="true" readonly>
+  <table class="container">
+    <tr>
+      <th>
+        <table class="row">
+          <tbody>
+            <tr>Colunas vão aqui</tr>
+          </tbody>
+        </table>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Columns</h3></strong>
+                          <p class="content doc-alignment">A estrutura de uma coluna é escrita com a classe .columns e o tamanho que ela representará em relação a linha através de .large-n e . small-n (este para visualização em dispositivos móveis), cada linha suporta até 6 colunas:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="container">
+    <tr>
+      <th>
+        <table class="row">
+          <tbody>
+            <tr>
+              <th class="columns small-6 large-6">
+                Este é um bloco que ocupa 6 colunas (máximo) em uma linha.
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns small-6 large-6">
+                          Este é um bloco que ocupa 6 colunas (máximo) em uma linha.
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Classes first e last</h3></strong>
+                          <p class="content doc-alignment">Basicamente a classe first adiciona um padding-left na coluna selecionada, sendo a classe last o inverso, adicionando padding-right na coluna selecionada:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <th class="small-12 large-4 columns first">
+    <table>
+      <tr>
+        <th>One</th>
+      </tr>
+    </table>
+  </th>
+  <th class="small-12 large-4 columns">
+    <table>
+      <tr>
+        <th>Two</th>
+      </tr>
+    </table>
+  </th>
+  <th class="small-12 large-4 columns last">
+    <table>
+      <tr>
+        <th>Three</th>
+      </tr>
+    </table>
+  </th>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-12 large-4 columns first">
+                          <table>
+                            <tr>
+                              <th>One</th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-12 large-4 columns">
+                          <table>
+                            <tr>
+                              <th>Two</th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-12 large-4 columns last">
+                          <table>
+                            <tr>
+                              <th>Three</th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Offsets</h3></strong>
+                          <p class="content doc-alignment">Offsets adicionam espaços antes, depois ou entre colunas, basicamente têm a mesma funcionalidade de uma coluna em branco, vejamos:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="large-offset-2 small-12 large-2 columns first">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999/&amp;text=offset column"></th>
+            </tr>
+          </table>
+        </th>
+        <th class="small-12 large-2 columns last">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999"></th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="large-offset-2 small-12 large-2 columns first">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999/" alt=""></th>
+                            </tr>
+                          </table>
+                        </th>
+                        <th class="small-12 large-2 columns last">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999" alt=""></th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h5 class="content doc-alignment">Lembrando:</h5></strong>
+                          <p class="content doc-alignment">Linhas não podem ultrapassar 6 colunas, portanto atenção ao usar offsets.</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="foundation" name="foundation" src="/images/foundation-doc.svg" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h2 class="content doc-alignment">Foundation Email</h2></strong>
+                          <p class="content doc-alignment">O modelo do projeto Email-marketing QiSat é baseado no framework <a href="https://foundation.zurb.com/emails/docs/"><strong>Foundation for Emails</strong></a> portanto qualquer dúvida em relação a estruturas acesse o link do site.  </p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h5 class="content doc-alignment">Lembrando:</h5></strong>
+                          <p class="content doc-alignment">Vale ressaltar uma mudança importante em relação a estrutura, o número de colunas em uma linha no foundation emails é <strong>12</strong>, no QiSat email-marketing é <strong>6</strong>.</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="template-basico" name="template-basico" src="/images/template-doc.png" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h2 class="content doc-alignment">Template Básico</h2></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="38" cols="100" disabled="true" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QiSat - Basic template</title>
+  <link rel="stylesheet" type="text/css" href="/css/qisat-foundation.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <!-- inject-style src="public\css\qisat-foundation.css" -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');  
+  </style>
+</head>
+  <body>
+
+    <table class="body">
+      <tr>
+        <td class="float-center">
+            <!-- move the above styles into your custom stylesheet -->
+            <table align="center" class="retangulo header float-center">
+              <tr>
+                <td class="wrapper-inner">
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table class="row">
+                            <tbody>
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <center><a href="" class="clique-aqui branco">
+                                    Não consegue visualizar? Clique aqui.
+                                  </a></center>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="row collapse">
+                            <tbody>
+                              <tr>
+                                <th class="small-6 large-6 columns first last">
+                                  <a href="https://www.qisat.com.br" target="_blank">
+                                    <img src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                                  </a>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="spacer">
+                            <tr>
+                              <td height="30px">&#xA0;</td>
+                            </tr>
+                          </table>
+                          <table class="row">
+                            <tbody>
+                              <tr>
+                                <th class="small-6 large-6 columns first" valign="middle">
+                                  <table>
+                                    <tr>
+                                      <th><img src=""></th>
+                                    </tr>
+                                  </table>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="container float-center">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td height="40px"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns first last">
+                            <strong><h2 class="content">Olá[Nome]</h2></strong>
+                            <p class="content">
+                                texto
+                            </p>
+                            <p class="content">
+                                texto
+                            </p>
+                            <table class="spacer">
+                              <tr>
+                                <td height="40px"></td>
+                              </tr>
+                            </table>  
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row">
+                      <tr>
+                        <td valign="top" class="rodape-logo-td">
+                          <a href="https://www.qisat.com.br" target="_blank" >
+                            <img alt="Logo" class="float-center mobile-logo" src="/images/logo_topo.png">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    <table class="spacer">
+                      <tr>
+                        <td height="5px">&#xA0;</td>
+                      </tr>
+                    </table>
+
+                    <table class="row">
+                      <tr>
+                        <th class="small-1 large-1 columns"></th>
+                        <th class="small-1 large-1 columns first float-center">
+                          <a href="https://www.facebook.com/qisat" target="_blank">
+                            <p class="small-text-center icons-sprite icons-facebook"></p>
+                          </a>
+                        </th>
+                        <th class="small-1 large-1 columns float-center">
+                          <a href="https://www.instagram.com/qisat/" target="_blank">
+                            <p class="small-text-center icons-sprite icons-instagram"></p>
+                          </a>
+                        </th>
+                        <th class="small-1 large-1 columns float-center">
+                          <a href="https://br.linkedin.com/in/qisat" target="_blank">
+                            <p class=" icons-sprite icons-linkedin"></p>
+                          </a>
+                        </th>
+                        <th class="small-1 large-1 columns last float-center">
+                          <a href="https://www.youtube.com/user/qisat" target="_blank">
+                            <p class="small-text-center icons-sprite icons-youtube"></p>
+                          </a>
+                        </th>
+                        <th class="small-1 large-1 columns"></th>
+                      </tr>
+                    </table>
+                    <table class="row">
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <center><span class="rodape-duvidas">Em caso de dúvidas, responda esse e-mail ou entre em contato pelo telefone/whatsapp:<br><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5548998151222" title="WhatsApp" class="clique-aqui default">+55 48 99815 1222</a></span></center>
+                        </th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+</textarea>
+                  <table class="spacer">
+                    <tr>
+                      <td height="40px"></td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="retangulo float-center">
+              <tr>
+                <th>
+                  <table class="row">
+                    <tr>
+                      <th>
+                        <img id="templates-qisat" name="templates-qisat" src="/images/qisat-doc.png" class=" float-center">
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+            <table class="container">
+              <tr>
+                <th>
                   <table class="row">
                     <tbody>
                       <tr>  
-                        <th id="templates" name="templates" class="small-6 large-6">
+                        <th class="small-6 large-6">
                           <h2><a href="/templates/">Templates QiSat</a></h2>
                           <p class="content"><a href="/templates/qisat-catalogo-agronomia.html" class="link-arrow">Template Catálogo Agronomia</a></p>
                           <p class="content"><a href="/templates/qisat-catalogo-arquitetonico.html" class="link-arrow">Template Catálogo Arquitetônico</a></p>
@@ -685,7 +2301,7 @@
                           <p class="content"><a href="/templates/qisat-curso-oferta-estrutural.html" class="link-arrow">Template Oferta - Estrutural</a></p>
                           <p class="content"><a href="/templates/qisat-curso-oferta-hidraulica.html" class="link-arrow">Template Oferta - Hidráulica</a></p>
                           <p class="content"><a href="/templates/qisat-curso-oferta-incendio.html" class="link-arrow">Template Oferta - Incêndio</a></p>
-                          <p class="content"><a href="/templates/qisat-curso-qieletrico.html.html" class="link-arrow">Template Oferta - Elétrica</a></p>
+                          <p class="content"><a href="/templates/qisat-curso-qieletrico.html" class="link-arrow">Template Oferta - Elétrica</a></p>
                           <p class="content"><a href="/templates/qisat-curso-oferta.html" class="link-arrow">Template Oferta - Básico</a></p>
                           <p class="content"><a href="/templates/qisat-curso-presencial.html" class="link-arrow">Template Curso Presencial</a></p>
                           <p class="content"><a href="/templates/qisat-curso-serie.html" class="link-arrow">Template Série</a></p>
@@ -696,6 +2312,49 @@
                   <table class="spacer">
                     <tr>
                       <td height="40px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tr>
+                      <td valign="top">
+                        <a href="https://www.qisat.com.br" target="_blank" >
+                          <img alt="Logo" class="float-center mobile-logo" src="/images/logo_topo.png">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="row">
+                    <tr>
+                      <th class="small-1 large-1 columns rodape"></th>
+                      <th class="small-1 large-1 columns first float-center rodape">
+                        <a href="https://www.facebook.com/qisat" target="_blank">
+                          <p class="small-text-center icons-sprite icons-facebook"></p>
+                        </a>
+                      </th>
+                      <th class="small-1 large-1 columns float-center rodape">
+                        <a href="https://www.instagram.com/qisat/" target="_blank">
+                          <p class="small-text-center icons-sprite icons-instagram"></p>
+                        </a>
+                      </th>
+                      <th class="small-1 large-1 columns float-center rodape">
+                        <a href="https://br.linkedin.com/in/qisat" target="_blank">
+                          <p class=" icons-sprite icons-linkedin"></p>
+                        </a>
+                      </th>
+                      <th class="small-1 large-1 columns last float-center rodape">
+                        <a href="https://www.youtube.com/user/qisat" target="_blank">
+                          <p class="small-text-center icons-sprite icons-youtube"></p>
+                        </a>
+                      </th>
+                      <th class="small-1 large-1 columns rodape"></th>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tr>
+                      <th class="small-6 large-6 columns first last">
+                        <center><span class="rodape-duvidas">Em caso de dúvidas, responda esse e-mail ou entre em contato pelo telefone/whatsapp:<br><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5548998151222" title="WhatsApp" class="clique-aqui default">+55 48 99815 1222</a></span></center>
+                      </th>
                     </tr>
                   </table>
                 </th>

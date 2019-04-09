@@ -201,7 +201,8 @@ a{
     -webkit-border-radius: $btn-radius; 
     -moz-border-radius: $btn-radius;      
     text-align: center !important;
-    width: auto;
+    width: 200px;
+    display: inline-block;
     &:hover{ background-color: $default-hover-background !important; }
   }
 
