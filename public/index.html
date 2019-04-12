@@ -31,7 +31,7 @@
                               <tr>
                                 <th class="small-6 large-6 columns">
                                   <a href="https://www.qisat.com.br" target="_blank">
-                                    <img id="requisitos" name="requisitos" src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                                    <img id="inicio" name="inicio" src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
                                   </a>
                                 </th>
                               </tr>
@@ -77,7 +77,7 @@
                     <table class="sidenav">
                       <tr>
                         <th>
-                          <a href="#requisitos">Requisitos</a>
+                          <a href="#inicio">Início</a>
                           <a href="#gulp">Gulp</a>
                           <a href="#sass">Sass</a>
                           <a href="#alinhamentos">Alinhamentos</a>
@@ -198,6 +198,14 @@
                           <h4>Sugestão:</h4>
                           <p class="content">Para editar o arquivo gulpfile.js é sugerido que se use um editor de texto. Caso você não tenha instale o Sublime Text 3 no link abaixo:</p>
                           <p class="content"><a href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a></p>
+                        </th>
+                      </tr>
+                    </table>
+                    <table class="row">
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h2>Processo</h2>
+                          <p class="content">Agora com todos os requisitos instalados, é só rodar o gulp no CLI (dentro da pasta raíz do projeto), e iniciar uma campanha na pasta 'campanhas/2019', esta mesma campanha criada será duplicada e enviada para a pasta 'public/campanhas/2019' em versão minificada, além disso uma mesma versão com css aplicado inline será enviada para 'public/campanhas/2019/inline' essa última versão é a que deve ser usada para ser enviada por email.</p>
                         </th>
                       </tr>
                     </table>
@@ -1355,7 +1363,7 @@
 
   <table class="row">
     <tr>
-      <th class="small-1 large-1 columns rodape"></th>
+      <th class="small-1 large-6 columns rodape"></th>
       <th class="small-1 large-1 columns first float-center rodape">
         <a href="https://www.facebook.com/qisat" target="_blank">
           <p class="small-text-center icons-sprite icons-facebook"></p>
@@ -1376,7 +1384,7 @@
           <p class="small-text-center icons-sprite icons-youtube"></p>
         </a>
       </th>
-      <th class="small-1 large-1 columns rodape"></th>
+      <th class="small-1 large-6 columns rodape"></th>
     </tr>
   </table>
   <table class="row">
@@ -1891,21 +1899,21 @@
                     </tbody>
                   </table>
 <textarea rows="16" cols="100" disabled="true" readonly>
-  <th class="small-12 large-4 columns first">
+  <th class="small-6 large-2 columns first">
     <table>
       <tr>
         <th>One</th>
       </tr>
     </table>
   </th>
-  <th class="small-12 large-4 columns">
+  <th class="small-6 large-2 columns">
     <table>
       <tr>
         <th>Two</th>
       </tr>
     </table>
   </th>
-  <th class="small-12 large-4 columns last">
+  <th class="small-6 large-2 columns last">
     <table>
       <tr>
         <th>Three</th>
@@ -1916,21 +1924,21 @@
                   <table class="row">
                     <tbody>
                       <tr>
-                        <th class="small-12 large-4 columns first">
+                        <th class="small-6 large-2 columns first">
                           <table>
                             <tr>
                               <th>One</th>
                             </tr>
                           </table>
                         </th>
-                        <th class="small-12 large-4 columns">
+                        <th class="small-6 large-2 columns">
                           <table>
                             <tr>
                               <th>Two</th>
                             </tr>
                           </table>
                         </th>
-                        <th class="small-12 large-4 columns last">
+                        <th class="small-6 large-2 columns last">
                           <table>
                             <tr>
                               <th>Three</th>
@@ -1954,14 +1962,14 @@
   <table class="row">
     <tbody>
       <tr>
-        <th class="large-offset-2 small-12 large-2 columns first">
+        <th class="large-offset-2 small-6 large-2 columns first">
           <table>
             <tr>
               <th><img src="https://placehold.it/150x150/999999/&amp;text=offset column"></th>
             </tr>
           </table>
         </th>
-        <th class="small-12 large-2 columns last">
+        <th class="small-6 large-2 columns last">
           <table>
             <tr>
               <th><img src="https://placehold.it/150x150/999999"></th>
@@ -1998,6 +2006,80 @@
                         <th class="small-6 large-6 columns first last">
                           <strong><h5 class="content doc-alignment">Lembrando:</h5></strong>
                           <p class="content doc-alignment">Linhas não podem ultrapassar 6 colunas, portanto atenção ao usar offsets.</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Spacer</h3></strong>
+                          <p class="content doc-alignment">O spacer é um bloco usado para criar espaçamento somente, vejamos:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999/"></th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <table class="spacer">
+    <tr>
+      <td height="50px"></td>
+    </tr>
+  </table>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999/"></th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999/"></th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="50px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999/"></th>
+                            </tr>
+                          </table>
                         </th>
                       </tr>
                     </tbody>
@@ -2326,7 +2408,7 @@
 
                   <table class="row">
                     <tr>
-                      <th class="small-1 large-1 columns rodape"></th>
+                      <th class="small-1 large-6 columns rodape"></th>
                       <th class="small-1 large-1 columns first float-center rodape">
                         <a href="https://www.facebook.com/qisat" target="_blank">
                           <p class="small-text-center icons-sprite icons-facebook"></p>
@@ -2347,7 +2429,7 @@
                           <p class="small-text-center icons-sprite icons-youtube"></p>
                         </a>
                       </th>
-                      <th class="small-1 large-1 columns rodape"></th>
+                      <th class="small-1 large-6 columns rodape"></th>
                     </tr>
                   </table>
                   <table class="row">

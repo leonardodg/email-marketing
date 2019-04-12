@@ -150,6 +150,7 @@ gulp.task('campanhas-html-final', function() {
                 .pipe(htmlmin({
                   collapseWhitespace: true
                 }))
+                .pipe(replace('/css/qisat-foundation.css','/css/qisat-foundation.min.css' ))
                 .pipe(gulp.dest('public/campanhas/2019'));
 });
 
@@ -175,6 +176,12 @@ gulp.task('templates', function() {
                 .pipe(gulp.dest('public/templates'));
 });
 
+/*gulp.task('rep', function(){
+  return gulp.src('qisat-foundation-templates/*.html')
+        .pipe(replace('small-1 large-1 columns rodape','small-1 large-6 columns rodape'))
+                .pipe(gulp.dest('qisat-foundation-templates'))
+
+});*/
 
 ///exemplo de watch funcionando
 /*gulp.task('watch-compass', function () {

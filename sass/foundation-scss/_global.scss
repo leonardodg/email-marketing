@@ -26,7 +26,6 @@ $color-qualidade-desempenho: #736357 !default;
 $color-gestao-projetos: #0000ff !default;
 
 
-
 ///Cores Qisat padrões:
 $azul-default: #1E7AC9;
 $azul-escuro: #1C5485;
@@ -129,6 +128,7 @@ $global-breakpoint: $global-width + $global-gutter !default;
 .retangulo,.header{
 	width: 100%;
 	background-color: $color-default;
+	padding: 0px !important;
 
 	&.eletrica{
 		background-color: $color-eletrica;
