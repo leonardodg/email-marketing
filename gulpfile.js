@@ -18,7 +18,19 @@ var gulp = require('gulp'),
     removeEmptyLines = require('gulp-remove-empty-lines'),
     watch = require('gulp-watch'),
     compass = require('gulp-compass');
-const del = require('del');    
+const del = require('del');
+var mail = require('gulp-mail');
+ 
+var smtpInfo = {
+  auth: {
+    user: 'joao.goncalves@qisat.com.br',
+    pass: '*joao.1072'
+  },
+  host: 'email-ssl.com.br',
+  secureConnection: true,
+  port: 465
+};    
+
 
 
 var url_base = 'http://public-local.qisat.com.br'; // LOCAL
@@ -198,3 +210,37 @@ gulp.task('templates', function() {
                   .pipe(gulp.dest('estilos/css/'));
   });
 });*/
+ 
+gulp.task('mail-all', function () {
+  return gulp.src(['public/campanhas/2019/inline/*.html'])
+    .pipe(mail({
+      subject: 'Surprise!?',
+      to: [
+        'teste@qisat.com.br', 'qisat.email@gmail.com', 'qisat@outlook.com', 'qisat@hotmail.com', 'joao.goncalves@qisat.com.br'
+      ],
+      from: 'QiSat <qisat@qisat.com.br>',
+      smtp: smtpInfo
+    }));
+
+  });
+
+gulp.task('mail', function () {
+  var template = process.argv[3];
+  template = template.replace(/^\-+/, '');
+  
+  return gulp.src(['public/campanhas/2019/inline/'+template])
+    .pipe(mail({
+      subject: 'Email!!',
+      to: [
+        'teste@qisat.com.br', 'qisat.email@gmail.com', 'qisat@outlook.com', 'qisat@hotmail.com', 'joao.goncalves@qisat.com.br' 
+      ],
+      from: 'QiSat <qisat@qisat.com.br>',
+      smtp: smtpInfo
+    }));
+
+  });
+
+return gulp.task('mytask', function(cb) {
+    console.log(process.argv[3]);
+    cb();
+});

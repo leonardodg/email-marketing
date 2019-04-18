@@ -29,7 +29,8 @@
     "jshint": "^2.9.6"
   },
   "devDependencies": {
-    "gulp-clean": "^0.4.0"
+    "gulp-clean": "^0.4.0",
+    "gulp-mail": "^0.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
