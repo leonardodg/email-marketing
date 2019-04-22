@@ -21,7 +21,7 @@ var gulp = require('gulp'),
 const del = require('del');    
 
 
-var url_base = 'http://public-local.qisat.com.br'; // LOCAL
+var url_base = 'http://my-local-public.qisat.com.br'; // LOCAL
 var url_html = url_base + '/campanhas/';
 var url_imagens = url_base + '/images/';
 var url_css = url_base + '/css/';
