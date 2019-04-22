@@ -56,6 +56,17 @@ $btn-alt-background: $white !default;
 /// Background color of buttons hover.
 /// @type Color
 $default-hover-background: #1560A0 !default;
+$eletrica-hover-background: #D3D3D3 !default;
+$agronomia-hover-background: #D3D3D3 !default;
+$estrutural-hover-background: #D3D3D3 !default;
+$incendio-hover-background: #D3D3D3 !default;
+$hidraulica-hover-background: #D3D3D3 !default;
+$arquitetonica-hover-background: #D3D3D3 !default;
+$cad-hover-background: #D3D3D3 !default;
+$curso-presencial-hover-background: #D3D3D3 !default;
+$administracao-hover-background: #D3D3D3 !default;
+$qualidade-desempenho-hover-background: #D3D3D3 !default;
+$gestao-projetos-hover-background: #D3D3D3 !default;
 
 /// Background color of buttons hover.
 /// @type Color
@@ -155,43 +166,54 @@ a{
     background-color: $color-default;
       &.eletrica{
       background-color: $color-eletrica;
+      &:hover{ background-color: $eletrica-hover-background !important;}
       }
 
       &.agronomia{
         background-color: $color-agronomia;
+        &:hover{ background-color: $agronomia-hover-background !important;}
       }
 
       &.estrutural{
         background-color: $color-estrutural;
+        &:hover{ background-color: $estrutural-hover-background !important;}
       }
 
       &.incendio{
         background-color: $color-incendio;
+        &:hover{ background-color: $default-hover-background !important;}
       } 
 
       &.hidraulica{
         background-color: $color-hidraulica;
+        &:hover{ background-color: $default-hover-background !important;}
       }
 
       &.arquitetonica{
         background-color: $color-arquitetonica;
+        &:hover{ background-color: $default-hover-background !important;}
       }
 
       &.cad{
         background-color: $color-cad;
+        &:hover{ background-color: $default-hover-background !important;}
       }
 
       &.curso-presencial{
         background-color: $color-curso-presencial;
+        &:hover{ background-color: $default-hover-background !important;}
       }
       &.administracao{
         background-color: $color-administracao;
+        &:hover{ background-color: $default-hover-background !important;}
       }
       &.qualidade-desempenho{
         background-color: $color-qualidade-desempenho;
+        &:hover{ background-color: $default-hover-background !important;}
       }
       &.gestao-projetos{
         background-color: $color-gestao-projetos;
+        &:hover{ background-color: $default-hover-background !important;}
       } 
     color: $btn-default-color; 
     text-decoration: none; 
@@ -203,7 +225,7 @@ a{
     text-align: center !important;
     width: 200px;
     display: inline-block;
-    &:hover{ background-color: $default-hover-background !important; }
+    &:hover{ background-color: $default-hover-background; }
   }
 
 

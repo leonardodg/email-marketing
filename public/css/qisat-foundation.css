@@ -5,6 +5,7 @@
 .retangulo, .header {
   width: 100%;
   background-color: #1C5485;
+  padding: 0px !important;
 }
 .retangulo.eletrica, .header.eletrica {
   background-color: #FF8C00;
@@ -1040,38 +1041,71 @@ a.default-btn {
 a.default-btn.eletrica {
   background-color: #FF8C00;
 }
+a.default-btn.eletrica:hover {
+  background-color: #D3D3D3 !important;
+}
 a.default-btn.agronomia {
   background-color: #006633;
+}
+a.default-btn.agronomia:hover {
+  background-color: #D3D3D3 !important;
 }
 a.default-btn.estrutural {
   background-color: #7c7c7b;
 }
+a.default-btn.estrutural:hover {
+  background-color: #D3D3D3 !important;
+}
 a.default-btn.incendio {
   background-color: #B22222;
+}
+a.default-btn.incendio:hover {
+  background-color: #1560A0 !important;
 }
 a.default-btn.hidraulica {
   background-color: #1E7AC9;
 }
+a.default-btn.hidraulica:hover {
+  background-color: #1560A0 !important;
+}
 a.default-btn.arquitetonica {
   background-color: #ebe4cc;
+}
+a.default-btn.arquitetonica:hover {
+  background-color: #1560A0 !important;
 }
 a.default-btn.cad {
   background-color: #736357;
 }
+a.default-btn.cad:hover {
+  background-color: #1560A0 !important;
+}
 a.default-btn.curso-presencial {
   background-color: #0000ff;
+}
+a.default-btn.curso-presencial:hover {
+  background-color: #1560A0 !important;
 }
 a.default-btn.administracao {
   background-color: #ebe4cc;
 }
+a.default-btn.administracao:hover {
+  background-color: #1560A0 !important;
+}
 a.default-btn.qualidade-desempenho {
   background-color: #736357;
+}
+a.default-btn.qualidade-desempenho:hover {
+  background-color: #1560A0 !important;
 }
 a.default-btn.gestao-projetos {
   background-color: #0000ff;
 }
-a.default-btn:hover {
+a.default-btn.gestao-projetos:hover {
   background-color: #1560A0 !important;
+}
+a.default-btn:hover {
+  background-color: #1560A0;
 }
 a.link-arrow {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
@@ -1693,8 +1727,12 @@ body.outlook p {
   }
 }
 @media only screen and (min-width: 624px) {
-  h2.subtitle-catalogo, h4.subtitle-catalogo, p.subtitle-catalogo {
-    padding-left: 16px !important;
+  h2.subtitle-catalogo, h4.subtitle-catalogo {
+    padding-left: 32px !important;
+  }
+
+  p.subtitle-catalogo {
+    padding-left: 32px !important;
   }
 }
 /* GERAL*/
@@ -1887,6 +1925,16 @@ h3.investimento-adquirir {
   text-transform: uppercase;
 }
 
+p.subtitle-catalogo {
+  color: #8e8e8e;
+  font-size: 16px;
+  font-family: 'Lato';
+}
+
+span.subtitle-catalogo {
+  padding-left: 16px !important;
+}
+
 ul {
   list-style-type: none;
 }
@@ -1949,6 +1997,31 @@ textarea {
     display: none;
   }
 }
+.accordion {
+  background-color: #eaeced;
+  color: #444;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel {
+  background-color: #eaeced;
+  display: none;
+  overflow: hidden;
+  padding: 0px 0px 0px 10px;
+  transition: max-height 0.2s ease-out;
+}
+
+ul.active {
+  display: block;
+}
+
 .icons-sprite, .icons-alt-cargahor, .icons-alt-certificado, .icons-alt-encontros, .icons-alt-metodologia, .icons-alt-people, .icons-alt-promo, .icons-facebook, .icons-facebook2, .icons-ico_choraria, .icons-icon-acesso-agronomia, .icons-icon-acesso-eletrica, .icons-icon-acesso-hidraulica, .icons-icon-acesso-incendio, .icons-icon-acesso, .icons-icon-addcheck-agronomia, .icons-icon-addcheck-eletrica, .icons-icon-addcheck-incendio, .icons-icon-addcheck, .icons-icon-cargahor-agronomia, .icons-icon-cargahor-eletrica, .icons-icon-cargahor-hidraulica, .icons-icon-cargahor-incendio, .icons-icon-cargahor, .icons-icon-certificado-agronomia, .icons-icon-certificado-eletrica, .icons-icon-certificado-hidraulica, .icons-icon-certificado-incendio, .icons-icon-certificado, .icons-icon-encontros-agronomia, .icons-icon-encontros-eletrica, .icons-icon-encontros-hidraulica, .icons-icon-encontros-incendio, .icons-icon-encontros, .icons-icon-menu-agronomia, .icons-icon-menu-eletrica, .icons-icon-menu-hidraulica, .icons-icon-menu-incendio, .icons-icon-menu, .icons-icon-metodologia-agronomia, .icons-icon-metodologia-eletrica, .icons-icon-metodologia-hidraulica, .icons-icon-metodologia-incendio, .icons-icon-metodologia, .icons-icon-online-agronomia, .icons-icon-online-eletrica, .icons-icon-online-hidraulica, .icons-icon-online-incendio, .icons-icon-online, .icons-icon-people-agronomia, .icons-icon-people-eletrica, .icons-icon-people-hidraulica, .icons-icon-people-incendio, .icons-icon-people, .icons-icon-prazo-agronomia, .icons-icon-prazo-eletrica, .icons-icon-prazo-hidraulica, .icons-icon-prazo-incendio, .icons-icon-prazo, .icons-icon-school-agronomia, .icons-icon-school-eletrica, .icons-icon-school-incendio, .icons-icon-school, .icons-icon-screen-agronomia, .icons-icon-screen-eletrica, .icons-icon-screen-incendio, .icons-icon-screen, .icons-icon-shopcart-agronomia, .icons-icon-shopcart-eletrica, .icons-icon-shopcart-incendio, .icons-icon-shopcart, .icons-instagram, .icons-linkedin, .icons-linkedin2, .icons-lote1, .icons-lote2, .icons-lote3, .icons-lote4, .icons-youtube, .icons-youtube2 {
   background-image: url('http://my-local-public.qisat.com.br/images/icons-se41a167810.png');
   background-repeat: no-repeat;

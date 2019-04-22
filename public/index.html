@@ -7,6 +7,7 @@
 	<title>Email-marketing - DOC</title>
 	<link rel="stylesheet" type="text/css" href="/css/qisat-foundation.min.css">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <script src="/js/accordion.js" type="text/javascript" charset="utf-8" defer></script>
   <!-- inject-style src="public\css\qisat-foundation.css" -->
   <style>
     @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900');
@@ -31,7 +32,7 @@
                               <tr>
                                 <th class="small-6 large-6 columns">
                                   <a href="https://www.qisat.com.br" target="_blank">
-                                    <img id="requisitos" name="requisitos" src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
+                                    <img id="inicio" name="inicio" src="/images/logos-altoqi-qisat-branco.png" class="float-center mobile-logo logo-topo">
                                   </a>
                                 </th>
                               </tr>
@@ -77,22 +78,37 @@
                     <table class="sidenav">
                       <tr>
                         <th>
-                          <a href="#requisitos">Requisitos</a>
+                          <a href="#inicio">Início</a>
                           <a href="#gulp">Gulp</a>
                           <a href="#sass">Sass</a>
-                          <a href="#alinhamentos">Alinhamentos</a>
-                          <a href="#botões">Botões</a>
+                          <button class="accordion"><a>Componentes</a></button>
+                          <ul class="panel">
+                            <li><a href="#alinhamentos">Alinhamentos</a></li>
+                            <li><a href="#botões">Botões</a></li>
+                            <li><a href="#listas">Listas</a></li>
+                            <li><a href="#cards">Cards</a></li>
+                            <li><a href="#ícones">Ícones</a></li>
+                          </ul>
+                          <a href="#foundation">Foundation Doc</a>
                           <a href="#cabeçalhos">Cabeçalho</a>
                           <a href="#rodapé">Rodapé</a>
-                          <a href="#ícones">Ícones</a>
-                          <a href="#listas">Listas</a>
-                          <a href="#cards">Cards</a>
                           <a href="#grid">Grid</a>
-                          <a href="#foundation">Foundation</a>
-                          <a href="#template-basico">Template Básico</a>
-                          <a href="#templates-qisat">Templates Qisat</a>
+                          <button class="accordion"><a>Templates</a></button>
+                          <ul class="panel">
+                            <li><a href="#template-basico">Template Básico</a></li>
+                            <li><a href="#templates-qisat">Templates Qisat</a></li>
+                          </ul>
                         </th>
                       </tr>  
+                    </table>
+                    <table class="row">
+                      <tr>
+                        <th class="small-6 large-6 columns first last doc-alignment">
+                          <h1>Email-marketing QiSat</h1>
+                          <p class="content">Este projeto funciona baseado no Framework <a href="https://foundation.zurb.com/emails.html">Foundation for Email</a>, juntamente com a ferramenta <a href="https://gulpjs.com/">Gulp</a>, com o objetivo de automatizar tarefas e criar Emails padronizados de forma simples e rápida.</p>
+                          <p class="content">A seguir estão listadas as instalações necessárias para dar início ao uso do projeto:</p>
+                        </th>
+                      </tr>
                     </table>
                     <table class="row">
                       <tr>
@@ -112,7 +128,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>1 - Instalação Git:</h3>
+                          <h4>1 - Instalação Git:</h4>
                           <p class="content">O download para instalação do Git pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
                           <p class="content"> Escolha a opção adequada ao seu sistema e faça o download.</p>
@@ -127,7 +143,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>2 - Instalação Ruby:</h3>
+                          <h4>2 - Instalação Ruby:</h4>
                           <p class="content">O download para instalação do Ruby pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://rubyinstaller.org/downloads/">https://rubyinstaller.org/downloads/</a></p>
                           <p class="content"> Escolha a opção adequada ao seu sistema e faça o download.</p>
@@ -137,7 +153,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>3 - Instalação Node JS:</h3>
+                          <h4>3 - Instalação Node JS:</h4>
                           <p class="content">O download para instalação do Node JS pode ser feito através do seguinte link:</p>
                           <p class="content"><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
                           <p class="content"> Escolha a opção adequada ao seu sistema e faça o download.</p>
@@ -147,7 +163,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>4 - Instalação Compass:</h3>
+                          <h4>4 - Instalação Compass:</h4>
                           <p class="content">A instalação do Compass é feita de uma forma mais manual, será necessário acessar a linha de comando (CLI) e digitar os seguintes comandos respectivamente:</p>
                           <p class="content">gem update --system</p>
                           <p class="content">gem install compass</p>
@@ -158,11 +174,12 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>5 - Instalação Gulp:</h3>
+                          <h4>5 - Instalação Gulp:</h4>
                           <ul>
                             <li>Abra o prompt de comando (CLI)</li>
                             <li>Acesse o diretório raíz do projeto(diretório onde foi clonado o repositório email-marketing)</li>
                             <li>Digite "npm install", dê enter e aguarde...</li>
+                            <li>Em seguida, digite "npm install gulp-cli -g"</li>
                             <li>Pronto, a instalação está feita.</li>
                           </ul>
                         </th>
@@ -171,7 +188,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last doc-alignment">
-                          <h3>6 - Servidor Web:</h3>
+                          <h4>6 - Servidor Web:</h4>
                           <p class="content">Caso já não possua um servidor web faça o download de um servidor do Chrome no link a seguir:</p>
                           <p class="content"><a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en">https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en</a></p>
                         </th>
@@ -180,7 +197,7 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h3>7 - Editando Host</h3>
+                          <h4>7 - Editando Host</h4>
                           <h6 class="content">7.1 - Para isso você deverá abrir a linha de comando como administrador:</h6>
                           <p class="content">>>Tecla windows + R</p>
                           <p class="content">>>Digite: cmd <br> Seguido das teclas Ctrl + Shift + Enter</p>
@@ -193,11 +210,19 @@
                     <table class="row">
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h3>8 - Editando variáveis de destino no Gulp</h3>
+                          <h4>8 - Editando variáveis de destino no Gulp</h4>
                           <p class="content">No arquivo gulpfile.js, localizado na pasta raíz do projeto, deverá ser alterada a variável 'url_base'. O valor da variável deve ser igual ao endereço para o qual foi editado o host.</p>
                           <h4>Sugestão:</h4>
                           <p class="content">Para editar o arquivo gulpfile.js é sugerido que se use um editor de texto. Caso você não tenha instale o Sublime Text 3 no link abaixo:</p>
                           <p class="content"><a href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a></p>
+                        </th>
+                      </tr>
+                    </table>
+                    <table class="row">
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <h2>Processo</h2>
+                          <p class="content">Agora com todos os requisitos instalados, é só rodar o gulp no CLI (dentro da pasta raíz do projeto), e iniciar uma campanha na pasta 'campanhas/2019', esta mesma campanha criada será duplicada e enviada para a pasta 'public/campanhas/2019' em versão minificada, além disso uma mesma versão com css aplicado inline será enviada para 'public/campanhas/2019/inline' essa última versão é a que deve ser usada para ser enviada por email.</p>
                         </th>
                       </tr>
                     </table>
@@ -474,6 +499,46 @@
                       </tr>
                     </tbody>
                   </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4 class="content doc-alignment">Tarefa Teste - "gulp mail"</h4></strong>
+                          <p class="content doc-alignment">
+                              1- Modifique na variável <strong>smtpInfo</strong>, o valor de 'user' e 'pass'; Após isso procure as tarefas que estão comentadas com <strong>//GULP MAIL//</strong> e modifique os endereços remetente e destino(s) dos emails teste;
+                          </p>
+                          <p class="content doc-alignment">
+                              2- Agora execute no CLI <strong>gulp mail --'aqui vai o endereço do template inline produzido'</strong>, assim o gulp enviará o html produzido em campanhas para os endereços de email destinatário que você selecionou.
+                          </p>
+                          <p class="content doc-alignment">
+                              3- Para enviar para teste todos os html da pasta basta executar a tarefa <strong>gulp mail-all</strong>;
+                          </p>
+                          <table class="spacer">
+                            <tr>
+                              <td height="40px"></td>
+                            </tr>
+                          </table>  
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody> 
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h4 class="content doc-alignment">Tarefa Templates - "gulp templates"</h4></strong>
+                          <p class="content doc-alignment">
+                              Esta tarefa é opcional, caso haja mudanças no html dos templates da pasta qisat-foundation-templates, realizando a tarefa <strong>gulp templates</strong>, a pasta 'templates' no public, é atualizada. 
+                          </p>
+                          <table class="spacer">
+                            <tr>
+                              <td height="40px"></td>
+                            </tr>
+                          </table>  
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
                 </th>
               </tr>
             </table>    
@@ -596,7 +661,7 @@
                     <tbody> 
                       <tr>
                         <th class="small-6 large-6 columns first last">
-                          <h4 class="content doc-alignment">1 - Global</h4>
+                          <h4 class="content doc-alignment">1 - Global (estrutura)</h4>
                           <ul>
                             <li>$global-width - Largura do container</li><br>
                             <li>$container-background - Cor do background do container </li><br>
@@ -1355,7 +1420,7 @@
 
   <table class="row">
     <tr>
-      <th class="small-1 large-1 columns rodape"></th>
+      <th class="small-1 large-6 columns rodape"></th>
       <th class="small-1 large-1 columns first float-center rodape">
         <a href="https://www.facebook.com/qisat" target="_blank">
           <p class="small-text-center icons-sprite icons-facebook"></p>
@@ -1376,7 +1441,7 @@
           <p class="small-text-center icons-sprite icons-youtube"></p>
         </a>
       </th>
-      <th class="small-1 large-1 columns rodape"></th>
+      <th class="small-1 large-6 columns rodape"></th>
     </tr>
   </table>
   <table class="row">
@@ -1630,7 +1695,7 @@
                     <tbody>
                       <tr>
                         <th class="columns large-6 small-6 first last">
-                          <strong><h3 class=" content doc-alignment">Lista Destacada com link (Catálogos):</h3></strong>
+                          <strong><h3 class=" content doc-alignment">Lista Destacada com link (catálogos):</h3></strong>
                         </th>
                       </tr>
                     </tbody>
@@ -1658,17 +1723,60 @@
                       <td height="30px"></td>
                     </tr>
                   </table>
-<textarea rows="30" cols="100" disabled="true" readonly>
-  <table class="row">
-    <tbody>
-      <tr>
-        <th class="columns large-6 small-6 first last">
-          <strong><h3 class=" content doc-alignment">Lista Destacada com link (Catálogos):</h3></strong>
-        </th>
-      </tr>
-    </tbody>
-  </table>
+<textarea rows="21" cols="100" disabled="true" readonly>
   <table class="row list">  
+    <tr class="list">
+      <th class="small-4 large-5 columns list">
+        <a href="" class="link-list"><span>Item 1</span></a>
+      </th>
+      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+        <a href="" class="link-list"><span>R$500,°°</span></a>
+      </th>
+    </tr>
+    <tr class="list">
+      <th class="small-4 large-5 columns list">
+        <a href="" class="link-list"><span>Item 2</span></a>
+      </th>
+      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+        <a href="" class="link-list"><span>R$1.000,°°</span></a>
+      </th>
+    </tr>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="columns large-6 small-6 first last">
+                          <strong><h3 class=" content doc-alignment">Lista Destacada com link (colorida):</h3></strong>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row list" bgcolor="#eaeced">  
+                    <tr class="list">
+                      <th class="small-4 large-5 columns list">
+                        <a href="" class="link-list"><span>Item 1</span></a>
+                      </th>
+                      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+                        <a href="" class="link-list"><span>R$500,°°</span></a>
+                      </th>
+                    </tr>
+                    <tr class="list">
+                      <th class="small-4 large-5 columns list">
+                        <a href="" class="link-list"><span>Item 2</span></a>
+                      </th>
+                      <th class="small-2 large-1 columns list small-text-right text-center small-text-right text-center">
+                        <a href="" class="link-list"><span>R$1.000,°°</span></a>
+                      </th>
+                    </tr>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="30px"></td>
+                    </tr>
+                  </table>
+<textarea rows="21" cols="100" disabled="true" readonly>
+  <table class="row list" bgcolor="#eaeced">  
     <tr class="list">
       <th class="small-4 large-5 columns list">
         <a href="" class="link-list"><span>Item 1</span></a>
@@ -1891,21 +1999,21 @@
                     </tbody>
                   </table>
 <textarea rows="16" cols="100" disabled="true" readonly>
-  <th class="small-12 large-4 columns first">
+  <th class="small-6 large-2 columns first">
     <table>
       <tr>
         <th>One</th>
       </tr>
     </table>
   </th>
-  <th class="small-12 large-4 columns">
+  <th class="small-6 large-2 columns">
     <table>
       <tr>
         <th>Two</th>
       </tr>
     </table>
   </th>
-  <th class="small-12 large-4 columns last">
+  <th class="small-6 large-2 columns last">
     <table>
       <tr>
         <th>Three</th>
@@ -1916,21 +2024,21 @@
                   <table class="row">
                     <tbody>
                       <tr>
-                        <th class="small-12 large-4 columns first">
+                        <th class="small-6 large-2 columns first">
                           <table>
                             <tr>
                               <th>One</th>
                             </tr>
                           </table>
                         </th>
-                        <th class="small-12 large-4 columns">
+                        <th class="small-6 large-2 columns">
                           <table>
                             <tr>
                               <th>Two</th>
                             </tr>
                           </table>
                         </th>
-                        <th class="small-12 large-4 columns last">
+                        <th class="small-6 large-2 columns last">
                           <table>
                             <tr>
                               <th>Three</th>
@@ -1954,14 +2062,14 @@
   <table class="row">
     <tbody>
       <tr>
-        <th class="large-offset-2 small-12 large-2 columns first">
+        <th class="large-offset-2 small-6 large-2 columns first">
           <table>
             <tr>
               <th><img src="https://placehold.it/150x150/999999/&amp;text=offset column"></th>
             </tr>
           </table>
         </th>
-        <th class="small-12 large-2 columns last">
+        <th class="small-6 large-2 columns last">
           <table>
             <tr>
               <th><img src="https://placehold.it/150x150/999999"></th>
@@ -1998,6 +2106,80 @@
                         <th class="small-6 large-6 columns first last">
                           <strong><h5 class="content doc-alignment">Lembrando:</h5></strong>
                           <p class="content doc-alignment">Linhas não podem ultrapassar 6 colunas, portanto atenção ao usar offsets.</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns first last">
+                          <strong><h3 class="content doc-alignment">Spacer</h3></strong>
+                          <p class="content doc-alignment">O spacer é um bloco usado para criar espaçamento somente, vejamos:</p>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+<textarea rows="16" cols="100" disabled="true" readonly>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999/"></th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <table class="spacer">
+    <tr>
+      <td height="50px"></td>
+    </tr>
+  </table>
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="small-6 large-6 columns">
+          <table>
+            <tr>
+              <th><img src="https://placehold.it/150x150/999999/"></th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</textarea>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999/"></th>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tr>
+                      <td height="50px"></td>
+                    </tr>
+                  </table>
+                  <table class="row">
+                    <tbody>
+                      <tr>
+                        <th class="small-6 large-6 columns">
+                          <table>
+                            <tr>
+                              <th><img src="https://placehold.it/150x150/999999/"></th>
+                            </tr>
+                          </table>
                         </th>
                       </tr>
                     </tbody>
@@ -2260,7 +2442,7 @@
                   <table class="row">
                     <tr>
                       <th>
-                        <img id="templates-qisat" name="templates-qisat" src="/images/qisat-doc.png" class=" float-center">
+                        <img id="templates-qisat" name="templates-qisat" src="/images/qisat-doc.png" class="float-center">
                       </th>
                     </tr>
                   </table>
@@ -2326,7 +2508,7 @@
 
                   <table class="row">
                     <tr>
-                      <th class="small-1 large-1 columns rodape"></th>
+                      <th class="small-1 large-6 columns rodape"></th>
                       <th class="small-1 large-1 columns first float-center rodape">
                         <a href="https://www.facebook.com/qisat" target="_blank">
                           <p class="small-text-center icons-sprite icons-facebook"></p>
@@ -2347,7 +2529,7 @@
                           <p class="small-text-center icons-sprite icons-youtube"></p>
                         </a>
                       </th>
-                      <th class="small-1 large-1 columns rodape"></th>
+                      <th class="small-1 large-6 columns rodape"></th>
                     </tr>
                   </table>
                   <table class="row">

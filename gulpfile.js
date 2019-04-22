@@ -18,7 +18,19 @@ var gulp = require('gulp'),
     removeEmptyLines = require('gulp-remove-empty-lines'),
     watch = require('gulp-watch'),
     compass = require('gulp-compass');
-const del = require('del');    
+const del = require('del');
+var mail = require('gulp-mail');
+ 
+var smtpInfo = {
+  auth: {
+    user: 'joao.goncalves@qisat.com.br',
+    pass: '*joao.1072'
+  },
+  host: 'email-ssl.com.br',
+  secureConnection: true,
+  port: 465
+};    
+
 
 
 var url_base = 'http://my-local-public.qisat.com.br'; // LOCAL
@@ -150,6 +162,7 @@ gulp.task('campanhas-html-final', function() {
                 .pipe(htmlmin({
                   collapseWhitespace: true
                 }))
+                .pipe(replace('/css/qisat-foundation.css','/css/qisat-foundation.min.css' ))
                 .pipe(gulp.dest('public/campanhas/2019'));
 });
 
@@ -175,6 +188,12 @@ gulp.task('templates', function() {
                 .pipe(gulp.dest('public/templates'));
 });
 
+/*gulp.task('rep', function(){
+  return gulp.src('qisat-foundation-templates/*.html')
+        .pipe(replace('small-1 large-1 columns rodape','small-1 large-6 columns rodape'))
+                .pipe(gulp.dest('qisat-foundation-templates'))
+
+});*/
 
 ///exemplo de watch funcionando
 /*gulp.task('watch-compass', function () {
@@ -191,3 +210,37 @@ gulp.task('templates', function() {
                   .pipe(gulp.dest('estilos/css/'));
   });
 });*/
+ 
+gulp.task('mail-all', function () {
+  return gulp.src(['public/campanhas/2019/inline/*.html'])
+    .pipe(mail({
+      subject: 'Surprise!?',
+      to: [
+        'teste@qisat.com.br', 'qisat.email@gmail.com', 'qisat@outlook.com', 'qisat@hotmail.com', 'joao.goncalves@qisat.com.br'
+      ],
+      from: 'QiSat <qisat@qisat.com.br>',
+      smtp: smtpInfo
+    }));
+
+  });
+
+gulp.task('mail', function () {
+  var template = process.argv[3];
+  template = template.replace(/^\-+/, '');
+  
+  return gulp.src(['public/campanhas/2019/inline/'+template])
+    .pipe(mail({
+      subject: 'Email!!',
+      to: [
+        'teste@qisat.com.br', 'qisat.email@gmail.com', 'qisat@outlook.com', 'qisat@hotmail.com', 'joao.goncalves@qisat.com.br' 
+      ],
+      from: 'QiSat <qisat@qisat.com.br>',
+      smtp: smtpInfo
+    }));
+
+  });
+
+return gulp.task('mytask', function(cb) {
+    console.log(process.argv[3]);
+    cb();
+});

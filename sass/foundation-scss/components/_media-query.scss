@@ -165,7 +165,10 @@
 
 // Media Tipografia
 @media only screen and (min-width: #{$global-breakpoint}){
-  h2.subtitle-catalogo,h4.subtitle-catalogo,p.subtitle-catalogo{
-    padding-left: 16px !important;
+  h2.subtitle-catalogo,h4.subtitle-catalogo{
+    padding-left: 32px !important;
+  }
+  p.subtitle-catalogo{
+    padding-left: 32px !important; 
   }
 }  
